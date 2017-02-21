@@ -1,0 +1,119 @@
+\hypertarget{usart_8c}{\section{\-Robo\-Way/usart/usart.c \-File \-Reference}
+\label{usart_8c}\index{\-Robo\-Way/usart/usart.\-c@{\-Robo\-Way/usart/usart.\-c}}
+}
+
+
+\-Source code file for \-U\-S\-A\-R\-T (\-R\-S232)  
+
+
+{\ttfamily \#include \char`\"{}usart.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{usart_8c_a98d9722e84cfb0801019f88c18fe7e74}{set\-Usart\-Baud\-Rate} (uint32\-\_\-t baud\-Rate)
+\begin{DoxyCompactList}\small\item\em \-Setup baudrate for usart. \end{DoxyCompactList}\item 
+void \hyperlink{usart_8c_a34ec26a112ef498e25abd8447b45b7c8}{setup\-Usart0} (uint32\-\_\-t baud\-Rate)
+\begin{DoxyCompactList}\small\item\em \-Initial setup of the usart serial interface. \end{DoxyCompactList}\item 
+void \hyperlink{usart_8c_ae9238adedb87b8a6ccead91d4dfe0398}{usart0\-Transmit} (uint8\-\_\-t data)
+\begin{DoxyCompactList}\small\item\em \-Send one byte over the usart. \end{DoxyCompactList}\item 
+void \hyperlink{usart_8c_abeab49a721297d97409bcdaf802e3524}{usart0\-Print\-Str} (char str\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em \-Send a zero terminated string over the usart. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Source code file for \-U\-S\-A\-R\-T (\-R\-S232) \begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+12.\-08.\-2013 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Version}
+0.\-0.\-1
+\end{DoxyVersion}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{usart_8c_a34ec26a112ef498e25abd8447b45b7c8}{\index{usart.\-c@{usart.\-c}!setup\-Usart0@{setup\-Usart0}}
+\index{setup\-Usart0@{setup\-Usart0}!usart.c@{usart.\-c}}
+\subsubsection[{setup\-Usart0}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf setup\-Usart0} (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{baud\-Rate}
+\end{DoxyParamCaption}
+)}}\label{usart_8c_a34ec26a112ef498e25abd8447b45b7c8}
+
+
+\-Initial setup of the usart serial interface. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em baud\-Rate} & \-Baudrate in bit/sec\par
+ \-Possible values\-: 2400; 4800; 9600; 19200; 57600; 115200 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{usart_8c_a98d9722e84cfb0801019f88c18fe7e74}{\index{usart.\-c@{usart.\-c}!set\-Usart\-Baud\-Rate@{set\-Usart\-Baud\-Rate}}
+\index{set\-Usart\-Baud\-Rate@{set\-Usart\-Baud\-Rate}!usart.c@{usart.\-c}}
+\subsubsection[{set\-Usart\-Baud\-Rate}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf set\-Usart\-Baud\-Rate} (
+\begin{DoxyParamCaption}
+\item[{uint32\-\_\-t}]{baud\-Rate}
+\end{DoxyParamCaption}
+)}}\label{usart_8c_a98d9722e84cfb0801019f88c18fe7e74}
+
+
+\-Setup baudrate for usart. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em baud\-Rate} & \-Baudrate in bit/sec\par
+ \-Possible values\-: 2400; 4800; 9600; 19200; 57600; 115200 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{usart_8c_abeab49a721297d97409bcdaf802e3524}{\index{usart.\-c@{usart.\-c}!usart0\-Print\-Str@{usart0\-Print\-Str}}
+\index{usart0\-Print\-Str@{usart0\-Print\-Str}!usart.c@{usart.\-c}}
+\subsubsection[{usart0\-Print\-Str}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf usart0\-Print\-Str} (
+\begin{DoxyParamCaption}
+\item[{char}]{str\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}}\label{usart_8c_abeab49a721297d97409bcdaf802e3524}
+
+
+\-Send a zero terminated string over the usart. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em str} & \-String to send \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{\-Warning}
+str must be a zero terminated string 
+\end{DoxyWarning}
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{usart_8c_ae9238adedb87b8a6ccead91d4dfe0398}{\index{usart.\-c@{usart.\-c}!usart0\-Transmit@{usart0\-Transmit}}
+\index{usart0\-Transmit@{usart0\-Transmit}!usart.c@{usart.\-c}}
+\subsubsection[{usart0\-Transmit}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf usart0\-Transmit} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{data}
+\end{DoxyParamCaption}
+)}}\label{usart_8c_ae9238adedb87b8a6ccead91d4dfe0398}
+
+
+\-Send one byte over the usart. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em data} & \-Byte to send \\
+\hline
+\end{DoxyParams}

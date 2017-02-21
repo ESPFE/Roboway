@@ -1,0 +1,69 @@
+\hypertarget{avr_constants_8c}{\section{\-Robo\-Way/avr\-Constants.c \-File \-Reference}
+\label{avr_constants_8c}\index{\-Robo\-Way/avr\-Constants.\-c@{\-Robo\-Way/avr\-Constants.\-c}}
+}
+
+
+\-Global constants and settings for \-At\-Mega 8 bit micro controllers (source code)  
+
+
+{\ttfamily \#include \char`\"{}avr\-Constants.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{avr_constants_8c_a6b47d5c616488fbec1619746c4474298}{constrain\-D} (double val, double min, double max)
+\begin{DoxyCompactList}\small\item\em \-Restricts a number to a certain interval. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Global constants and settings for \-At\-Mega 8 bit micro controllers (source code) \begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+11.\-02.\-2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Version}
+2.\-1.\-5
+\end{DoxyVersion}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{avr_constants_8c_a6b47d5c616488fbec1619746c4474298}{\index{avr\-Constants.\-c@{avr\-Constants.\-c}!constrain\-D@{constrain\-D}}
+\index{constrain\-D@{constrain\-D}!avrConstants.c@{avr\-Constants.\-c}}
+\subsubsection[{constrain\-D}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf constrain\-D} (
+\begin{DoxyParamCaption}
+\item[{double}]{val, }
+\item[{double}]{min, }
+\item[{double}]{max}
+\end{DoxyParamCaption}
+)}}\label{avr_constants_8c_a6b47d5c616488fbec1619746c4474298}
+
+
+\-Restricts a number to a certain interval. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em val} & \-Limiting number \\
+\hline
+{\em min} & lower limit \\
+\hline
+{\em max} & higher limit \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+double 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em val} & if min $<$ val $<$ max \\
+\hline
+{\em min} & if val $<$ min \\
+\hline
+{\em max} & if max $<$ val \\
+\hline
+\end{DoxyRetVals}

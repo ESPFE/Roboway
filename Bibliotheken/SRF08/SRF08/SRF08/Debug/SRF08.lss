@@ -1,0 +1,1240 @@
+
+SRF08.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000158  00800100  000005f0  00000664  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000005f0  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .stab         000006cc  00000000  00000000  000007bc  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .stabstr      00000097  00000000  00000000  00000e88  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .comment      0000002f  00000000  00000000  00000f1f  2**0
+                  CONTENTS, READONLY
+  5 .debug_aranges 00000138  00000000  00000000  00000f4e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00001063  00000000  00000000  00001086  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000558  00000000  00000000  000020e9  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   00000768  00000000  00000000  00002641  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  000002f0  00000000  00000000  00002dac  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    000002b9  00000000  00000000  0000309c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    0000094b  00000000  00000000  00003355  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_ranges 000000e8  00000000  00000000  00003ca0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+    return buffer;
+}
+
+
+char* i16ToStr( int16_t i, char *buffer, uint8_t len )
+{
+   0:	0c 94 34 00 	jmp	0x68	; 0x68 <__ctors_end>
+   4:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+   8:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+   c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  10:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+	len -= 1;
+  14:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+	buffer[len] = '\0';
+  18:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  1c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+	while( len && i )
+  20:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  24:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+	{
+		len -= 1;
+		buffer[len] = iToC( i % 10 );
+  28:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  2c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  30:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  34:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  38:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  3c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  40:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  44:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  48:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+		i /= 10;
+  4c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+
+char* i16ToStr( int16_t i, char *buffer, uint8_t len )
+{
+	len -= 1;
+	buffer[len] = '\0';
+	while( len && i )
+  50:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  54:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+		i /= 10;
+	}
+	while( len )
+	{
+		len -= 1;
+		buffer[len] = ' ';
+  58:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  5c:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+  60:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+	{
+		len -= 1;
+		buffer[len] = iToC( i % 10 );
+		i /= 10;
+	}
+	while( len )
+  64:	0c 94 49 00 	jmp	0x92	; 0x92 <__bad_interrupt>
+
+00000068 <__ctors_end>:
+	{
+		len -= 1;
+		buffer[len] = ' ';
+	}
+	return buffer;
+  68:	11 24       	eor	r1, r1
+  6a:	1f be       	out	0x3f, r1	; 63
+  6c:	cf ef       	ldi	r28, 0xFF	; 255
+  6e:	d8 e0       	ldi	r29, 0x08	; 8
+  70:	de bf       	out	0x3e, r29	; 62
+  72:	cd bf       	out	0x3d, r28	; 61
+
+00000074 <__do_copy_data>:
+  74:	12 e0       	ldi	r17, 0x02	; 2
+  76:	a0 e0       	ldi	r26, 0x00	; 0
+  78:	b1 e0       	ldi	r27, 0x01	; 1
+  7a:	e0 ef       	ldi	r30, 0xF0	; 240
+  7c:	f5 e0       	ldi	r31, 0x05	; 5
+  7e:	02 c0       	rjmp	.+4      	; 0x84 <__do_copy_data+0x10>
+  80:	05 90       	lpm	r0, Z+
+  82:	0d 92       	st	X+, r0
+  84:	a8 35       	cpi	r26, 0x58	; 88
+  86:	b1 07       	cpc	r27, r17
+  88:	d9 f7       	brne	.-10     	; 0x80 <__do_copy_data+0xc>
+  8a:	0e 94 96 00 	call	0x12c	; 0x12c <main>
+  8e:	0c 94 f6 02 	jmp	0x5ec	; 0x5ec <_exit>
+
+00000092 <__bad_interrupt>:
+  92:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000096 <setup>:
+
+
+void setup( void )
+{
+    // Setup TWI
+    twiSetup( TWI_MASTER, TWI_CLK_NORMAL_MODE, FALSE );
+  96:	40 e0       	ldi	r20, 0x00	; 0
+  98:	60 e0       	ldi	r22, 0x00	; 0
+  9a:	80 e0       	ldi	r24, 0x00	; 0
+  9c:	0e 94 9f 01 	call	0x33e	; 0x33e <twiSetup>
+	setupUsart0( USART_BAUD_RATE );
+  a0:	60 e8       	ldi	r22, 0x80	; 128
+  a2:	75 e2       	ldi	r23, 0x25	; 37
+  a4:	80 e0       	ldi	r24, 0x00	; 0
+  a6:	90 e0       	ldi	r25, 0x00	; 0
+  a8:	0e 94 b4 02 	call	0x568	; 0x568 <setupUsart0>
+	usart0PrintStr( "Und ab gehts!!!\n" );
+  ac:	80 e0       	ldi	r24, 0x00	; 0
+  ae:	91 e0       	ldi	r25, 0x01	; 1
+  b0:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+  b4:	08 95       	ret
+
+000000b6 <loop>:
+
+void loop( void )
+{
+    uint16_t srf0Distance = 0;
+	
+	SRFStartMeasure( SRF_0, SRF_COM_MEASURE_CM );
+  b6:	61 e5       	ldi	r22, 0x51	; 81
+  b8:	80 e7       	ldi	r24, 0x70	; 112
+  ba:	0e 94 9a 00 	call	0x134	; 0x134 <SRFStartMeasure>
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  be:	2f ef       	ldi	r18, 0xFF	; 255
+  c0:	83 ed       	ldi	r24, 0xD3	; 211
+  c2:	90 e3       	ldi	r25, 0x30	; 48
+  c4:	21 50       	subi	r18, 0x01	; 1
+  c6:	80 40       	sbci	r24, 0x00	; 0
+  c8:	90 40       	sbci	r25, 0x00	; 0
+  ca:	e1 f7       	brne	.-8      	; 0xc4 <loop+0xe>
+  cc:	00 c0       	rjmp	.+0      	; 0xce <loop+0x18>
+  ce:	00 00       	nop
+	
+	
+    while( 1 )
+    {
+		_delay_ms( 1000 );
+		srf0Distance = SRFReadDistance( SRF_0 );
+  d0:	80 e7       	ldi	r24, 0x70	; 112
+  d2:	0e 94 c4 00 	call	0x188	; 0x188 <SRFReadDistance>
+		if( srf0Distance < SRF_MIN_DISTANCE )
+  d6:	82 33       	cpi	r24, 0x32	; 50
+  d8:	91 05       	cpc	r25, r1
+  da:	28 f4       	brcc	.+10     	; 0xe6 <loop+0x30>
+		{
+			usart0PrintStr( "Minimal zulaessigen Abstand unterschritten!!!\n" );
+  dc:	81 e1       	ldi	r24, 0x11	; 17
+  de:	91 e0       	ldi	r25, 0x01	; 1
+  e0:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+  e4:	15 c0       	rjmp	.+42     	; 0x110 <loop+0x5a>
+		}
+		else if( srf0Distance == SRF_UNAVAILABLE_16 )
+  e6:	8f 3f       	cpi	r24, 0xFF	; 255
+  e8:	2f ef       	ldi	r18, 0xFF	; 255
+  ea:	92 07       	cpc	r25, r18
+  ec:	29 f4       	brne	.+10     	; 0xf8 <loop+0x42>
+		{
+			usart0PrintStr( "Fehler bei der Abstandsmessung!!!\n" );
+  ee:	80 e4       	ldi	r24, 0x40	; 64
+  f0:	91 e0       	ldi	r25, 0x01	; 1
+  f2:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+  f6:	0c c0       	rjmp	.+24     	; 0x110 <loop+0x5a>
+		}
+		else if( srf0Distance > SRF_MAX_DISTANCE )
+  f8:	85 36       	cpi	r24, 0x65	; 101
+  fa:	91 05       	cpc	r25, r1
+  fc:	28 f0       	brcs	.+10     	; 0x108 <loop+0x52>
+		{
+			usart0PrintStr( "Maximal zulaessigen Abstand ueberschritten!!!\n" );
+  fe:	83 e6       	ldi	r24, 0x63	; 99
+ 100:	91 e0       	ldi	r25, 0x01	; 1
+ 102:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+ 106:	04 c0       	rjmp	.+8      	; 0x110 <loop+0x5a>
+		}
+		else
+		{
+			usart0PrintStr( "Abstand OK!!!\n" );
+ 108:	82 e9       	ldi	r24, 0x92	; 146
+ 10a:	91 e0       	ldi	r25, 0x01	; 1
+ 10c:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+ 110:	8f ef       	ldi	r24, 0xFF	; 255
+ 112:	93 ed       	ldi	r25, 0xD3	; 211
+ 114:	20 e3       	ldi	r18, 0x30	; 48
+ 116:	81 50       	subi	r24, 0x01	; 1
+ 118:	90 40       	sbci	r25, 0x00	; 0
+ 11a:	20 40       	sbci	r18, 0x00	; 0
+ 11c:	e1 f7       	brne	.-8      	; 0x116 <loop+0x60>
+ 11e:	00 c0       	rjmp	.+0      	; 0x120 <loop+0x6a>
+ 120:	00 00       	nop
+		}
+		_delay_ms( 1000 );
+		SRFStartMeasure( SRF_0, SRF_COM_MEASURE_CM );
+ 122:	61 e5       	ldi	r22, 0x51	; 81
+ 124:	80 e7       	ldi	r24, 0x70	; 112
+ 126:	0e 94 9a 00 	call	0x134	; 0x134 <SRFStartMeasure>
+		
+    }
+ 12a:	c9 cf       	rjmp	.-110    	; 0xbe <loop+0x8>
+
+0000012c <main>:
+void loop( void );
+void end( void );
+
+int main(void)
+{
+	setup();
+ 12c:	0e 94 4b 00 	call	0x96	; 0x96 <setup>
+	loop();
+ 130:	0e 94 5b 00 	call	0xb6	; 0xb6 <loop>
+
+00000134 <SRFStartMeasure>:
+#include "srf.h"
+#include "usart.h"
+
+
+void SRFStartMeasure( uint8_t address, uint8_t command )
+{
+ 134:	1f 93       	push	r17
+ 136:	cf 93       	push	r28
+ 138:	df 93       	push	r29
+ 13a:	00 d0       	rcall	.+0      	; 0x13c <SRFStartMeasure+0x8>
+ 13c:	cd b7       	in	r28, 0x3d	; 61
+ 13e:	de b7       	in	r29, 0x3e	; 62
+ 140:	18 2f       	mov	r17, r24
+    uint8_t data[] = { SRF_REG_COMMAND, command };
+ 142:	19 82       	std	Y+1, r1	; 0x01
+ 144:	6a 83       	std	Y+2, r22	; 0x02
+	if( twiStart() != TWI_OK )
+ 146:	0e 94 ac 01 	call	0x358	; 0x358 <twiStart>
+ 14a:	81 30       	cpi	r24, 0x01	; 1
+ 14c:	19 f0       	breq	.+6      	; 0x154 <SRFStartMeasure+0x20>
+	{
+			twiStop();
+ 14e:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+ 152:	14 c0       	rjmp	.+40     	; 0x17c <SRFStartMeasure+0x48>
+			return;
+	}
+    if( twiSelectWrite( address ) != TWI_OK )
+ 154:	81 2f       	mov	r24, r17
+ 156:	0e 94 e0 01 	call	0x3c0	; 0x3c0 <twiSelectWrite>
+ 15a:	81 30       	cpi	r24, 0x01	; 1
+ 15c:	19 f0       	breq	.+6      	; 0x164 <SRFStartMeasure+0x30>
+	{
+		twiStop();
+ 15e:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+ 162:	0c c0       	rjmp	.+24     	; 0x17c <SRFStartMeasure+0x48>
+		return;
+	}
+    if( twiWrite( data, 2 ) != TWI_OK )
+ 164:	62 e0       	ldi	r22, 0x02	; 2
+ 166:	ce 01       	movw	r24, r28
+ 168:	01 96       	adiw	r24, 0x01	; 1
+ 16a:	0e 94 31 02 	call	0x462	; 0x462 <twiWrite>
+ 16e:	81 30       	cpi	r24, 0x01	; 1
+ 170:	19 f0       	breq	.+6      	; 0x178 <SRFStartMeasure+0x44>
+	{
+		twiStop();
+ 172:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+ 176:	02 c0       	rjmp	.+4      	; 0x17c <SRFStartMeasure+0x48>
+		return;
+	}
+	twiStop();
+ 178:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+}
+ 17c:	0f 90       	pop	r0
+ 17e:	0f 90       	pop	r0
+ 180:	df 91       	pop	r29
+ 182:	cf 91       	pop	r28
+ 184:	1f 91       	pop	r17
+ 186:	08 95       	ret
+
+00000188 <SRFReadDistance>:
+    return data;
+}
+
+
+uint16_t SRFReadDistance( uint8_t address )
+{
+ 188:	1f 93       	push	r17
+ 18a:	cf 93       	push	r28
+ 18c:	df 93       	push	r29
+ 18e:	00 d0       	rcall	.+0      	; 0x190 <SRFReadDistance+0x8>
+ 190:	cd b7       	in	r28, 0x3d	; 61
+ 192:	de b7       	in	r29, 0x3e	; 62
+ 194:	18 2f       	mov	r17, r24
+	uint8_t dataLow  = SRF_REG_ECHO_LOW;
+ 196:	93 e0       	ldi	r25, 0x03	; 3
+ 198:	99 83       	std	Y+1, r25	; 0x01
+	uint8_t dataHigh = SRF_REG_ECHO_HIGH;
+ 19a:	92 e0       	ldi	r25, 0x02	; 2
+ 19c:	9a 83       	std	Y+2, r25	; 0x02
+
+	if( twiStart() != TWI_OK )
+ 19e:	0e 94 ac 01 	call	0x358	; 0x358 <twiStart>
+ 1a2:	81 30       	cpi	r24, 0x01	; 1
+ 1a4:	49 f0       	breq	.+18     	; 0x1b8 <SRFReadDistance+0x30>
+	{
+		twiStop();
+ 1a6:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 0\n" );
+ 1aa:	81 ea       	ldi	r24, 0xA1	; 161
+ 1ac:	91 e0       	ldi	r25, 0x01	; 1
+ 1ae:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 1b2:	2f ef       	ldi	r18, 0xFF	; 255
+ 1b4:	3f ef       	ldi	r19, 0xFF	; 255
+ 1b6:	af c0       	rjmp	.+350    	; 0x316 <SRFReadDistance+0x18e>
+	}
+	if( twiSelectWrite( address ) != TWI_OK )
+ 1b8:	81 2f       	mov	r24, r17
+ 1ba:	0e 94 e0 01 	call	0x3c0	; 0x3c0 <twiSelectWrite>
+ 1be:	81 30       	cpi	r24, 0x01	; 1
+ 1c0:	49 f0       	breq	.+18     	; 0x1d4 <SRFReadDistance+0x4c>
+	{
+		twiStop();
+ 1c2:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 1\n" );
+ 1c6:	8f ea       	ldi	r24, 0xAF	; 175
+ 1c8:	91 e0       	ldi	r25, 0x01	; 1
+ 1ca:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 1ce:	2f ef       	ldi	r18, 0xFF	; 255
+ 1d0:	3f ef       	ldi	r19, 0xFF	; 255
+ 1d2:	a1 c0       	rjmp	.+322    	; 0x316 <SRFReadDistance+0x18e>
+	}
+	if( twiWrite( &dataLow, 1 ) != TWI_OK )
+ 1d4:	61 e0       	ldi	r22, 0x01	; 1
+ 1d6:	ce 01       	movw	r24, r28
+ 1d8:	01 96       	adiw	r24, 0x01	; 1
+ 1da:	0e 94 31 02 	call	0x462	; 0x462 <twiWrite>
+ 1de:	81 30       	cpi	r24, 0x01	; 1
+ 1e0:	49 f0       	breq	.+18     	; 0x1f4 <SRFReadDistance+0x6c>
+	{
+		twiStop();
+ 1e2:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 2\n" );
+ 1e6:	8d eb       	ldi	r24, 0xBD	; 189
+ 1e8:	91 e0       	ldi	r25, 0x01	; 1
+ 1ea:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 1ee:	2f ef       	ldi	r18, 0xFF	; 255
+ 1f0:	3f ef       	ldi	r19, 0xFF	; 255
+ 1f2:	91 c0       	rjmp	.+290    	; 0x316 <SRFReadDistance+0x18e>
+	}
+	twiStop();
+ 1f4:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+	
+	if( twiStart() != TWI_OK )
+ 1f8:	0e 94 ac 01 	call	0x358	; 0x358 <twiStart>
+ 1fc:	81 30       	cpi	r24, 0x01	; 1
+ 1fe:	49 f0       	breq	.+18     	; 0x212 <SRFReadDistance+0x8a>
+	{
+		twiStop();
+ 200:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 3\n" );
+ 204:	8b ec       	ldi	r24, 0xCB	; 203
+ 206:	91 e0       	ldi	r25, 0x01	; 1
+ 208:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 20c:	2f ef       	ldi	r18, 0xFF	; 255
+ 20e:	3f ef       	ldi	r19, 0xFF	; 255
+ 210:	82 c0       	rjmp	.+260    	; 0x316 <SRFReadDistance+0x18e>
+	}
+	if( twiSelectRead( address ) != TWI_OK )
+ 212:	81 2f       	mov	r24, r17
+ 214:	0e 94 ca 01 	call	0x394	; 0x394 <twiSelectRead>
+ 218:	81 30       	cpi	r24, 0x01	; 1
+ 21a:	49 f0       	breq	.+18     	; 0x22e <SRFReadDistance+0xa6>
+	{
+		twiStop();
+ 21c:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 4\n" );
+ 220:	89 ed       	ldi	r24, 0xD9	; 217
+ 222:	91 e0       	ldi	r25, 0x01	; 1
+ 224:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 228:	2f ef       	ldi	r18, 0xFF	; 255
+ 22a:	3f ef       	ldi	r19, 0xFF	; 255
+ 22c:	74 c0       	rjmp	.+232    	; 0x316 <SRFReadDistance+0x18e>
+	}
+	if( twiRead( &dataLow, 1 ) != TWI_OK )
+ 22e:	61 e0       	ldi	r22, 0x01	; 1
+ 230:	ce 01       	movw	r24, r28
+ 232:	01 96       	adiw	r24, 0x01	; 1
+ 234:	0e 94 f3 01 	call	0x3e6	; 0x3e6 <twiRead>
+ 238:	81 30       	cpi	r24, 0x01	; 1
+ 23a:	49 f0       	breq	.+18     	; 0x24e <SRFReadDistance+0xc6>
+	{
+		twiStop();
+ 23c:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 5\n" );
+ 240:	87 ee       	ldi	r24, 0xE7	; 231
+ 242:	91 e0       	ldi	r25, 0x01	; 1
+ 244:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 248:	2f ef       	ldi	r18, 0xFF	; 255
+ 24a:	3f ef       	ldi	r19, 0xFF	; 255
+ 24c:	64 c0       	rjmp	.+200    	; 0x316 <SRFReadDistance+0x18e>
+	}
+	twiStop();
+ 24e:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+	
+	if( twiStart() != TWI_OK )
+ 252:	0e 94 ac 01 	call	0x358	; 0x358 <twiStart>
+ 256:	81 30       	cpi	r24, 0x01	; 1
+ 258:	49 f0       	breq	.+18     	; 0x26c <SRFReadDistance+0xe4>
+	{
+		twiStop();
+ 25a:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 6\n" );
+ 25e:	85 ef       	ldi	r24, 0xF5	; 245
+ 260:	91 e0       	ldi	r25, 0x01	; 1
+ 262:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 266:	2f ef       	ldi	r18, 0xFF	; 255
+ 268:	3f ef       	ldi	r19, 0xFF	; 255
+ 26a:	55 c0       	rjmp	.+170    	; 0x316 <SRFReadDistance+0x18e>
+	}
+	if( twiSelectWrite( address ) != TWI_OK )
+ 26c:	81 2f       	mov	r24, r17
+ 26e:	0e 94 e0 01 	call	0x3c0	; 0x3c0 <twiSelectWrite>
+ 272:	81 30       	cpi	r24, 0x01	; 1
+ 274:	49 f0       	breq	.+18     	; 0x288 <SRFReadDistance+0x100>
+	{
+		twiStop();
+ 276:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 7\n" );
+ 27a:	83 e0       	ldi	r24, 0x03	; 3
+ 27c:	92 e0       	ldi	r25, 0x02	; 2
+ 27e:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 282:	2f ef       	ldi	r18, 0xFF	; 255
+ 284:	3f ef       	ldi	r19, 0xFF	; 255
+ 286:	47 c0       	rjmp	.+142    	; 0x316 <SRFReadDistance+0x18e>
+	}
+	if( twiWrite( &dataHigh, 1 ) != TWI_OK )
+ 288:	61 e0       	ldi	r22, 0x01	; 1
+ 28a:	ce 01       	movw	r24, r28
+ 28c:	02 96       	adiw	r24, 0x02	; 2
+ 28e:	0e 94 31 02 	call	0x462	; 0x462 <twiWrite>
+ 292:	81 30       	cpi	r24, 0x01	; 1
+ 294:	49 f0       	breq	.+18     	; 0x2a8 <SRFReadDistance+0x120>
+	{
+		twiStop();
+ 296:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 8\n" );
+ 29a:	81 e1       	ldi	r24, 0x11	; 17
+ 29c:	92 e0       	ldi	r25, 0x02	; 2
+ 29e:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 2a2:	2f ef       	ldi	r18, 0xFF	; 255
+ 2a4:	3f ef       	ldi	r19, 0xFF	; 255
+ 2a6:	37 c0       	rjmp	.+110    	; 0x316 <SRFReadDistance+0x18e>
+	}
+	twiStop();
+ 2a8:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+	
+	if( twiStart() != TWI_OK )
+ 2ac:	0e 94 ac 01 	call	0x358	; 0x358 <twiStart>
+ 2b0:	81 30       	cpi	r24, 0x01	; 1
+ 2b2:	49 f0       	breq	.+18     	; 0x2c6 <SRFReadDistance+0x13e>
+	{
+		twiStop();
+ 2b4:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 9\n" );
+ 2b8:	8f e1       	ldi	r24, 0x1F	; 31
+ 2ba:	92 e0       	ldi	r25, 0x02	; 2
+ 2bc:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 2c0:	2f ef       	ldi	r18, 0xFF	; 255
+ 2c2:	3f ef       	ldi	r19, 0xFF	; 255
+ 2c4:	28 c0       	rjmp	.+80     	; 0x316 <SRFReadDistance+0x18e>
+	}
+	if( twiSelectRead( address ) != TWI_OK )
+ 2c6:	81 2f       	mov	r24, r17
+ 2c8:	0e 94 ca 01 	call	0x394	; 0x394 <twiSelectRead>
+ 2cc:	81 30       	cpi	r24, 0x01	; 1
+ 2ce:	49 f0       	breq	.+18     	; 0x2e2 <SRFReadDistance+0x15a>
+	{
+		twiStop();
+ 2d0:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 10\n" );
+ 2d4:	8d e2       	ldi	r24, 0x2D	; 45
+ 2d6:	92 e0       	ldi	r25, 0x02	; 2
+ 2d8:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 2dc:	2f ef       	ldi	r18, 0xFF	; 255
+ 2de:	3f ef       	ldi	r19, 0xFF	; 255
+ 2e0:	1a c0       	rjmp	.+52     	; 0x316 <SRFReadDistance+0x18e>
+	}
+	if( twiRead( &dataHigh, 1 ) != TWI_OK )
+ 2e2:	61 e0       	ldi	r22, 0x01	; 1
+ 2e4:	ce 01       	movw	r24, r28
+ 2e6:	02 96       	adiw	r24, 0x02	; 2
+ 2e8:	0e 94 f3 01 	call	0x3e6	; 0x3e6 <twiRead>
+ 2ec:	81 30       	cpi	r24, 0x01	; 1
+ 2ee:	49 f0       	breq	.+18     	; 0x302 <SRFReadDistance+0x17a>
+	{
+		twiStop();
+ 2f0:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+		usart0PrintStr( "Fehler bei 11\n" );
+ 2f4:	8c e3       	ldi	r24, 0x3C	; 60
+ 2f6:	92 e0       	ldi	r25, 0x02	; 2
+ 2f8:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+		return SRF_UNAVAILABLE_16;
+ 2fc:	2f ef       	ldi	r18, 0xFF	; 255
+ 2fe:	3f ef       	ldi	r19, 0xFF	; 255
+ 300:	0a c0       	rjmp	.+20     	; 0x316 <SRFReadDistance+0x18e>
+	}
+	
+	twiStop();
+ 302:	0e 94 c6 01 	call	0x38c	; 0x38c <twiStop>
+	usart0PrintStr( "Kein Fehler\n" );	
+ 306:	8b e4       	ldi	r24, 0x4B	; 75
+ 308:	92 e0       	ldi	r25, 0x02	; 2
+ 30a:	0e 94 c5 02 	call	0x58a	; 0x58a <usart0PrintStr>
+    return ( ( dataHigh << 8 ) | dataLow );
+ 30e:	3a 81       	ldd	r19, Y+2	; 0x02
+ 310:	20 e0       	ldi	r18, 0x00	; 0
+ 312:	89 81       	ldd	r24, Y+1	; 0x01
+ 314:	28 2b       	or	r18, r24
+}
+ 316:	82 2f       	mov	r24, r18
+ 318:	93 2f       	mov	r25, r19
+ 31a:	0f 90       	pop	r0
+ 31c:	0f 90       	pop	r0
+ 31e:	df 91       	pop	r29
+ 320:	cf 91       	pop	r28
+ 322:	1f 91       	pop	r17
+ 324:	08 95       	ret
+
+00000326 <twiSetBitRate>:
+    \param      clkMode
+    \brief      TWI_CLK_NORMAL_MODE or TWI_CLK_FAST_MODE
+*/
+void twiSetBitRate( uint8_t clkMode )
+{
+    if( clkMode == TWI_CLK_NORMAL_MODE )
+ 326:	81 11       	cpse	r24, r1
+ 328:	04 c0       	rjmp	.+8      	; 0x332 <twiSetBitRate+0xc>
+    {
+        TWBR = TWI_CALC_TWBR( TWI_CLK_NORMAL_MODE_VAL );
+ 32a:	88 e4       	ldi	r24, 0x48	; 72
+ 32c:	80 93 b8 00 	sts	0x00B8, r24
+ 330:	03 c0       	rjmp	.+6      	; 0x338 <twiSetBitRate+0x12>
+    }
+    else
+    {
+        TWBR = TWI_CALC_TWBR( TWI_CLK_FAST_MODE_VAL );
+ 332:	8c e0       	ldi	r24, 0x0C	; 12
+ 334:	80 93 b8 00 	sts	0x00B8, r24
+    }
+    TWSR = 0x0;
+ 338:	10 92 b9 00 	sts	0x00B9, r1
+ 33c:	08 95       	ret
+
+0000033e <twiSetup>:
+/*******************************************/
+/* functions in twi.h */
+/*******************************************/
+void twiSetup( bool mode, bool clkMode, uint8_t addr )
+{
+    if( mode == TWI_MASTER )
+ 33e:	81 11       	cpse	r24, r1
+ 340:	04 c0       	rjmp	.+8      	; 0x34a <twiSetup+0xc>
+    {
+        twiSetBitRate( clkMode );
+ 342:	86 2f       	mov	r24, r22
+ 344:	0e 94 93 01 	call	0x326	; 0x326 <twiSetBitRate>
+ 348:	08 95       	ret
+    }
+    else
+    {
+        TWAR = ( addr << 1 );
+ 34a:	44 0f       	add	r20, r20
+ 34c:	40 93 ba 00 	sts	0x00BA, r20
+        TWCR = ( 1 << TWINT ) | ( 1 << TWEA ) | ( 1 << TWEN );
+ 350:	84 ec       	ldi	r24, 0xC4	; 196
+ 352:	80 93 bc 00 	sts	0x00BC, r24
+ 356:	08 95       	ret
+
+00000358 <twiStart>:
+uint8_t twiStart( void )
+{
+    // enable interrupts ( 1 << TWINT )
+    // send start / repeated start condition ( 1 << TWSTA )
+    // enable TWI ( 1 << TWEN )
+    TWCR = ( 1 << TWINT ) | ( 1 << TWSTA ) | ( 1 << TWEN );
+ 358:	84 ea       	ldi	r24, 0xA4	; 164
+ 35a:	80 93 bc 00 	sts	0x00BC, r24
+
+    // wait until we are the boss
+    while( ! ( TWCR & ( 1 << TWINT ) ) );
+ 35e:	ec eb       	ldi	r30, 0xBC	; 188
+ 360:	f0 e0       	ldi	r31, 0x00	; 0
+ 362:	80 81       	ld	r24, Z
+ 364:	88 23       	and	r24, r24
+ 366:	ec f7       	brge	.-6      	; 0x362 <twiStart+0xa>
+
+    // errordetection
+    // TWI_OK -> no error
+    // TWI_ERROR -> error
+    return ((( TWSR & 0xF8 ) == 0x08 ) || ( TWSR & 0xF8 ) == 0x10 );
+ 368:	80 91 b9 00 	lds	r24, 0x00B9
+ 36c:	88 7f       	andi	r24, 0xF8	; 248
+ 36e:	88 30       	cpi	r24, 0x08	; 8
+ 370:	51 f0       	breq	.+20     	; 0x386 <twiStart+0x2e>
+ 372:	20 91 b9 00 	lds	r18, 0x00B9
+ 376:	28 7f       	andi	r18, 0xF8	; 248
+ 378:	81 e0       	ldi	r24, 0x01	; 1
+ 37a:	90 e0       	ldi	r25, 0x00	; 0
+ 37c:	20 31       	cpi	r18, 0x10	; 16
+ 37e:	29 f0       	breq	.+10     	; 0x38a <twiStart+0x32>
+ 380:	80 e0       	ldi	r24, 0x00	; 0
+ 382:	90 e0       	ldi	r25, 0x00	; 0
+ 384:	08 95       	ret
+ 386:	81 e0       	ldi	r24, 0x01	; 1
+ 388:	90 e0       	ldi	r25, 0x00	; 0
+}
+ 38a:	08 95       	ret
+
+0000038c <twiStop>:
+
+
+void twiStop( void )
+{
+    TWCR = ( 1 << TWINT ) | ( 1 << TWEN ) | ( 1 << TWSTO );
+ 38c:	84 e9       	ldi	r24, 0x94	; 148
+ 38e:	80 93 bc 00 	sts	0x00BC, r24
+ 392:	08 95       	ret
+
+00000394 <twiSelectRead>:
+
+uint8_t twiSelectRead( uint8_t addr )
+{
+    // Shift addr 1 bit to the left and set last bit to 1
+    // then write addr to TWDR ( TWI Data Register )
+    TWDR = ( addr << 1 ) | 0x01;
+ 394:	90 e0       	ldi	r25, 0x00	; 0
+ 396:	88 0f       	add	r24, r24
+ 398:	99 1f       	adc	r25, r25
+ 39a:	81 60       	ori	r24, 0x01	; 1
+ 39c:	80 93 bb 00 	sts	0x00BB, r24
+
+    // start sending
+    TWCR = ( 1 << TWINT ) | ( 1 << TWEN );
+ 3a0:	84 e8       	ldi	r24, 0x84	; 132
+ 3a2:	80 93 bc 00 	sts	0x00BC, r24
+
+    // Wait until everything is sent
+    while( ! ( TWCR & ( 1 << TWINT ) ) );
+ 3a6:	ec eb       	ldi	r30, 0xBC	; 188
+ 3a8:	f0 e0       	ldi	r31, 0x00	; 0
+ 3aa:	80 81       	ld	r24, Z
+ 3ac:	88 23       	and	r24, r24
+ 3ae:	ec f7       	brge	.-6      	; 0x3aa <twiSelectRead+0x16>
+
+    // errordetection
+    // TWI_OK -> no error
+    // TWI_ERROR -> error
+    return ( ( TWSR & 0xF8 ) == 0x40 );
+ 3b0:	90 91 b9 00 	lds	r25, 0x00B9
+ 3b4:	98 7f       	andi	r25, 0xF8	; 248
+ 3b6:	81 e0       	ldi	r24, 0x01	; 1
+ 3b8:	90 34       	cpi	r25, 0x40	; 64
+ 3ba:	09 f0       	breq	.+2      	; 0x3be <twiSelectRead+0x2a>
+ 3bc:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 3be:	08 95       	ret
+
+000003c0 <twiSelectWrite>:
+
+uint8_t twiSelectWrite( uint8_t addr )
+{
+    // Shift addr 1 bit to the left and set last bit to 0
+    // then write addr to TWDR ( TWI Data Register )
+    TWDR = ( addr << 1 );
+ 3c0:	88 0f       	add	r24, r24
+ 3c2:	80 93 bb 00 	sts	0x00BB, r24
+
+    // start sending
+    TWCR = ( 1 << TWINT ) | ( 1 << TWEN );
+ 3c6:	84 e8       	ldi	r24, 0x84	; 132
+ 3c8:	80 93 bc 00 	sts	0x00BC, r24
+
+    // wati until everything is sent
+    while( ! ( TWCR & ( 1 << TWINT) ) );
+ 3cc:	ec eb       	ldi	r30, 0xBC	; 188
+ 3ce:	f0 e0       	ldi	r31, 0x00	; 0
+ 3d0:	80 81       	ld	r24, Z
+ 3d2:	88 23       	and	r24, r24
+ 3d4:	ec f7       	brge	.-6      	; 0x3d0 <twiSelectWrite+0x10>
+
+    // errordetection
+    // TWI_OK -> no error
+    // TWI_ERROR -> error
+    return ( ( TWSR & 0xF8 ) == 0x18 );
+ 3d6:	90 91 b9 00 	lds	r25, 0x00B9
+ 3da:	98 7f       	andi	r25, 0xF8	; 248
+ 3dc:	81 e0       	ldi	r24, 0x01	; 1
+ 3de:	98 31       	cpi	r25, 0x18	; 24
+ 3e0:	09 f0       	breq	.+2      	; 0x3e4 <twiSelectWrite+0x24>
+ 3e2:	80 e0       	ldi	r24, 0x00	; 0
+}
+ 3e4:	08 95       	ret
+
+000003e6 <twiRead>:
+
+
+uint8_t twiRead( uint8_t data[], uint8_t length )
+{
+ 3e6:	0f 93       	push	r16
+ 3e8:	1f 93       	push	r17
+ 3ea:	cf 93       	push	r28
+ 3ec:	df 93       	push	r29
+ 3ee:	dc 01       	movw	r26, r24
+    while( length )
+ 3f0:	66 23       	and	r22, r22
+ 3f2:	69 f1       	breq	.+90     	; 0x44e <twiRead+0x68>
+    {
+        --length;
+        // Normal read
+        if( length > 0 )
+        {
+            TWCR = ( 1 << TWINT ) | ( 1 << TWEN ) | ( 1 << TWEA );
+ 3f4:	ec eb       	ldi	r30, 0xBC	; 188
+ 3f6:	f0 e0       	ldi	r31, 0x00	; 0
+ 3f8:	44 ec       	ldi	r20, 0xC4	; 196
+        }
+        // otherwise send NACK
+        else
+        {
+            TWCR = ( 1 << TWINT ) | ( 1 << TWEN );
+ 3fa:	34 e8       	ldi	r19, 0x84	; 132
+        }
+
+        // wait
+        while( ! ( TWCR & ( 1 << TWINT ) ) );
+
+        *data = TWDR;
+ 3fc:	0b eb       	ldi	r16, 0xBB	; 187
+ 3fe:	10 e0       	ldi	r17, 0x00	; 0
+
+        ++data;
+
+        switch( TWSR & 0xF8 )
+ 400:	89 eb       	ldi	r24, 0xB9	; 185
+ 402:	90 e0       	ldi	r25, 0x00	; 0
+
+uint8_t twiRead( uint8_t data[], uint8_t length )
+{
+    while( length )
+    {
+        --length;
+ 404:	61 50       	subi	r22, 0x01	; 1
+        // Normal read
+        if( length > 0 )
+ 406:	11 f0       	breq	.+4      	; 0x40c <twiRead+0x26>
+        {
+            TWCR = ( 1 << TWINT ) | ( 1 << TWEN ) | ( 1 << TWEA );
+ 408:	40 83       	st	Z, r20
+ 40a:	01 c0       	rjmp	.+2      	; 0x40e <twiRead+0x28>
+        }
+        // otherwise send NACK
+        else
+        {
+            TWCR = ( 1 << TWINT ) | ( 1 << TWEN );
+ 40c:	30 83       	st	Z, r19
+        }
+
+        // wait
+        while( ! ( TWCR & ( 1 << TWINT ) ) );
+ 40e:	20 81       	ld	r18, Z
+ 410:	22 23       	and	r18, r18
+ 412:	ec f7       	brge	.-6      	; 0x40e <twiRead+0x28>
+
+        *data = TWDR;
+ 414:	e8 01       	movw	r28, r16
+ 416:	28 81       	ld	r18, Y
+ 418:	2c 93       	st	X, r18
+
+        ++data;
+
+        switch( TWSR & 0xF8 )
+ 41a:	ec 01       	movw	r28, r24
+ 41c:	28 81       	ld	r18, Y
+ 41e:	28 7f       	andi	r18, 0xF8	; 248
+ 420:	20 35       	cpi	r18, 0x50	; 80
+ 422:	19 f0       	breq	.+6      	; 0x42a <twiRead+0x44>
+ 424:	28 35       	cpi	r18, 0x58	; 88
+ 426:	a9 f4       	brne	.+42     	; 0x452 <twiRead+0x6c>
+ 428:	0a c0       	rjmp	.+20     	; 0x43e <twiRead+0x58>
+        {
+            // ACK
+            case 0x50:
+                *data = TWDR;
+ 42a:	e8 01       	movw	r28, r16
+ 42c:	28 81       	ld	r18, Y
+ 42e:	11 96       	adiw	r26, 0x01	; 1
+ 430:	2c 93       	st	X, r18
+ 432:	11 97       	sbiw	r26, 0x01	; 1
+    // TWI_ERROR -> error
+    return ( ( TWSR & 0xF8 ) == 0x18 );
+}
+
+
+uint8_t twiRead( uint8_t data[], uint8_t length )
+ 434:	12 96       	adiw	r26, 0x02	; 2
+{
+    while( length )
+ 436:	61 11       	cpse	r22, r1
+ 438:	e5 cf       	rjmp	.-54     	; 0x404 <twiRead+0x1e>
+                return TWI_ERROR;
+                break;
+        }
+    }
+    // success
+    return TWI_OK;
+ 43a:	81 e0       	ldi	r24, 0x01	; 1
+ 43c:	0d c0       	rjmp	.+26     	; 0x458 <twiRead+0x72>
+                break;
+
+            // NACK
+            case 0x58:
+                // data left -> error
+                if( length > 0 )
+ 43e:	61 11       	cpse	r22, r1
+ 440:	0a c0       	rjmp	.+20     	; 0x456 <twiRead+0x70>
+                    return TWI_ERROR;
+                }
+                // no data left -> NACK correct
+                else
+                {
+                    *data = TWDR;
+ 442:	80 91 bb 00 	lds	r24, 0x00BB
+ 446:	11 96       	adiw	r26, 0x01	; 1
+ 448:	8c 93       	st	X, r24
+                return TWI_ERROR;
+                break;
+        }
+    }
+    // success
+    return TWI_OK;
+ 44a:	81 e0       	ldi	r24, 0x01	; 1
+ 44c:	05 c0       	rjmp	.+10     	; 0x458 <twiRead+0x72>
+ 44e:	81 e0       	ldi	r24, 0x01	; 1
+ 450:	03 c0       	rjmp	.+6      	; 0x458 <twiRead+0x72>
+                    ++data;
+                }
+                break;
+
+            default:
+                return TWI_ERROR;
+ 452:	80 e0       	ldi	r24, 0x00	; 0
+ 454:	01 c0       	rjmp	.+2      	; 0x458 <twiRead+0x72>
+            // NACK
+            case 0x58:
+                // data left -> error
+                if( length > 0 )
+                {
+                    return TWI_ERROR;
+ 456:	80 e0       	ldi	r24, 0x00	; 0
+                break;
+        }
+    }
+    // success
+    return TWI_OK;
+}
+ 458:	df 91       	pop	r29
+ 45a:	cf 91       	pop	r28
+ 45c:	1f 91       	pop	r17
+ 45e:	0f 91       	pop	r16
+ 460:	08 95       	ret
+
+00000462 <twiWrite>:
+
+
+uint8_t twiWrite( uint8_t data[], uint8_t length )
+{
+ 462:	cf 93       	push	r28
+ 464:	df 93       	push	r29
+    while( length > 0 )
+ 466:	66 23       	and	r22, r22
+ 468:	c9 f0       	breq	.+50     	; 0x49c <twiWrite+0x3a>
+ 46a:	a8 2f       	mov	r26, r24
+ 46c:	b9 2f       	mov	r27, r25
+    {
+        TWDR = *data;
+ 46e:	8b eb       	ldi	r24, 0xBB	; 187
+ 470:	90 e0       	ldi	r25, 0x00	; 0
+        // start sending
+        TWCR = ( 1 << TWINT ) | ( 1 << TWEN );
+ 472:	ec eb       	ldi	r30, 0xBC	; 188
+ 474:	f0 e0       	ldi	r31, 0x00	; 0
+ 476:	34 e8       	ldi	r19, 0x84	; 132
+        // wati until everything is sent
+        while( ! ( TWCR & ( 1 << TWINT ) ) );
+
+        // sent but no ACK is received
+        if( ( TWSR & 0xF8 ) != 0x28 )
+ 478:	49 eb       	ldi	r20, 0xB9	; 185
+ 47a:	50 e0       	ldi	r21, 0x00	; 0
+
+uint8_t twiWrite( uint8_t data[], uint8_t length )
+{
+    while( length > 0 )
+    {
+        TWDR = *data;
+ 47c:	2d 91       	ld	r18, X+
+ 47e:	ec 01       	movw	r28, r24
+ 480:	28 83       	st	Y, r18
+        // start sending
+        TWCR = ( 1 << TWINT ) | ( 1 << TWEN );
+ 482:	30 83       	st	Z, r19
+        // wati until everything is sent
+        while( ! ( TWCR & ( 1 << TWINT ) ) );
+ 484:	20 81       	ld	r18, Z
+ 486:	22 23       	and	r18, r18
+ 488:	ec f7       	brge	.-6      	; 0x484 <twiWrite+0x22>
+
+        // sent but no ACK is received
+        if( ( TWSR & 0xF8 ) != 0x28 )
+ 48a:	ea 01       	movw	r28, r20
+ 48c:	28 81       	ld	r18, Y
+ 48e:	28 7f       	andi	r18, 0xF8	; 248
+ 490:	28 32       	cpi	r18, 0x28	; 40
+ 492:	31 f4       	brne	.+12     	; 0x4a0 <twiWrite+0x3e>
+        {
+            return TWI_ERROR;
+        }
+
+        --length;
+ 494:	61 50       	subi	r22, 0x01	; 1
+}
+
+
+uint8_t twiWrite( uint8_t data[], uint8_t length )
+{
+    while( length > 0 )
+ 496:	91 f7       	brne	.-28     	; 0x47c <twiWrite+0x1a>
+
+        --length;
+        ++data;
+    }
+    // everything is sent successfully
+    return TWI_OK;
+ 498:	81 e0       	ldi	r24, 0x01	; 1
+ 49a:	03 c0       	rjmp	.+6      	; 0x4a2 <twiWrite+0x40>
+ 49c:	81 e0       	ldi	r24, 0x01	; 1
+ 49e:	01 c0       	rjmp	.+2      	; 0x4a2 <twiWrite+0x40>
+        while( ! ( TWCR & ( 1 << TWINT ) ) );
+
+        // sent but no ACK is received
+        if( ( TWSR & 0xF8 ) != 0x28 )
+        {
+            return TWI_ERROR;
+ 4a0:	80 e0       	ldi	r24, 0x00	; 0
+        --length;
+        ++data;
+    }
+    // everything is sent successfully
+    return TWI_OK;
+}
+ 4a2:	df 91       	pop	r29
+ 4a4:	cf 91       	pop	r28
+ 4a6:	08 95       	ret
+
+000004a8 <setUsartBaudRate>:
+#include "usart.h"
+
+
+void setUsartBaudRate( uint32_t usartBaudRate )
+{
+ 4a8:	cf 92       	push	r12
+ 4aa:	df 92       	push	r13
+ 4ac:	ef 92       	push	r14
+ 4ae:	ff 92       	push	r15
+ 4b0:	6b 01       	movw	r12, r22
+ 4b2:	7c 01       	movw	r14, r24
+    // liegt Baudrate noch im Toleranzbereich?? ( +/- 5% )
+    if( USART_BAUD_CALC( usartBaudRate ) > 30 )
+ 4b4:	dc 01       	movw	r26, r24
+ 4b6:	cb 01       	movw	r24, r22
+ 4b8:	88 0f       	add	r24, r24
+ 4ba:	99 1f       	adc	r25, r25
+ 4bc:	aa 1f       	adc	r26, r26
+ 4be:	bb 1f       	adc	r27, r27
+ 4c0:	88 0f       	add	r24, r24
+ 4c2:	99 1f       	adc	r25, r25
+ 4c4:	aa 1f       	adc	r26, r26
+ 4c6:	bb 1f       	adc	r27, r27
+ 4c8:	9c 01       	movw	r18, r24
+ 4ca:	ad 01       	movw	r20, r26
+ 4cc:	22 0f       	add	r18, r18
+ 4ce:	33 1f       	adc	r19, r19
+ 4d0:	44 1f       	adc	r20, r20
+ 4d2:	55 1f       	adc	r21, r21
+ 4d4:	22 0f       	add	r18, r18
+ 4d6:	33 1f       	adc	r19, r19
+ 4d8:	44 1f       	adc	r20, r20
+ 4da:	55 1f       	adc	r21, r21
+ 4dc:	60 e0       	ldi	r22, 0x00	; 0
+ 4de:	74 e2       	ldi	r23, 0x24	; 36
+ 4e0:	84 ef       	ldi	r24, 0xF4	; 244
+ 4e2:	90 e0       	ldi	r25, 0x00	; 0
+ 4e4:	0e 94 d4 02 	call	0x5a8	; 0x5a8 <__udivmodsi4>
+ 4e8:	da 01       	movw	r26, r20
+ 4ea:	c9 01       	movw	r24, r18
+ 4ec:	01 97       	sbiw	r24, 0x01	; 1
+ 4ee:	a1 09       	sbc	r26, r1
+ 4f0:	b1 09       	sbc	r27, r1
+ 4f2:	8f 31       	cpi	r24, 0x1F	; 31
+ 4f4:	91 05       	cpc	r25, r1
+ 4f6:	a1 05       	cpc	r26, r1
+ 4f8:	b1 05       	cpc	r27, r1
+ 4fa:	60 f0       	brcs	.+24     	; 0x514 <setUsartBaudRate+0x6c>
+    {
+        UBRR0H = (uint8_t)HIGH_BYTE( USART_BAUD_CALC( usartBaudRate ) );
+ 4fc:	89 2f       	mov	r24, r25
+ 4fe:	9a 2f       	mov	r25, r26
+ 500:	ab 2f       	mov	r26, r27
+ 502:	bb 27       	eor	r27, r27
+ 504:	80 93 c5 00 	sts	0x00C5, r24
+        UBRR0L = (uint8_t)LOW_BYTE( USART_BAUD_CALC( usartBaudRate ) );
+ 508:	21 50       	subi	r18, 0x01	; 1
+ 50a:	20 93 c4 00 	sts	0x00C4, r18
+        UCSR0A = 0x00;
+ 50e:	10 92 c0 00 	sts	0x00C0, r1
+ 512:	25 c0       	rjmp	.+74     	; 0x55e <setUsartBaudRate+0xb6>
+    }
+    // Ansonsten Doppelte Baudrate verwenden
+    else
+    {
+        UBRR0H = (uint8_t)HIGH_BYTE( USART_DOUBLE_BAUD_CALC( usartBaudRate ) );
+ 514:	cc 0c       	add	r12, r12
+ 516:	dd 1c       	adc	r13, r13
+ 518:	ee 1c       	adc	r14, r14
+ 51a:	ff 1c       	adc	r15, r15
+ 51c:	cc 0c       	add	r12, r12
+ 51e:	dd 1c       	adc	r13, r13
+ 520:	ee 1c       	adc	r14, r14
+ 522:	ff 1c       	adc	r15, r15
+ 524:	a7 01       	movw	r20, r14
+ 526:	96 01       	movw	r18, r12
+ 528:	22 0f       	add	r18, r18
+ 52a:	33 1f       	adc	r19, r19
+ 52c:	44 1f       	adc	r20, r20
+ 52e:	55 1f       	adc	r21, r21
+ 530:	60 e0       	ldi	r22, 0x00	; 0
+ 532:	74 e2       	ldi	r23, 0x24	; 36
+ 534:	84 ef       	ldi	r24, 0xF4	; 244
+ 536:	90 e0       	ldi	r25, 0x00	; 0
+ 538:	0e 94 d4 02 	call	0x5a8	; 0x5a8 <__udivmodsi4>
+ 53c:	da 01       	movw	r26, r20
+ 53e:	c9 01       	movw	r24, r18
+ 540:	01 97       	sbiw	r24, 0x01	; 1
+ 542:	a1 09       	sbc	r26, r1
+ 544:	b1 09       	sbc	r27, r1
+ 546:	89 2f       	mov	r24, r25
+ 548:	9a 2f       	mov	r25, r26
+ 54a:	ab 2f       	mov	r26, r27
+ 54c:	bb 27       	eor	r27, r27
+ 54e:	80 93 c5 00 	sts	0x00C5, r24
+        UBRR0L = (uint8_t)LOW_BYTE( USART_DOUBLE_BAUD_CALC( usartBaudRate ) );
+ 552:	21 50       	subi	r18, 0x01	; 1
+ 554:	20 93 c4 00 	sts	0x00C4, r18
+        UCSR0A = ( 1 << U2X0 );
+ 558:	82 e0       	ldi	r24, 0x02	; 2
+ 55a:	80 93 c0 00 	sts	0x00C0, r24
+    }
+}
+ 55e:	ff 90       	pop	r15
+ 560:	ef 90       	pop	r14
+ 562:	df 90       	pop	r13
+ 564:	cf 90       	pop	r12
+ 566:	08 95       	ret
+
+00000568 <setupUsart0>:
+
+// USART0 initialisieren
+void setupUsart0( uint32_t usartBaudRate )
+{
+    // BaudRate einstellen
+    setUsartBaudRate( usartBaudRate );
+ 568:	0e 94 54 02 	call	0x4a8	; 0x4a8 <setUsartBaudRate>
+    // RX, TX und Interrupts einschalten
+    UCSR0B = ( 1 << RXEN0 ) | ( 1 << TXEN0 ) | ( 1 << RXCIE0 );
+ 56c:	88 e9       	ldi	r24, 0x98	; 152
+ 56e:	80 93 c1 00 	sts	0x00C1, r24
+    // 8n1 -> 1 Startbit , 8 Datenbits , 1 Stopbit
+    UCSR0C = ( 1 << UCSZ00 ) | ( 1 << UCSZ01 );
+ 572:	86 e0       	ldi	r24, 0x06	; 6
+ 574:	80 93 c2 00 	sts	0x00C2, r24
+ 578:	08 95       	ret
+
+0000057a <usart0Transmit>:
+
+// SENDEN an USART0
+void usart0Transmit( uint8_t data )
+{
+    // warten, bis senderegister frei
+    while( !( UCSR0A & ( 1 << UDRE0 ) ) );
+ 57a:	e0 ec       	ldi	r30, 0xC0	; 192
+ 57c:	f0 e0       	ldi	r31, 0x00	; 0
+ 57e:	90 81       	ld	r25, Z
+ 580:	95 ff       	sbrs	r25, 5
+ 582:	fd cf       	rjmp	.-6      	; 0x57e <usart0Transmit+0x4>
+    // und ab dafür
+    UDR0 = data;
+ 584:	80 93 c6 00 	sts	0x00C6, r24
+ 588:	08 95       	ret
+
+0000058a <usart0PrintStr>:
+}
+
+
+void usart0PrintStr( char str[] )
+{
+ 58a:	cf 93       	push	r28
+ 58c:	df 93       	push	r29
+ 58e:	ec 01       	movw	r28, r24
+    while( *str != '\0' )
+ 590:	88 81       	ld	r24, Y
+ 592:	88 23       	and	r24, r24
+ 594:	31 f0       	breq	.+12     	; 0x5a2 <usart0PrintStr+0x18>
+    // und ab dafür
+    UDR0 = data;
+}
+
+
+void usart0PrintStr( char str[] )
+ 596:	21 96       	adiw	r28, 0x01	; 1
+{
+    while( *str != '\0' )
+    {
+        usart0Transmit( (uint8_t)(*str) );
+ 598:	0e 94 bd 02 	call	0x57a	; 0x57a <usart0Transmit>
+}
+
+
+void usart0PrintStr( char str[] )
+{
+    while( *str != '\0' )
+ 59c:	89 91       	ld	r24, Y+
+ 59e:	81 11       	cpse	r24, r1
+ 5a0:	fb cf       	rjmp	.-10     	; 0x598 <usart0PrintStr+0xe>
+    {
+        usart0Transmit( (uint8_t)(*str) );
+        ++str;
+    }
+}
+ 5a2:	df 91       	pop	r29
+ 5a4:	cf 91       	pop	r28
+ 5a6:	08 95       	ret
+
+000005a8 <__udivmodsi4>:
+ 5a8:	a1 e2       	ldi	r26, 0x21	; 33
+ 5aa:	1a 2e       	mov	r1, r26
+ 5ac:	aa 1b       	sub	r26, r26
+ 5ae:	bb 1b       	sub	r27, r27
+ 5b0:	fd 01       	movw	r30, r26
+ 5b2:	0d c0       	rjmp	.+26     	; 0x5ce <__udivmodsi4_ep>
+
+000005b4 <__udivmodsi4_loop>:
+ 5b4:	aa 1f       	adc	r26, r26
+ 5b6:	bb 1f       	adc	r27, r27
+ 5b8:	ee 1f       	adc	r30, r30
+ 5ba:	ff 1f       	adc	r31, r31
+ 5bc:	a2 17       	cp	r26, r18
+ 5be:	b3 07       	cpc	r27, r19
+ 5c0:	e4 07       	cpc	r30, r20
+ 5c2:	f5 07       	cpc	r31, r21
+ 5c4:	20 f0       	brcs	.+8      	; 0x5ce <__udivmodsi4_ep>
+ 5c6:	a2 1b       	sub	r26, r18
+ 5c8:	b3 0b       	sbc	r27, r19
+ 5ca:	e4 0b       	sbc	r30, r20
+ 5cc:	f5 0b       	sbc	r31, r21
+
+000005ce <__udivmodsi4_ep>:
+ 5ce:	66 1f       	adc	r22, r22
+ 5d0:	77 1f       	adc	r23, r23
+ 5d2:	88 1f       	adc	r24, r24
+ 5d4:	99 1f       	adc	r25, r25
+ 5d6:	1a 94       	dec	r1
+ 5d8:	69 f7       	brne	.-38     	; 0x5b4 <__udivmodsi4_loop>
+ 5da:	60 95       	com	r22
+ 5dc:	70 95       	com	r23
+ 5de:	80 95       	com	r24
+ 5e0:	90 95       	com	r25
+ 5e2:	9b 01       	movw	r18, r22
+ 5e4:	ac 01       	movw	r20, r24
+ 5e6:	bd 01       	movw	r22, r26
+ 5e8:	cf 01       	movw	r24, r30
+ 5ea:	08 95       	ret
+
+000005ec <_exit>:
+ 5ec:	f8 94       	cli
+
+000005ee <__stop_program>:
+ 5ee:	ff cf       	rjmp	.-2      	; 0x5ee <__stop_program>

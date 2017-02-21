@@ -1,0 +1,125 @@
+\hypertarget{pid_8c}{\section{\-Robo\-Way/pid/pid.c \-File \-Reference}
+\label{pid_8c}\index{\-Robo\-Way/pid/pid.\-c@{\-Robo\-Way/pid/pid.\-c}}
+}
+
+
+\-This is the source code file of the pid controller.  
+
+
+{\ttfamily \#include \char`\"{}pid.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{pid_8c_af8a80fa50e8e9eecc8e9f00a6481b386}{pid\-Init} (double k, double kp, double ki, double kd, double min\-Out, double max\-Out, \hyperlink{structpid_data}{pid\-Data} $\ast$pd)
+\begin{DoxyCompactList}\small\item\em \-Initial setup of a pid controller. \end{DoxyCompactList}\item 
+double \hyperlink{pid_8c_a0f7ac4e72e964f94242e0d1f96bb6032}{update\-Pid} (double r\-Pos, double c\-Pos, \hyperlink{structpid_data}{pid\-Data} $\ast$pd)
+\begin{DoxyCompactList}\small\item\em \-Calculate new output depending on reference position, current position and the data in the working structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is the source code file of the pid controller. \begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+18.\-03.\-2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Version}
+1.\-6.\-2
+\end{DoxyVersion}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{pid_8c_af8a80fa50e8e9eecc8e9f00a6481b386}{\index{pid.\-c@{pid.\-c}!pid\-Init@{pid\-Init}}
+\index{pid\-Init@{pid\-Init}!pid.c@{pid.\-c}}
+\subsubsection[{pid\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf pid\-Init} (
+\begin{DoxyParamCaption}
+\item[{double}]{k, }
+\item[{double}]{kp, }
+\item[{double}]{ki, }
+\item[{double}]{kd, }
+\item[{double}]{min\-Out, }
+\item[{double}]{max\-Out, }
+\item[{{\bf pid\-Data} $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}}\label{pid_8c_af8a80fa50e8e9eecc8e9f00a6481b386}
+
+
+\-Initial setup of a pid controller. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em k} & \-Over all gain \\
+\hline
+{\em kp} & \-Gain proportional part \\
+\hline
+{\em ki} & \-Gain integral part \\
+\hline
+{\em kd} & \-Gain differential part \\
+\hline
+{\em min\-Out} & \-Minimum output value \\
+\hline
+{\em max\-Out} & \-Maximum output value \\
+\hline
+{\em pd} & \-Pointer to a pid working structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{pid_8c_a0f7ac4e72e964f94242e0d1f96bb6032}{\index{pid.\-c@{pid.\-c}!update\-Pid@{update\-Pid}}
+\index{update\-Pid@{update\-Pid}!pid.c@{pid.\-c}}
+\subsubsection[{update\-Pid}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf update\-Pid} (
+\begin{DoxyParamCaption}
+\item[{double}]{r\-Pos, }
+\item[{double}]{c\-Pos, }
+\item[{{\bf pid\-Data} $\ast$}]{pd}
+\end{DoxyParamCaption}
+)}}\label{pid_8c_a0f7ac4e72e964f94242e0d1f96bb6032}
+
+
+\-Calculate new output depending on reference position, current position and the data in the working structure. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em r\-Pos} & \-Reference position \\
+\hline
+{\em c\-Pos} & \-Current position \\
+\hline
+{\em pd} & \-Pointer to a pid working structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+double \-New value for motor speed 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{motor_controll_8h}{motor\-Controll.\-h} 
+\end{DoxySeeAlso}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \hyperlink{structpid_data_a63b4fa4621b3b415456f63052a37c85f}{pid\-Data\-::min\-Out}} & $<$= x $<$= \hyperlink{structpid_data_a14770bf27f0349e6cb6d407fd23ca3a9}{pid\-Data\-::max\-Out} \\
+\hline
+\end{DoxyRetVals}
+
+\begin{DoxyCode}
+                        double updatePid( double rPos, double cPos, pidData *pd
+       )
+                        {
+                                        double error = 0.0;
+                                        double pTerm = 0.0;
+                                        double dTerm = 0.0;
+                                        
+                                        error = rPos - cPos;
+                                        pTerm = pd->kp * error;
+                                        pd->iTerm = constrainD( pd->iTerm + pd
+      ->ki * error, PID_MIN_ITERM, PID_MAX_ITERM );
+                                        dTerm = pd->kd * ( error - pd->eOld );
+                                        return constrainD( pTerm + pd->iTerm + 
+      dTerm, pd->minOut, pd->maxOut );
+                        }
+\end{DoxyCode}

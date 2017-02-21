@@ -1,0 +1,3260 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=pdflatex 2014.1.22)  26 MAR 2014 01:52
+entering extended mode
+ %&-line parsing enabled.
+**refman
+(./refman.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/bk10.clo
+File: bk10.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/usr/share/texmf-texlive/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texmf-texlive/tex/latex/natbib/natbib.sty
+Package: natbib 2009/07/16 8.31 (PWD, AO)
+\bibhang=\skip43
+\bibsep=\skip44
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count88
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: pdftex.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/pdftex-def/pdftex.def
+File: pdftex.def 2010/03/12 v0.04p Graphics/color for pdfTeX
+\Gread@gobject=\count89
+))
+\Gin@req@height=\dimen103
+\Gin@req@width=\dimen104
+)
+(/usr/share/texmf-texlive/tex/latex/tools/multicol.sty
+Package: multicol 2008/12/05 v1.6h multicolumn formatting (FMi)
+\c@tracingmulticols=\count90
+\mult@box=\box26
+\multicol@leftmargin=\dimen105
+\c@unbalance=\count91
+\c@collectmore=\count92
+\doublecol@number=\count93
+\multicoltolerance=\count94
+\multicolpretolerance=\count95
+\full@width=\dimen106
+\page@free=\dimen107
+\premulticols=\dimen108
+\postmulticols=\dimen109
+\multicolsep=\skip45
+\multicolbaselineskip=\skip46
+\partial@page=\box27
+\last@line=\box28
+\mult@rightbox=\box29
+\mult@grightbox=\box30
+\mult@gfirstbox=\box31
+\mult@firstbox=\box32
+\@tempa=\box33
+\@tempa=\box34
+\@tempa=\box35
+\@tempa=\box36
+\@tempa=\box37
+\@tempa=\box38
+\@tempa=\box39
+\@tempa=\box40
+\@tempa=\box41
+\@tempa=\box42
+\@tempa=\box43
+\@tempa=\box44
+\@tempa=\box45
+\@tempa=\box46
+\@tempa=\box47
+\@tempa=\box48
+\@tempa=\box49
+\c@columnbadness=\count96
+\c@finalcolumnbadness=\count97
+\last@try=\dimen110
+\multicolovershoot=\dimen111
+\multicolundershoot=\dimen112
+\mult@nat@firstbox=\box50
+\colbreak@box=\box51
+)
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count98
+\float@exts=\toks15
+\float@box=\box52
+\@float@everytoks=\toks16
+\@floatcapt=\box53
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count99
+\lst@gtempboxa=\box54
+\lst@token=\toks17
+\lst@length=\count100
+\lst@currlwidth=\dimen113
+\lst@column=\count101
+\lst@pos=\count102
+\lst@lostspace=\dimen114
+\lst@width=\dimen115
+\lst@newlines=\count103
+\lst@lineno=\count104
+\lst@maxwidth=\dimen116
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count105
+\lst@skipnumbers=\count106
+\lst@framebox=\box55
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: pdftex.def on input line 130.
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+
+(/usr/share/texmf-texlive/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2001/02/13 v0.1j Color table columns (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen117
+\extrarowheight=\dimen118
+\NC@list=\toks18
+\extratabsurround=\skip47
+\backup@length=\skip48
+)
+\everycr=\toks19
+\minrowclearance=\skip49
+)
+LaTeX Info: Redefining \color on input line 702.
+\rownum=\count107
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1341.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texmf-texlive/tex/latex/base/textcomp.sty
+Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
+Package textcomp Info: Sub-encoding information:
+(textcomp)               5 = only ISO-Adobe without \textcurrency
+(textcomp)               4 = 5 + \texteuro
+(textcomp)               3 = 4 + \textohm
+(textcomp)               2 = 3 + \textestimated + \textcurrency
+(textcomp)               1 = TS1 - \textcircled - \t
+(textcomp)               0 = TS1 (full)
+(textcomp)             Font families with sub-encoding setting implement
+(textcomp)             only a restricted character set as indicated.
+(textcomp)             Family '?' is the default used for unknown fonts.
+(textcomp)             See the documentation for details.
+Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
+
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.def
+File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
+)
+LaTeX Info: Redefining \oldstylenums on input line 266.
+Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
+Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
+Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
+Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
+Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
+Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
+Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
+Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
+Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
+Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
+Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
+Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
+Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
+Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
+Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
+Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
+Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
+Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
+Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
+Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
+Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
+Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
+Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
+Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
+
+Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
+Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
+Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
+Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
+Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
+Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
+Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 311.
+Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 312.
+Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 313.
+Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 314.
+Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 315.
+Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 316.
+Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 317.
+Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 318.
+Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 319.
+Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 320.
+Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 321.
+Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 322.
+Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 323.
+Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 324.
+Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 325.
+Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 326.
+)
+(/usr/share/texmf-texlive/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode detected.
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen119
+\Hy@linkcounter=\count108
+\Hy@pagecounter=\count109
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+))
+Package hyperref Info: Option `colorlinks' set `true' on input line 2864.
+Package hyperref Info: Option `unicode' set `true' on input line 2864.
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/puenc.def
+File: puenc.def 2009/10/09 v6.79a Hyperref: PDF Unicode definition (HO)
+)
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing ON on input line 2993.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/hyperref/backref.sty
+Package: backref 2006/09/05 v1.28 Bibliographical back referencing
+)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip10
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)))
+\Fld@menulength=\count110
+\Field@Width=\dimen120
+\Fld@charsize=\dimen121
+\Field@toks=\toks20
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing ON on input line 4390.
+Package hyperref Info: Link coloring ON on input line 4395.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count111
+\c@Item=\count112
+\c@Hfootnote=\count113
+)
+*hyperref using driver hpdftex*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2009/10/09 v6.79a Hyperref driver for pdfTeX
+\Fld@listcount=\count114
+)
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks21
+\inpenc@posthook=\toks22
+
+(/usr/share/texmf-texlive/tex/latex/base/utf8.def
+File: utf8.def 2008/04/05 v1.1m UTF-8 support for inputenc
+Now handling font encoding OML ...
+... no UTF-8 mapping file for font encoding OML
+Now handling font encoding T1 ...
+... processing UTF-8 mapping file for font encoding T1
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.dfu
+File: t1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00AB (decimal 171)
+   defining Unicode char U+00BB (decimal 187)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C0 (decimal 192)
+   defining Unicode char U+00C1 (decimal 193)
+   defining Unicode char U+00C2 (decimal 194)
+   defining Unicode char U+00C3 (decimal 195)
+   defining Unicode char U+00C4 (decimal 196)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00C7 (decimal 199)
+   defining Unicode char U+00C8 (decimal 200)
+   defining Unicode char U+00C9 (decimal 201)
+   defining Unicode char U+00CA (decimal 202)
+   defining Unicode char U+00CB (decimal 203)
+   defining Unicode char U+00CC (decimal 204)
+   defining Unicode char U+00CD (decimal 205)
+   defining Unicode char U+00CE (decimal 206)
+   defining Unicode char U+00CF (decimal 207)
+   defining Unicode char U+00D0 (decimal 208)
+   defining Unicode char U+00D1 (decimal 209)
+   defining Unicode char U+00D2 (decimal 210)
+   defining Unicode char U+00D3 (decimal 211)
+   defining Unicode char U+00D4 (decimal 212)
+   defining Unicode char U+00D5 (decimal 213)
+   defining Unicode char U+00D6 (decimal 214)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00D9 (decimal 217)
+   defining Unicode char U+00DA (decimal 218)
+   defining Unicode char U+00DB (decimal 219)
+   defining Unicode char U+00DC (decimal 220)
+   defining Unicode char U+00DD (decimal 221)
+   defining Unicode char U+00DE (decimal 222)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E0 (decimal 224)
+   defining Unicode char U+00E1 (decimal 225)
+   defining Unicode char U+00E2 (decimal 226)
+   defining Unicode char U+00E3 (decimal 227)
+   defining Unicode char U+00E4 (decimal 228)
+   defining Unicode char U+00E5 (decimal 229)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00E7 (decimal 231)
+   defining Unicode char U+00E8 (decimal 232)
+   defining Unicode char U+00E9 (decimal 233)
+   defining Unicode char U+00EA (decimal 234)
+   defining Unicode char U+00EB (decimal 235)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F0 (decimal 240)
+   defining Unicode char U+00F1 (decimal 241)
+   defining Unicode char U+00F2 (decimal 242)
+   defining Unicode char U+00F3 (decimal 243)
+   defining Unicode char U+00F4 (decimal 244)
+   defining Unicode char U+00F5 (decimal 245)
+   defining Unicode char U+00F6 (decimal 246)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+00F9 (decimal 249)
+   defining Unicode char U+00FA (decimal 250)
+   defining Unicode char U+00FB (decimal 251)
+   defining Unicode char U+00FC (decimal 252)
+   defining Unicode char U+00FD (decimal 253)
+   defining Unicode char U+00FE (decimal 254)
+   defining Unicode char U+00FF (decimal 255)
+   defining Unicode char U+0102 (decimal 258)
+   defining Unicode char U+0103 (decimal 259)
+   defining Unicode char U+0104 (decimal 260)
+   defining Unicode char U+0105 (decimal 261)
+   defining Unicode char U+0106 (decimal 262)
+   defining Unicode char U+0107 (decimal 263)
+   defining Unicode char U+010C (decimal 268)
+   defining Unicode char U+010D (decimal 269)
+   defining Unicode char U+010E (decimal 270)
+   defining Unicode char U+010F (decimal 271)
+   defining Unicode char U+0110 (decimal 272)
+   defining Unicode char U+0111 (decimal 273)
+   defining Unicode char U+0118 (decimal 280)
+   defining Unicode char U+0119 (decimal 281)
+   defining Unicode char U+011A (decimal 282)
+   defining Unicode char U+011B (decimal 283)
+   defining Unicode char U+011E (decimal 286)
+   defining Unicode char U+011F (decimal 287)
+   defining Unicode char U+0130 (decimal 304)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0132 (decimal 306)
+   defining Unicode char U+0133 (decimal 307)
+   defining Unicode char U+0139 (decimal 313)
+   defining Unicode char U+013A (decimal 314)
+   defining Unicode char U+013D (decimal 317)
+   defining Unicode char U+013E (decimal 318)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0143 (decimal 323)
+   defining Unicode char U+0144 (decimal 324)
+   defining Unicode char U+0147 (decimal 327)
+   defining Unicode char U+0148 (decimal 328)
+   defining Unicode char U+014A (decimal 330)
+   defining Unicode char U+014B (decimal 331)
+   defining Unicode char U+0150 (decimal 336)
+   defining Unicode char U+0151 (decimal 337)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+0154 (decimal 340)
+   defining Unicode char U+0155 (decimal 341)
+   defining Unicode char U+0158 (decimal 344)
+   defining Unicode char U+0159 (decimal 345)
+   defining Unicode char U+015A (decimal 346)
+   defining Unicode char U+015B (decimal 347)
+   defining Unicode char U+015E (decimal 350)
+   defining Unicode char U+015F (decimal 351)
+   defining Unicode char U+0160 (decimal 352)
+   defining Unicode char U+0161 (decimal 353)
+   defining Unicode char U+0162 (decimal 354)
+   defining Unicode char U+0163 (decimal 355)
+   defining Unicode char U+0164 (decimal 356)
+   defining Unicode char U+0165 (decimal 357)
+   defining Unicode char U+016E (decimal 366)
+   defining Unicode char U+016F (decimal 367)
+   defining Unicode char U+0170 (decimal 368)
+   defining Unicode char U+0171 (decimal 369)
+   defining Unicode char U+0178 (decimal 376)
+   defining Unicode char U+0179 (decimal 377)
+   defining Unicode char U+017A (decimal 378)
+   defining Unicode char U+017B (decimal 379)
+   defining Unicode char U+017C (decimal 380)
+   defining Unicode char U+017D (decimal 381)
+   defining Unicode char U+017E (decimal 382)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201A (decimal 8218)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+   defining Unicode char U+201E (decimal 8222)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+2039 (decimal 8249)
+   defining Unicode char U+203A (decimal 8250)
+   defining Unicode char U+2423 (decimal 9251)
+)
+Now handling font encoding OT1 ...
+... processing UTF-8 mapping file for font encoding OT1
+
+(/usr/share/texmf-texlive/tex/latex/base/ot1enc.dfu
+File: ot1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A1 (decimal 161)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00B8 (decimal 184)
+   defining Unicode char U+00BF (decimal 191)
+   defining Unicode char U+00C5 (decimal 197)
+   defining Unicode char U+00C6 (decimal 198)
+   defining Unicode char U+00D8 (decimal 216)
+   defining Unicode char U+00DF (decimal 223)
+   defining Unicode char U+00E6 (decimal 230)
+   defining Unicode char U+00EC (decimal 236)
+   defining Unicode char U+00ED (decimal 237)
+   defining Unicode char U+00EE (decimal 238)
+   defining Unicode char U+00EF (decimal 239)
+   defining Unicode char U+00F8 (decimal 248)
+   defining Unicode char U+0131 (decimal 305)
+   defining Unicode char U+0141 (decimal 321)
+   defining Unicode char U+0142 (decimal 322)
+   defining Unicode char U+0152 (decimal 338)
+   defining Unicode char U+0153 (decimal 339)
+   defining Unicode char U+2013 (decimal 8211)
+   defining Unicode char U+2014 (decimal 8212)
+   defining Unicode char U+2018 (decimal 8216)
+   defining Unicode char U+2019 (decimal 8217)
+   defining Unicode char U+201C (decimal 8220)
+   defining Unicode char U+201D (decimal 8221)
+)
+Now handling font encoding OMS ...
+... processing UTF-8 mapping file for font encoding OMS
+
+(/usr/share/texmf-texlive/tex/latex/base/omsenc.dfu
+File: omsenc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+)
+Now handling font encoding OMX ...
+... no UTF-8 mapping file for font encoding OMX
+Now handling font encoding U ...
+... no UTF-8 mapping file for font encoding U
+Now handling font encoding TS1 ...
+... processing UTF-8 mapping file for font encoding TS1
+
+(/usr/share/texmf-texlive/tex/latex/base/ts1enc.dfu
+File: ts1enc.dfu 2008/04/05 v1.1m UTF-8 support for inputenc
+   defining Unicode char U+00A2 (decimal 162)
+   defining Unicode char U+00A3 (decimal 163)
+   defining Unicode char U+00A4 (decimal 164)
+   defining Unicode char U+00A5 (decimal 165)
+   defining Unicode char U+00A6 (decimal 166)
+   defining Unicode char U+00A7 (decimal 167)
+   defining Unicode char U+00A8 (decimal 168)
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AC (decimal 172)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00AF (decimal 175)
+   defining Unicode char U+00B0 (decimal 176)
+   defining Unicode char U+00B1 (decimal 177)
+   defining Unicode char U+00B2 (decimal 178)
+   defining Unicode char U+00B3 (decimal 179)
+   defining Unicode char U+00B4 (decimal 180)
+   defining Unicode char U+00B5 (decimal 181)
+   defining Unicode char U+00B6 (decimal 182)
+   defining Unicode char U+00B7 (decimal 183)
+   defining Unicode char U+00B9 (decimal 185)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+00BC (decimal 188)
+   defining Unicode char U+00BD (decimal 189)
+   defining Unicode char U+00BE (decimal 190)
+   defining Unicode char U+00D7 (decimal 215)
+   defining Unicode char U+00F7 (decimal 247)
+   defining Unicode char U+0192 (decimal 402)
+   defining Unicode char U+02C7 (decimal 711)
+   defining Unicode char U+02D8 (decimal 728)
+   defining Unicode char U+02DD (decimal 733)
+   defining Unicode char U+0E3F (decimal 3647)
+   defining Unicode char U+2016 (decimal 8214)
+   defining Unicode char U+2020 (decimal 8224)
+   defining Unicode char U+2021 (decimal 8225)
+   defining Unicode char U+2022 (decimal 8226)
+   defining Unicode char U+2030 (decimal 8240)
+   defining Unicode char U+2031 (decimal 8241)
+   defining Unicode char U+203B (decimal 8251)
+   defining Unicode char U+203D (decimal 8253)
+   defining Unicode char U+2044 (decimal 8260)
+   defining Unicode char U+204E (decimal 8270)
+   defining Unicode char U+2052 (decimal 8274)
+   defining Unicode char U+20A1 (decimal 8353)
+   defining Unicode char U+20A4 (decimal 8356)
+   defining Unicode char U+20A6 (decimal 8358)
+   defining Unicode char U+20A9 (decimal 8361)
+   defining Unicode char U+20AB (decimal 8363)
+   defining Unicode char U+20AC (decimal 8364)
+   defining Unicode char U+20B1 (decimal 8369)
+   defining Unicode char U+2103 (decimal 8451)
+   defining Unicode char U+2116 (decimal 8470)
+   defining Unicode char U+2117 (decimal 8471)
+   defining Unicode char U+211E (decimal 8478)
+   defining Unicode char U+2120 (decimal 8480)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2126 (decimal 8486)
+   defining Unicode char U+2127 (decimal 8487)
+   defining Unicode char U+212E (decimal 8494)
+   defining Unicode char U+2190 (decimal 8592)
+   defining Unicode char U+2191 (decimal 8593)
+   defining Unicode char U+2192 (decimal 8594)
+   defining Unicode char U+2193 (decimal 8595)
+   defining Unicode char U+2329 (decimal 9001)
+   defining Unicode char U+232A (decimal 9002)
+   defining Unicode char U+2422 (decimal 9250)
+   defining Unicode char U+25E6 (decimal 9702)
+   defining Unicode char U+25EF (decimal 9711)
+   defining Unicode char U+266A (decimal 9834)
+)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+   defining Unicode char U+00A9 (decimal 169)
+   defining Unicode char U+00AA (decimal 170)
+   defining Unicode char U+00AE (decimal 174)
+   defining Unicode char U+00BA (decimal 186)
+   defining Unicode char U+02C6 (decimal 710)
+   defining Unicode char U+02DC (decimal 732)
+   defining Unicode char U+200C (decimal 8204)
+   defining Unicode char U+2026 (decimal 8230)
+   defining Unicode char U+2122 (decimal 8482)
+   defining Unicode char U+2423 (decimal 9251)
+))
+(/usr/share/texmf-texlive/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup4
+\symitalic=\mathgroup5
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/helvet.sty
+Package: helvet 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texmf-texlive/tex/latex/psnfss/courier.sty
+Package: courier 2005/04/12 PSNFSS-v9.2a (WaS) 
+)
+(/usr/share/texmf-texlive/tex/latex/sectsty/sectsty.sty
+Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
+les
+)
+(/usr/share/texmf-texlive/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2009/09/04 v2.3d parameterised ToC, etc., typesetting
+
+
+Package tocloft Note: The document has chapter divisions.
+
+\cftparskip=\skip50
+\cftbeforetoctitleskip=\skip51
+\cftaftertoctitleskip=\skip52
+\cftbeforepartskip=\skip53
+\cftpartnumwidth=\skip54
+\cftpartindent=\skip55
+\cftbeforechapskip=\skip56
+\cftchapindent=\skip57
+\cftchapnumwidth=\skip58
+\cftbeforesecskip=\skip59
+\cftsecindent=\skip60
+\cftsecnumwidth=\skip61
+\cftbeforesubsecskip=\skip62
+\cftsubsecindent=\skip63
+\cftsubsecnumwidth=\skip64
+\cftbeforesubsubsecskip=\skip65
+\cftsubsubsecindent=\skip66
+\cftsubsubsecnumwidth=\skip67
+\cftbeforeparaskip=\skip68
+\cftparaindent=\skip69
+\cftparanumwidth=\skip70
+\cftbeforesubparaskip=\skip71
+\cftsubparaindent=\skip72
+\cftsubparanumwidth=\skip73
+\cftbeforeloftitleskip=\skip74
+\cftafterloftitleskip=\skip75
+\cftbeforefigskip=\skip76
+\cftfigindent=\skip77
+\cftfignumwidth=\skip78
+\c@lofdepth=\count115
+\c@lotdepth=\count116
+\cftbeforelottitleskip=\skip79
+\cftafterlottitleskip=\skip80
+\cftbeforetabskip=\skip81
+\cfttabindent=\skip82
+\cfttabnumwidth=\skip83
+) (./doxygen.sty
+Package: doxygen 
+ (/usr/share/texmf-texlive/tex/latex/tools/calc.sty
+Package: calc 2007/08/22 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count117
+\calc@Bcount=\count118
+\calc@Adimen=\dimen122
+\calc@Bdimen=\dimen123
+\calc@Askip=\skip84
+\calc@Bskip=\skip85
+LaTeX Info: Redefining \setlength on input line 76.
+LaTeX Info: Redefining \addtolength on input line 77.
+\calc@Ccount=\count119
+\calc@Cskip=\skip86
+)
+(/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip87
+\f@ncyO@elh=\skip88
+\f@ncyO@erh=\skip89
+\f@ncyO@olh=\skip90
+\f@ncyO@orh=\skip91
+\f@ncyO@elf=\skip92
+\f@ncyO@erf=\skip93
+\f@ncyO@olf=\skip94
+\f@ncyO@orf=\skip95
+)
+(/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip96
+\LTright=\skip97
+\LTpre=\skip98
+\LTpost=\skip99
+\LTchunksize=\count120
+\LTcapwidth=\dimen124
+\LT@head=\box56
+\LT@firsthead=\box57
+\LT@foot=\box58
+\LT@lastfoot=\box59
+\LT@cols=\count121
+\LT@rows=\count122
+\c@LT@tables=\count123
+\c@LT@chunks=\count124
+\LT@p@ftn=\toks23
+)
+(/usr/share/texmf-texlive/tex/latex/tools/verbatim.sty
+Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks24
+\verbatim@line=\toks25
+\verbatim@in@stream=\read1
+)
+\tmplength=\skip100
+\xrefbox=\box60
+\xreflength=\skip101
+
+(/usr/share/texmf-texlive/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texmf-texlive/tex/latex/base/t1enc.def
+File: t1enc.def 2005/09/27 v1.99g Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding T1 on input line 43.
+)))
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texmf-texlive/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2004/09/05 1.3 listings language file
+)
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+)
+\@indexfile=\write3
+\openout3 = `refman.idx'.
+
+
+Writing index file refman.idx
+No file refman.aux.
+\openout1 = `refman.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 46.
+(/usr/share/texmf-texlive/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 46.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/t1phv.fd
+File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
+)
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 46.
+
+(/usr/share/texmf-texlive/tex/context/base/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count125
+\scratchdimen=\dimen125
+\scratchbox=\box61
+\nofMPsegments=\count126
+\nofMParguments=\count127
+\everyMPshowfont=\toks26
+\MPscratchCnt=\count128
+\MPscratchDim=\dimen126
+\MPnumerator=\count129
+\everyMPtoPDFconversion=\toks27
+)
+\c@lstlisting=\count130
+Package hyperref Info: Link coloring ON on input line 46.
+ (/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count131
+)
+LaTeX Info: Redefining \ref on input line 46.
+LaTeX Info: Redefining \pageref on input line 46.
+\@outlinefile=\write4
+\openout4 = `refman.out'.
+
+Package backref Info: ** backref set up for natbib ** on input line 46.
+\AtBeginShipoutBox=\box62
+\big@size=\dimen127
+Package hyperref Info: Option `pageanchor' set `false' on input line 47.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 12.9599pt on input line 51.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 10.79993pt on input line 53.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 8.09995pt on input line 55.
+ [1
+
+
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2
+
+]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 22.39185pt on input line 60.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <24.88> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 60.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 22.39185pt on input line 60.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 60.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1phv.fd
+File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
+)
+LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
+(Font)              scaled to size 22.39185pt on input line 60.
+\tf@toc=\write5
+\openout5 = `refman.toc'.
+
+ [1
+
+] [2
+
+]
+Package hyperref Info: Option `pageanchor' set `true' on input line 63.
+
+Chapter 1.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 18.66588pt on input line 64.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <20.74> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 64.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 18.66588pt on input line 64.
+LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
+(Font)              scaled to size 18.66588pt on input line 64.
+(./index.tex
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <12> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 10.79993pt on input line 1.
+LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
+(Font)              scaled to size 10.79993pt on input line 1.
+LaTeX Font Info:    Try loading font information for T1+pcr on input line 16.
+ (/usr/share/texmf-texlive/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+LaTeX Font Info:    Try loading font information for TS1+phv on input line 27.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ts1phv.fd
+File: ts1phv.fd 2001/06/04 scalable font definitions for TS1/phv.
+)
+LaTeX Font Info:    Font shape `TS1/phv/m/n' will be
+(Font)              scaled to size 8.99994pt on input line 27.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <10> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 27.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 8.99994pt on input line 27.
+ [1
+
+]
+Underfull \hbox (badness 10000) in paragraph at lines 106--107
+[][][]\T1/pcr/m/n/10 http-://www.-rn-wissen.-de/index.-php/-Regelungstechnik[][
+]
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.16548pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <7> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 107.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 6.29996pt on input line 107.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 107--108
+[][][]\T1/pcr/m/n/10 https-://github.-com/astromaf/-Verti-B-O-T/tree/master/-
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 109--110
+[]\T1/phv/m/n/10 -A-V-R--Mikrocontroller--Kochbuch ( -Entwurf und -Programmieru
+ng prak-tis-cher -
+ []
+
+) [3]
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.16548pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[4
+
+]
+Chapter 2.
+(./modules.tex
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 1.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
+(Font)              scaled to size 12.9599pt on input line 1.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 3.
+
+ (/usr/share/texmf-texlive/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 3.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 3.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 3.
+
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 3.
+
+(/usr/share/texmf-texlive/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <6> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+
+
+LaTeX Warning: Reference `group___a_d_x_l354___r_e_g_i_s_t_e_r_s' on page 5 und
+efined on input line 3.
+
+
+LaTeX Warning: Reference `group___a_d_x_l354___r_e_g___b_w___r_a_t_e___m_o_d_e_
+s' on page 5 undefined on input line 4.
+
+
+LaTeX Warning: Reference `group___a_d_x_l354___a_x_i_s' on page 5 undefined on 
+input line 5.
+
+
+LaTeX Warning: Reference `group___a_d_x_l354___m_a_c_r_o_s' on page 5 undefined
+ on input line 6.
+
+
+LaTeX Warning: Reference `group___a_t_m_e_g_a___s_e_t_t_i_n_g_s' on page 5 unde
+fined on input line 7.
+
+
+LaTeX Warning: Reference `group___a_t_m_e_g_a___c_o_n_s_t_a_n_t_s' on page 5 un
+defined on input line 8.
+
+
+LaTeX Warning: Reference `group___a_t_m_e_g_e___m_a_c_r_o_s' on page 5 undefine
+d on input line 9.
+
+
+LaTeX Warning: Reference `group___i2_c___d_i_r_e_c_t_i_o_n' on page 5 undefined
+ on input line 10.
+
+
+LaTeX Warning: Reference `group___i2_c_m_a_c_r_o_s' on page 5 undefined on inpu
+t line 11.
+
+
+LaTeX Warning: Reference `group___i2_c___s_t_a_t_u_s___c_o_d_e_s' on page 5 und
+efined on input line 12.
+
+
+LaTeX Warning: Reference `group___i2_c___s_c_l___m_o_d_e_s' on page 5 undefined
+ on input line 13.
+
+
+LaTeX Warning: Reference `group___l3_g4200_d___d_e_v_i_c_e___i_d_s' on page 5 u
+ndefined on input line 14.
+
+
+LaTeX Warning: Reference `group___l3_g4200_d___r_e_g_i_s_t_e_r_s' on page 5 und
+efined on input line 15.
+
+
+LaTeX Warning: Reference `group___l3_g4200_d___b_w___r_a_t_e' on page 5 undefin
+ed on input line 16.
+
+
+LaTeX Warning: Reference `group___l3_g4200_d___a_x_i_s' on page 5 undefined on 
+input line 17.
+
+
+LaTeX Warning: Reference `group___l3_g42000_d___m_a_c_r_o_s' on page 5 undefine
+d on input line 18.
+
+
+LaTeX Warning: Reference `group___m_c___p_i_n_s' on page 5 undefined on input l
+ine 19.
+
+
+LaTeX Warning: Reference `group___m_c___o_c_r' on page 5 undefined on input lin
+e 20.
+
+
+LaTeX Warning: Reference `group___r_o_l_l___l_i_m_i_t_s' on page 5 undefined on
+ input line 21.
+
+
+LaTeX Warning: Reference `group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e' on page 5 un
+defined on input line 22.
+
+
+LaTeX Warning: Reference `group___s_r_f08___a_d_d_r_e_s_s_e_s' on page 5 undefi
+ned on input line 23.
+
+
+LaTeX Warning: Reference `group___s_r_f08___m_o_d___a_d_d_r' on page 5 undefine
+d on input line 24.
+
+
+LaTeX Warning: Reference `group___s_r_f08___r_e_g_i_s_t_e_r_s' on page 5 undefi
+ned on input line 25.
+
+
+LaTeX Warning: Reference `group___s_r_f08___c_o_m_m_a_n_d_s' on page 5 undefine
+d on input line 26.
+
+
+LaTeX Warning: Reference `group___u_s_a_r_t___m_a_c_r_o_s' on page 5 undefined 
+on input line 27.
+
+) [5] [6
+
+]
+Chapter 3.
+(./annotated.tex
+
+LaTeX Warning: Reference `structcomp_filter_data' on page 7 undefined on input 
+line 3.
+
+
+LaTeX Warning: Reference `structpid_data' on page 7 undefined on input line 4.
+
+) [7] [8
+
+]
+Chapter 4.
+(./files.tex
+
+LaTeX Warning: Reference `avr_constants_8c' on page 9 undefined on input line 3
+.
+
+
+LaTeX Warning: Reference `avr_constants_8h' on page 9 undefined on input line 4
+.
+
+
+LaTeX Warning: Reference `main_8c' on page 9 undefined on input line 5.
+
+
+LaTeX Warning: Reference `main_page_8h' on page 9 undefined on input line 6.
+
+
+LaTeX Warning: Reference `adxl354_8c' on page 9 undefined on input line 7.
+
+
+LaTeX Warning: Reference `adxl354_8h' on page 9 undefined on input line 8.
+
+
+LaTeX Warning: Reference `complementary_filter_8c' on page 9 undefined on input
+ line 9.
+
+
+LaTeX Warning: Reference `complementary_filter_8h' on page 9 undefined on input
+ line 10.
+
+Runaway argument?
+{\-Robo\-Way/i2cmaster/\hyperlink {i2cmaster_8c}{i2cmaster.\-c} \\*\-\ETC.
+! Paragraph ended before \contentsline was complete.
+<to be read again> 
+                   \par 
+l.11 ...ntation of the \-I2\-C (\-T\-W\-I) bus\par
+                                                  
+? 
+! Extra }, or forgotten \endgroup.
+l.13 ...nd documented by \-Andre \-S\"{u}nnemann }
+                                                  {\pageref{i2cmaster_8c}}{}
+? 
+
+LaTeX Warning: Reference `i2cmaster_8c' on page 9 undefined on input line 13.
+
+Runaway argument?
+{\-Robo\-Way/i2cmaster/\hyperlink {i2cmaster_8h}{i2cmaster.\-h} \\*\-\ETC.
+! Paragraph ended before \contentsline was complete.
+<to be read again> 
+                   \par 
+l.14 ...ntation of the \-I2\-C (\-T\-W\-I) bus\par
+                                                  
+? 
+! Extra }, or forgotten \endgroup.
+l.16 ...nd documented by \-Andre \-S\"{u}nnemann }
+                                                  {\pageref{i2cmaster_8h}}{}
+? 
+
+LaTeX Warning: Reference `i2cmaster_8h' on page 9 undefined on input line 16.
+
+
+LaTeX Warning: Reference `l3g4200d_8c' on page 9 undefined on input line 17.
+
+
+LaTeX Warning: Reference `l3g4200d_8h' on page 9 undefined on input line 18.
+
+
+LaTeX Warning: Reference `motor_controll_8c' on page 9 undefined on input line 
+19.
+
+
+LaTeX Warning: Reference `motor_controll_8h' on page 9 undefined on input line 
+20.
+
+[9]
+
+LaTeX Warning: Reference `pid_8c' on page 10 undefined on input line 21.
+
+
+LaTeX Warning: Reference `pid_8h' on page 10 undefined on input line 22.
+
+
+LaTeX Warning: Reference `robo_way_8c' on page 10 undefined on input line 23.
+
+
+LaTeX Warning: Reference `robo_way_8h' on page 10 undefined on input line 24.
+
+
+LaTeX Warning: Reference `srf08_8c' on page 10 undefined on input line 25.
+
+
+LaTeX Warning: Reference `srf08_8h' on page 10 undefined on input line 26.
+
+
+LaTeX Warning: Reference `usart_8c' on page 10 undefined on input line 27.
+
+
+LaTeX Warning: Reference `usart_8h' on page 10 undefined on input line 28.
+
+) [10]
+Chapter 5.
+(./group___a_d_x_l354___r_e_g_i_s_t_e_r_s.tex
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <9> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 9.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.09995pt on input line 9.
+ [11
+
+]
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
+) [12]
+\openout2 = `group___a_d_x_l354___r_e_g___b_w___r_a_t_e___m_o_d_e_s.aux'.
+
+
+(./group___a_d_x_l354___r_e_g___b_w___r_a_t_e___m_o_d_e_s.tex
+Underfull \hbox (badness 1147) in paragraph at lines 3--3
+[]\OT1/phv/bc/n/14.4 -Possible bi-trates for bit rate reg-is-ter (refert to ta-
+ble 8 in
+ []
+
+) [13
+
+]
+\openout2 = `group___a_d_x_l354___a_x_i_s.aux'.
+
+ (./group___a_d_x_l354___a_x_i_s.tex) [14
+
+
+]
+\openout2 = `group___a_d_x_l354___m_a_c_r_o_s.aux'.
+
+
+(./group___a_d_x_l354___m_a_c_r_o_s.tex) [15
+
+
+]
+\openout2 = `group___a_t_m_e_g_a___s_e_t_t_i_n_g_s.aux'.
+
+
+(./group___a_t_m_e_g_a___s_e_t_t_i_n_g_s.tex) [16
+
+
+]
+\openout2 = `group___a_t_m_e_g_a___c_o_n_s_t_a_n_t_s.aux'.
+
+
+(./group___a_t_m_e_g_a___c_o_n_s_t_a_n_t_s.tex
+LaTeX Font Info:    Font shape `OT1/phv/bc/n' will be
+(Font)              scaled to size 8.99994pt on input line 37.
+ [17
+
+
+]) [18]
+\openout2 = `group___a_t_m_e_g_e___m_a_c_r_o_s.aux'.
+
+
+(./group___a_t_m_e_g_e___m_a_c_r_o_s.tex) [19
+
+
+]
+\openout2 = `group___i2_c___d_i_r_e_c_t_i_o_n.aux'.
+
+
+(./group___i2_c___d_i_r_e_c_t_i_o_n.tex
+LaTeX Font Info:    Font shape `OT1/phv/bc/it' in size <10> not available
+(Font)              Font shape `OT1/phv/bc/sl' tried instead on input line 20.
+LaTeX Font Info:    Font shape `OT1/phv/bc/sl' will be
+(Font)              scaled to size 8.99994pt on input line 20.
+LaTeX Font Info:    Font shape `T1/phv/m/it' in size <10> not available
+(Font)              Font shape `T1/phv/m/sl' tried instead on input line 27.
+LaTeX Font Info:    Font shape `T1/phv/m/sl' will be
+(Font)              scaled to size 8.99994pt on input line 27.
+
+Underfull \vbox (badness 10000) detected at line 29
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 45
+ []
+
+) [20
+
+
+]
+\openout2 = `group___i2_c_m_a_c_r_o_s.aux'.
+
+ (./group___i2_c_m_a_c_r_o_s.tex) [21
+
+
+]
+\openout2 = `group___i2_c___s_t_a_t_u_s___c_o_d_e_s.aux'.
+
+
+(./group___i2_c___s_t_a_t_u_s___c_o_d_e_s.tex) [22
+
+
+]
+\openout2 = `group___i2_c___s_c_l___m_o_d_e_s.aux'.
+
+
+(./group___i2_c___s_c_l___m_o_d_e_s.tex) [23
+
+
+]
+\openout2 = `group___l3_g4200_d___d_e_v_i_c_e___i_d_s.aux'.
+
+
+(./group___l3_g4200_d___d_e_v_i_c_e___i_d_s.tex) [24
+
+
+]
+\openout2 = `group___l3_g4200_d___r_e_g_i_s_t_e_r_s.aux'.
+
+
+(./group___l3_g4200_d___r_e_g_i_s_t_e_r_s.tex [25
+
+
+]) [26]
+\openout2 = `group___l3_g4200_d___b_w___r_a_t_e.aux'.
+
+
+(./group___l3_g4200_d___b_w___r_a_t_e.tex)
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 22.16548pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[27
+
+
+]
+\openout2 = `group___l3_g4200_d___a_x_i_s.aux'.
+
+ (./group___l3_g4200_d___a_x_i_s.tex) [28
+
+
+]
+\openout2 = `group___l3_g42000_d___m_a_c_r_o_s.aux'.
+
+
+(./group___l3_g42000_d___m_a_c_r_o_s.tex) [29
+
+
+]
+\openout2 = `group___m_c___p_i_n_s.aux'.
+
+ (./group___m_c___p_i_n_s.tex)
+[30
+
+
+]
+\openout2 = `group___m_c___o_c_r.aux'.
+
+ (./group___m_c___o_c_r.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10.95> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 3.
+
+) [31
+
+
+]
+\openout2 = `group___r_o_l_l___l_i_m_i_t_s.aux'.
+
+ (./group___r_o_l_l___l_i_m_i_t_s.tex) [32
+
+
+]
+\openout2 = `group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e.aux'.
+
+
+(./group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e.tex) [33
+
+
+]
+\openout2 = `group___s_r_f08___a_d_d_r_e_s_s_e_s.aux'.
+
+
+(./group___s_r_f08___a_d_d_r_e_s_s_e_s.tex) [34
+
+
+]
+\openout2 = `group___s_r_f08___m_o_d___a_d_d_r.aux'.
+
+
+(./group___s_r_f08___m_o_d___a_d_d_r.tex) [35
+
+
+]
+\openout2 = `group___s_r_f08___r_e_g_i_s_t_e_r_s.aux'.
+
+
+(./group___s_r_f08___r_e_g_i_s_t_e_r_s.tex) [36
+
+
+]
+\openout2 = `group___s_r_f08___c_o_m_m_a_n_d_s.aux'.
+
+
+(./group___s_r_f08___c_o_m_m_a_n_d_s.tex) [37
+
+
+]
+\openout2 = `group___u_s_a_r_t___m_a_c_r_o_s.aux'.
+
+
+(./group___u_s_a_r_t___m_a_c_r_o_s.tex) [38
+
+
+]
+Chapter 6.
+(./structcomp_filter_data.tex [39
+
+
+]) (./structpid_data.tex [40]) [41] [42
+
+]
+Chapter 7.
+(./adxl354_8c.tex [43]
+Underfull \vbox (badness 10000) detected at line 63
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 68--73
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 73
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 98
+ []
+
+[44]
+Overfull \hbox (21.89388pt too wide) in alignment at lines 103--108
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 108
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 127
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 132--137
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 137
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 159
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 164--169
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 169
+ []
+
+) (./adxl354_8h.tex [45]pdfTeX warning (ext4): destination with the same identi
+fier (name{group___a_d_x_l354___r_e_g_i_s_t_e_r_s_ga0502be9729f2c6d3bbe5a82ce2d
+7\ETC.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.17 ...-\_\-\-R\-E\-G\-\_\-\-D\-E\-V\-I\-D}~0x00}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga7e0efa725edb4701c8d7e93e52e5\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 ...\-T\-H\-R\-E\-S\-H\-\_\-\-T\-A\-P}~0x1\-D}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_gac9c88162d0a35fc24357d4163287\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.23 ...\-\_\-\-R\-E\-G\-\_\-\-O\-F\-S\-X}~0x1\-E}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_gac3c9587801aba98589bb0987d6fc\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 ...\-\_\-\-R\-E\-G\-\_\-\-O\-F\-S\-Y}~0x1\-F}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga8e325fadf8f2e84762c76383458a\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 ...54\-\_\-\-R\-E\-G\-\_\-\-O\-F\-S\-Z}~0x20}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_gab2b3f895d20a431886d12a66ff74\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 ...-E\-G\-\_\-\-T\-A\-P\-\_\-\-D\-U\-R}~0x21}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga6dd85cda6dbd783a3f349754b94f\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 ...\-\-T\-A\-P\-\_\-\-L\-A\-T\-E\-N\-T}~0x22}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga73a0d82a6a38bc427a9a3ead0621\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.38 ...\-\-T\-A\-P\-\_\-\-W\-I\-N\-D\-O\-W}~0x23}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga704f29863fe15d8f9b303e4716e3\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.41 ...\-\-T\-H\-R\-E\-S\-H\-\_\-\-A\-C\-T}~0x24}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga54554f252e8b54180d35ff042564\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 ...-H\-R\-E\-S\-H\-\_\-\-I\-N\-A\-C\-T}~0x25}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga4cc1633cd481ae135ce068783e69\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 ...\-\-T\-I\-M\-E\-\_\-\-I\-N\-A\-C\-T}~0x26}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga98f467999df03dbbb52dea484b5a\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.50 ...-\_\-\-I\-N\-A\-C\-T\-\_\-\-C\-T\-L}~0x27}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga06e36abf613046ae7d2610dc1f27\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.53 ...-\_\-\-T\-H\-R\-E\-S\-H\-\_\-\-F\-F}~0x28}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_gad7b6e170e075e75d32f43ef5e7b1\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 ...-E\-G\-\_\-\-T\-I\-M\-E\-\_\-\-F\-F}~0x29}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_gac2c1909b531e1e432ffa3a489d5f\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 ...\-\_\-\-A\-X\-E\-S\-\_\-\-C\-T\-L}~0x2\-A}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga975adc0f7d8d03af71c7483d8105\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.62 ...\-T\-A\-P\-\_\-\-S\-T\-A\-T\-U\-S}~0x2\-B}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga70d2be90d81a8f07ad4dcaad37c3\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.65 ...\-L\-\_\-\-B\-W\-\_\-\-R\-A\-T\-E}~0x2\-C}
+                                                  \label{group___a_d_x_l354_...
+[46]pdfTeX warning (ext4): destination with the same identifier (name{group___a
+_d_x_l354___r_e_g_i_s_t_e_r_s_gacc12aae59ab72417eee3bdebcfaa\ETC.}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 ..._\-\-C\-T\-L\-\_\-\-P\-O\-W\-E\-R}~0x2\-D}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_gadf1a567fab98064226a9019ceda5\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.71 ...\-E\-G\-\_\-\-I\-N\-T\-\_\-\-E\-N}~0x2\-E}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga71639672526dfd0e0fbadd130019\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.74 ...\-G\-\_\-\-I\-N\-T\-\_\-\-M\-A\-P}~0x2\-F}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga45acc9daef157794ac6889aa3a80\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.77 ...-E\-G\-\_\-\-I\-N\-T\-\_\-\-S\-R\-C}~0x30}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga612234c31741911cdfd5079c5f18\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.80 ...-D\-A\-T\-A\-\_\-\-F\-O\-R\-M\-A\-T}~0x31}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga7c3173b923eeaf75f61f0a261a3c\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.83 ...-E\-G\-\_\-\-D\-A\-T\-A\-X\-\_\-\-L}~0x32}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga92613d54b893cc99400b1694e11a\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 ...-E\-G\-\_\-\-D\-A\-T\-A\-X\-\_\-\-H}~0x33}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga04137c170f870f5c03540c4b4dcd\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.89 ...-E\-G\-\_\-\-D\-A\-T\-A\-Y\-\_\-\-L}~0x34}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_gab33924329166c22a9bbea48ba684\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.92 ...-E\-G\-\_\-\-D\-A\-T\-A\-Y\-\_\-\-H}~0x35}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga0daae6c5d86f95e220a46151059b\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.95 ...-E\-G\-\_\-\-D\-A\-T\-A\-Z\-\_\-\-L}~0x36}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga525a5152ed6f7d5c70001e9082fd\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.98 ...-E\-G\-\_\-\-D\-A\-T\-A\-Z\-\_\-\-H}~0x37}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_ga58e362923aea0acd7420c4a6646a\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.101 ...G\-\_\-\-C\-T\-L\-\_\-\-F\-I\-F\-O}~0x38}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g_i_s_t_e_r_s_gaec3218603707dfc9f7bbf6fa508a\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.104 ...F\-I\-F\-O\-\_\-\-S\-T\-A\-T\-U\-S}~0x39}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g___b_w___r_a_t_e___m_o_d_e_s_ga6abc5023bd9d\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.107 ...-B\-W\-\_\-\-R\-A\-T\-E\-\_\-400}~0b1100}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___r_e_g___b_w___r_a_t_e___m_o_d_e_s_ga784c050f85ee\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.110 ...-B\-W\-\_\-\-R\-A\-T\-E\-\_\-100}~0b1010}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___a_x_i_s_gaa6b505b3acdf0fd830c97050220e03ef}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.113 ...\-R\-E\-G\-\_\-\-D\-A\-T\-A\-X\-\_\-\-L}}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___a_x_i_s_ga110e1234898b51eccbcec4ff024e546e}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.116 ...\-R\-E\-G\-\_\-\-D\-A\-T\-A\-Y\-\_\-\-L}}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___a_x_i_s_ga30d308af2964af6d41132580f6f87b4c}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.119 ...\-R\-E\-G\-\_\-\-D\-A\-T\-A\-Z\-\_\-\-L}}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___m_a_c_r_o_s_ga24da6f6c7f1c2a39de687738ea4bffd0}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.122 ...-L354\-\_\-\-A\-X\-I\-S\-\_\-\-X}, val )}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___m_a_c_r_o_s_ga96cba403489b243b0ed531fc85004772}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.125 ...-L354\-\_\-\-A\-X\-I\-S\-\_\-\-Y}, val )}
+                                                  \label{group___a_d_x_l354_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_d_x
+_l354___m_a_c_r_o_s_ga982ac0c68b6a4b828d1d73687e96fa89}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.128 ...-L354\-\_\-\-A\-X\-I\-S\-\_\-\-Z}, val )}
+                                                  \label{group___a_d_x_l354_...
+[47] [48]
+Underfull \vbox (badness 10000) detected at line 184
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 189--194
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 194
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 219
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 224--229
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 229
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 248
+ []
+
+[49]
+Overfull \hbox (21.89388pt too wide) in alignment at lines 253--258
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 258
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 280
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 285--290
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 290
+ []
+
+) (./avr_constants_8c.tex [50]
+Underfull \vbox (badness 10000) detected at line 57
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 62--69
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 69
+ []
+
+) (./avr_constants_8h.tex [51]pdfTeX warning (ext4): destination with the same 
+identifier (name{group___a_t_m_e_g_a___s_e_t_t_i_n_g_s_ga43bafb28b29491ec7f8713
+19b5a3b\ETC.}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.12 ...3b2f8}{\-F\-\_\-\-C\-P\-U}~16000000\-U\-L}
+                                                  \label{group___a_t_m_e_g_a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_t_m
+_e_g_a___c_o_n_s_t_a_n_t_s_ga65e9886d74aaee76545e83dd090\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 ...5e9886d74aaee76545e83dd09011727}{false}~0}
+                                                  \label{group___a_t_m_e_g_a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_t_m
+_e_g_a___c_o_n_s_t_a_n_t_s_ga41f9c5fb8b08eb5dc3edce4dcb3\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 ...41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}~1}
+                                                  \label{group___a_t_m_e_g_a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_t_m
+_e_g_a___c_o_n_s_t_a_n_t_s_gabb452686968e48b67397da5f974\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.25 ...e48b67397da5f97445f5b}{bool}~uint8\-\_\-t}
+                                                  \label{group___a_t_m_e_g_a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_t_m
+_e_g_a___c_o_n_s_t_a_n_t_s_ga9ce2716323ceb0e2133340a161f\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30 ...9ce2716323ceb0e2133340a161f33a6c}{high}~1}
+                                                  \label{group___a_t_m_e_g_a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_t_m
+_e_g_a___c_o_n_s_t_a_n_t_s_ga4c601b4f90966724c2de786d8bd\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 ...a4c601b4f90966724c2de786d8bd9eb82}{low}~0}
+                                                  \label{group___a_t_m_e_g_a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_t_m
+_e_g_e___m_a_c_r_o_s_ga77dd57594a038f87051b324cee42c531}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 ...st$ 57.\-295779513082320876798154814105 )}
+                                                  \label{group___a_t_m_e_g_e...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_t_m
+_e_g_e___m_a_c_r_o_s_gaaf16148e7a910d20df2da6bcf300ea25}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.43 ...)~( (uint8\-\_\-t)( ( x ) \& 0x\-F\-F ) )}
+                                                  \label{group___a_t_m_e_g_e...
+pdfTeX warning (ext4): destination with the same identifier (name{group___a_t_m
+_e_g_e___m_a_c_r_o_s_ga414e62382b4f31e419c3dce2bd833ca7}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.47 ..._\-t)( ( ( x ) $>$$>$ 8 ) \& 0x\-F\-F ) )}
+                                                  \label{group___a_t_m_e_g_e...
+[52]
+Underfull \vbox (badness 10000) detected at line 98
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 103--110
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 110
+ []
+
+) (./complementary_filter_8c.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+[]\OT1/phv/bc/n/14.4 -Robo-Way/complementary-Filter/complementary-Filter.c -Fil
+e -
+ []
+
+[53]
+Underfull \vbox (badness 10000) detected at line 61
+ []
+
+
+Overfull \vbox (13.28314pt too high) has occurred while \output is active []
+
+
+[54]
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.19995pt on input line 69.
+
+Underfull \vbox (badness 10000) detected at line 100
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 108
+ []
+
+) (./complementary_filter_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 3--3
+[]\OT1/phv/bc/n/14.4 -Robo-Way/complementary-Filter/complementary-Filter.h -Fil
+e -
+ []
+
+[55] [56]
+Underfull \vbox (badness 10000) detected at line 84
+ []
+
+[57]
+Underfull \vbox (badness 10000) detected at line 123
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 131
+ []
+
+) (./i2cmaster_8c.tex [58] [59]
+Underfull \vbox (badness 10000) detected at line 67
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 86--89
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 89
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 105--108
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 108
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 124
+ []
+
+[60]
+Overfull \hbox (21.89388pt too wide) in alignment at lines 132--137
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 137
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 153
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 186
+ []
+
+[61]
+Overfull \hbox (21.89388pt too wide) in alignment at lines 191--196
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 196
+ []
+
+) (./i2cmaster_8h.tex
+Overfull \hbox (15.66544pt too wide) in paragraph at lines 11--16
+[]\T1/pcr/m/n/10 #include $\OML/ztmcm/m/it/10 <$\T1/pcr/m/n/10 avr/io.-h$\OML/z
+tmcm/m/it/10 >$\OMS/ztmcm/m/n/10 ^^B \T1/pcr/m/n/10 #include $\OML/ztmcm/m/it/1
+0 <$\T1/pcr/m/n/10 stdint.-h$\OML/ztmcm/m/it/10 >$\OMS/ztmcm/m/n/10 ^^B \T1/pcr
+/m/n/10 #include $\OML/ztmcm/m/it/10 <$\T1/pcr/m/n/10 inttypes.-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{group___i2_c_
+m_a_c_r_o_s_gae4d997715a9975eac8684f6e52402a9b}) has been already used, duplica
+te ignored
+<to be read again> 
+                   \relax 
+l.23 ...165722ccb59e4049f159}{i2c\-Start}(addr) )}
+                                                  \label{group___i2_c_m_a_c_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___i2_c_
+__s_t_a_t_u_s___c_o_d_e_s_ga57d0c95ccd7c129288743e9674a9\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.26 ...c5c5c054d2875c03e77b7be15d}{\-T\-R\-U\-E}}
+                                                  \label{group___i2_c___s_t_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___i2_c_
+__s_t_a_t_u_s___c_o_d_e_s_ga54139eea2c8f2fec652dc4b86132\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.29 ...8d23995850d61f7d61c55c1}{\-F\-A\-L\-S\-E}}
+                                                  \label{group___i2_c___s_t_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___i2_c_
+__s_c_l___m_o_d_e_s_ga5f9f8d213ca31b74210ead375f3e0fcd}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 ...C\-L\-\_\-\-N\-O\-R\-M\-A\-L}~10000\-U\-L}
+                                                  \label{group___i2_c___s_c_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___i2_c_
+__s_c_l___m_o_d_e_s_gaced20b32c9a185f76434c0594f34b12d}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.35 ...-\-S\-C\-L\-\_\-\-H\-I\-G\-H}~40000\-U\-L}
+                                                  \label{group___i2_c___s_c_...
+[62]
+Underfull \vbox (badness 10000) detected at line 93
+ []
+
+[63]
+Overfull \hbox (21.89388pt too wide) in alignment at lines 112--115
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 115
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 131--134
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 134
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 150
+ []
+
+[64]
+Overfull \hbox (21.89388pt too wide) in alignment at lines 158--163
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 163
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 179
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 212
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 217--222
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 222
+ []
+
+
+Overfull \vbox (0.56174pt too high) has occurred while \output is active []
+
+
+[65]) (./l3g4200d_8c.tex [66]
+Underfull \vbox (badness 10000) detected at line 65
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 70--75
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 75
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 100
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 105--110
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 110
+ []
+
+[67]
+Underfull \vbox (badness 10000) detected at line 129
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 134--137
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 137
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 156
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 161--166
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 166
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 188
+ []
+
+[68]
+Overfull \hbox (21.89388pt too wide) in alignment at lines 193--198
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 198
+ []
+
+) (./l3g4200d_8h.tex
+Underfull \hbox (badness 1005) in paragraph at lines 9--12
+[]\T1/pcr/m/n/10 #include $\OML/ztmcm/m/it/10 <$\T1/pcr/m/n/10 avr/io.-h$\OML/z
+tmcm/m/it/10 >$\OMS/ztmcm/m/n/10 ^^B \T1/pcr/m/n/10 #include "../avr-Constants.
+-h"\OMS/ztmcm/m/n/10 ^^B \T1/pcr/m/n/10 #include
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___d_e_v_i_c_e___i_d_s_gac0a640df1322f5f945eb8c1daf\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 ...4200\-D\-\_\-\-D\-E\-V\-I\-D\-\_\-0}~0x68}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___d_e_v_i_c_e___i_d_s_gacc4da7e364e8f20599ce14fb73\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 ...4200\-D\-\_\-\-D\-E\-V\-I\-D\-\_\-1}~0x69}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_gaf207c66cc749c8965c21580d4775\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.21 ...\-D\-\_\-\-R\-E\-G\-\_\-\-W\-A\-I}~0x0\-F}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga924aee183efe2901f9cd4d898762\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 ...-\-R\-E\-G\-\_\-\-C\-T\-R\-L\-\_\-1}~0x20}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga990e9dd3d8cb9d8d700786d94358\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.28 ...-\-R\-E\-G\-\_\-\-C\-T\-R\-L\-\_\-2}~0x21}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_gaecb66b209ff8cda854540df8a418\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.32 ...-\-R\-E\-G\-\_\-\-C\-T\-R\-L\-\_\-3}~0x22}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga409c92ac9980a58088ea84deb3f1\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 ...-\-R\-E\-G\-\_\-\-C\-T\-R\-L\-\_\-4}~0x23}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga1fecfc94dd916cc374371ab4d708\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.40 ...-\-R\-E\-G\-\_\-\-C\-T\-R\-L\-\_\-5}~0x24}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga504f7f409b9672a2789f5d4755ef\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.44 ...00\-D\-\_\-\-R\-E\-G\-\_\-\-R\-E\-F}~0x25}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_gaeb2ef4d078697850509caca5f490\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 ...-D\-\_\-\-R\-E\-G\-\_\-\-T\-E\-M\-P}~0x26}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga6d11a79225bed920d5ac4cdcf8d9\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.52 ...\-\-R\-E\-G\-\_\-\-S\-T\-A\-T\-U\-S}~0x27}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_gafbad426ec9eafa3e09f42dd2ed2a\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.56 ...-E\-G\-\_\-\-D\-A\-T\-A\-X\-\_\-\-L}~0x28}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga0a6a177960618db5ab14adffadb3\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.59 ...-E\-G\-\_\-\-D\-A\-T\-A\-X\-\_\-\-H}~0x29}
+                                                  \label{group___l3_g4200_d_...
+[69]pdfTeX warning (ext4): destination with the same identifier (name{group___l
+3_g4200_d___r_e_g_i_s_t_e_r_s_ga7a1702cabf5046f28ce3824e4ae9\ETC.}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.62 ...\-G\-\_\-\-D\-A\-T\-A\-Y\-\_\-\-L}~0x2\-A}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_gaaca49f3b353b60df2424dda8e455\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.65 ...\-G\-\_\-\-D\-A\-T\-A\-Y\-\_\-\-H}~0x2\-B}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga59b07ccd68c25b0343eaed5988f1\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.68 ...\-G\-\_\-\-D\-A\-T\-A\-Z\-\_\-\-L}~0x2\-C}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_gacfe78644e17f6965560e7b442752\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.71 ...\-G\-\_\-\-D\-A\-T\-A\-Z\-\_\-\-H}~0x2\-D}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_gaf4a068a5aa78b1d9e33c9853d1f4\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.74 ..._\-\-C\-T\-R\-L\-\_\-\-F\-I\-F\-O}~0x2\-E}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga52a365fe7f5db010d374c9d80627\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.78 ...\-\_\-\-S\-R\-C\-\_\-\-F\-I\-F\-O}~0x2\-F}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_gabe7303d9e7b2f4964056fcaaef5e\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 ...E\-G\-\_\-\-C\-F\-G\-\_\-\-I\-N\-T1}~0x30}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga29b065479947b9a4a7527b7ac0b5\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.86 ...E\-G\-\_\-\-S\-R\-C\-\_\-\-I\-N\-T1}~0x31}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga1185af16387f1a9e8624273b03e1\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.90 ...I\-N\-T1\-\_\-\-T\-S\-H\-\_\-\-X\-H}~0x32}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga0c023a7fb71e48453ea35f874ffb\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 ...I\-N\-T1\-\_\-\-T\-S\-H\-\_\-\-X\-L}~0x33}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga531e951657441b076b7c9d0268df\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.96 ...I\-N\-T1\-\_\-\-T\-S\-H\-\_\-\-Y\-H}~0x34}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_gad86924140bb2ff1f5e889bfe959f\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.99 ...I\-N\-T1\-\_\-\-T\-S\-H\-\_\-\-Y\-L}~0x35}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga4cf1cb3280eca36b80e15c3d2e98\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.102 ...\-N\-T1\-\_\-\-T\-S\-H\-\_\-\-Z\-H}~0x36}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_ga3c3fdeb7fa49f05de2a2fb472e8e\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.105 ...\-N\-T1\-\_\-\-T\-S\-H\-\_\-\-Z\-L}~0x37}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___r_e_g_i_s_t_e_r_s_gad997d1412246e223d6410a1edbee\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.108 ...\-G\-\_\-\-I\-N\-T1\-\_\-\-D\-U\-R}~0x38}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___b_w___r_a_t_e_gaff099c109582a2b37649cf0f005c2f23}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.112 ...W\-\_\-\-R\-A\-T\-E\-\_\-100}~0b00110000}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___b_w___r_a_t_e_ga5a4ce71b8a706461d3fbd06e2fc1fe7d}) has been already use
+d, duplicate ignored
+<to be read again> 
+                   \relax 
+l.115 ...W\-\_\-\-R\-A\-T\-E\-\_\-400}~0b10000000}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___a_x_i_s_ga7367808c23b425254b6a1ace8ec11623}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.121 ...\-R\-E\-G\-\_\-\-D\-A\-T\-A\-X\-\_\-\-L}}
+                                                  \label{group___l3_g4200_d_...
+[70]pdfTeX warning (ext4): destination with the same identifier (name{group___l
+3_g4200_d___a_x_i_s_ga2c6f3cbbb3b16689b44241c18d1780a1}) has been already used,
+ duplicate ignored
+<to be read again> 
+                   \relax 
+l.124 ...\-R\-E\-G\-\_\-\-D\-A\-T\-A\-Y\-\_\-\-L}}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+200_d___a_x_i_s_gaab65ddff59998ccd400f3c4fb29ee00c}) has been already used, dup
+licate ignored
+<to be read again> 
+                   \relax 
+l.127 ...\-R\-E\-G\-\_\-\-D\-A\-T\-A\-Z\-\_\-\-L}}
+                                                  \label{group___l3_g4200_d_...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+2000_d___m_a_c_r_o_s_ga4db6cd41beda3bd6d833363cf08d9883}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.130 ...-G\-\_\-\-D\-A\-T\-A\-X\-\_\-\-L}, val )}
+                                                  \label{group___l3_g42000_d...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+2000_d___m_a_c_r_o_s_ga78a08bfdbe423c8a209842b4ce62aa14}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.133 ...-G\-\_\-\-D\-A\-T\-A\-Y\-\_\-\-L}, val )}
+                                                  \label{group___l3_g42000_d...
+pdfTeX warning (ext4): destination with the same identifier (name{group___l3_g4
+2000_d___m_a_c_r_o_s_gafb627a39e1a5630675b015164acfa689}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.136 ...-G\-\_\-\-D\-A\-T\-A\-Z\-\_\-\-L}, val )}
+                                                  \label{group___l3_g42000_d...
+[71]
+Underfull \vbox (badness 10000) detected at line 194
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 199--204
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 204
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 229
+ []
+
+[72]
+Overfull \hbox (21.89388pt too wide) in alignment at lines 234--239
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 239
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 258
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 263--266
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 266
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 285
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 290--295
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 295
+ []
+
+[73]
+Underfull \vbox (badness 10000) detected at line 317
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 322--327
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 327
+ []
+
+) (./main_8c.tex [74]) (./main_page_8h.tex) (./motor_controll_8c.tex [75]
+[76]
+Underfull \vbox (badness 10000) detected at line 69
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 86
+ []
+
+) (./motor_controll_8h.texpdfTeX warning (ext4): destination with the same iden
+tifier (name{group___m_c___p_i_n_s_gade4d9adc2fb51f9d4697a5b17ff9659d}) has bee
+n already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.13 ...\-M\-C\-\_\-\-P\-O\-R\-T}~\-P\-O\-R\-T\-D}
+                                                  \label{group___m_c___p_i_n...
+pdfTeX warning (ext4): destination with the same identifier (name{group___m_c__
+_p_i_n_s_gaf248c583aa63761168322d4f9d59c24d}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.16 ...c24d}{\-M\-C\-\_\-\-D\-D\-R}~\-D\-D\-R\-D}
+                                                  \label{group___m_c___p_i_n...
+pdfTeX warning (ext4): destination with the same identifier (name{group___m_c__
+_p_i_n_s_ga4b4e05b59627be30c01b2a052c8d143a}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.19 ...8d143a}{\-M\-C\-\_\-\-L\-E\-F\-T}~\-P\-D5}
+                                                  \label{group___m_c___p_i_n...
+pdfTeX warning (ext4): destination with the same identifier (name{group___m_c__
+_p_i_n_s_ga6d6ada18e848708206bc1fbf1305e5ee}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.22 ...-C\-\_\-\-L\-E\-F\-T\-\_\-\-F\-W}~\-P\-D2}
+                                                  \label{group___m_c___p_i_n...
+pdfTeX warning (ext4): destination with the same identifier (name{group___m_c__
+_p_i_n_s_gaec96aeb7ac2143bd73c4e21e367f7c94}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.25 ...-C\-\_\-\-L\-E\-F\-T\-\_\-\-B\-W}~\-P\-D3}
+                                                  \label{group___m_c___p_i_n...
+pdfTeX warning (ext4): destination with the same identifier (name{group___m_c__
+_p_i_n_s_ga17ab3ecb2a453c06a3376f54df9e9900}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.28 ...900}{\-M\-C\-\_\-\-R\-I\-G\-H\-T}~\-P\-D6}
+                                                  \label{group___m_c___p_i_n...
+pdfTeX warning (ext4): destination with the same identifier (name{group___m_c__
+_p_i_n_s_ga9c42700359a1bbe408fa75b3f80a4cac}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.31 ...-\_\-\-R\-I\-G\-H\-T\-\_\-\-F\-W}~\-P\-D4}
+                                                  \label{group___m_c___p_i_n...
+pdfTeX warning (ext4): destination with the same identifier (name{group___m_c__
+_p_i_n_s_ga14f87c4fefc3cc862fb305c19717df5a}) has been already used, duplicate 
+ignored
+<to be read again> 
+                   \relax 
+l.34 ...-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-W}~\-P\-D7}
+                                                  \label{group___m_c___p_i_n...
+pdfTeX warning (ext4): destination with the same identifier (name{group___m_c__
+_o_c_r_ga1e7c75f85713ec4e9b5e1cd731b0bf87}) has been already used, duplicate ig
+nored
+<to be read again> 
+                   \relax 
+l.37 ...-L\-E\-F\-T\-\_\-\-O\-C\-R}~\-O\-C\-R0\-B}
+                                                  \label{group___m_c___o_c_r...
+[77]pdfTeX warning (ext4): destination with the same identifier (name{group___m
+_c___o_c_r_gad7beaa519afc6c507ab05fa799452ed9}) has been already used, duplicat
+e ignored
+<to be read again> 
+                   \relax 
+l.40 ...-I\-G\-H\-T\-\_\-\-O\-C\-R}~\-O\-C\-R0\-A}
+                                                  \label{group___m_c___o_c_r...
+[78]
+Underfull \vbox (badness 10000) detected at line 104
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 121
+ []
+
+) (./pid_8c.tex [79]
+Underfull \vbox (badness 10000) detected at line 71
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 96
+ []
+
+[80]
+Overfull \hbox (21.89388pt too wide) in alignment at lines 104--107
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 107
+ []
+
+
+Overfull \hbox (34.20024pt too wide) in paragraph at lines 110--110
+[]                        \T1/pcr/m/n/8 double updatePid( double rPos, double c
+Pos, pidData *pd[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 119--119
+[]                                        \T1/pcr/m/n/8 pd->iTerm = constrainD(
+ pd->iTerm + pd[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 121--121
+[]                                        \T1/pcr/m/n/8 dTerm = pd->kd * ( erro
+r - pd->eOld );[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 122--122
+[]                                        \T1/pcr/m/n/8 return constrainD( pTer
+m + pd->iTerm +[] 
+ []
+
+) (./pid_8h.tex [81]
+Underfull \vbox (badness 10000) detected at line 86
+ []
+
+
+Overfull \vbox (35.87215pt too high) has occurred while \output is active []
+
+
+[82]
+Underfull \vbox (badness 10000) detected at line 111
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 119--122
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 122
+ []
+
+
+Overfull \hbox (34.20024pt too wide) in paragraph at lines 125--125
+[]                        \T1/pcr/m/n/8 double updatePid( double rPos, double c
+Pos, pidData *pd[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 134--134
+[]                                        \T1/pcr/m/n/8 pd->iTerm = constrainD(
+ pd->iTerm + pd[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 136--136
+[]                                        \T1/pcr/m/n/8 dTerm = pd->kd * ( erro
+r - pd->eOld );[] 
+ []
+
+
+Overfull \hbox (29.40024pt too wide) in paragraph at lines 137--137
+[]                                        \T1/pcr/m/n/8 return constrainD( pTer
+m + pd->iTerm +[] 
+ []
+
+) (./robo_way_8c.tex [83] [84]) (./robo_way_8h.tex
+Underfull \hbox (badness 776) in paragraph at lines 9--19
+[]\T1/pcr/m/n/10 #include $\OML/ztmcm/m/it/10 <$\T1/pcr/m/n/10 avr/interrupt.-h
+$\OML/ztmcm/m/it/10 >$\OMS/ztmcm/m/n/10 ^^B \T1/pcr/m/n/10 #include "../adxl354
+/adxl354.-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--19
+\T1/pcr/m/n/10 h"\OMS/ztmcm/m/n/10 ^^B \T1/pcr/m/n/10 #include "../l3g4200d/l3g
+4200d.-h"\OMS/ztmcm/m/n/10 ^^B \T1/pcr/m/n/10 #include "../motor-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--19
+\T1/pcr/m/n/10 Controll/motor-Controll.-h"\OMS/ztmcm/m/n/10 ^^B \T1/pcr/m/n/10 
+#include "../avr-Constants.-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--19
+\T1/pcr/m/n/10 h"\OMS/ztmcm/m/n/10 ^^B \T1/pcr/m/n/10 #include "../srf08/srf08.
+-h"\OMS/ztmcm/m/n/10 ^^B \T1/pcr/m/n/10 #include "../pid/pid.-h"\OMS/ztmcm/m/n/
+10 ^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 9--19
+\T1/pcr/m/n/10 #include "../complementary-Filter/complementary-Filter.-h"\OMS/z
+tmcm/m/n/10 ^^B
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{group___p_i_d
+___c_o_n_s_e_r_v_a_t_i_v_e_gabd87ddda9a7835cbbdad494de18\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.54 ...94de1816966}{\-K\-\_\-\-B\-\_\-\-C}~1.\-0}
+                                                  \label{group___p_i_d___c_o...
+[85]pdfTeX warning (ext4): destination with the same identifier (name{group___p
+_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga6368ffc1b40771544abbef8a674\ETC.}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 ...e}{\-K\-\_\-\-P\-\_\-\-B\-\_\-\-C}~1.\-86}
+                                                  \label{group___p_i_d___c_o...
+pdfTeX warning (ext4): destination with the same identifier (name{group___p_i_d
+___c_o_n_s_e_r_v_a_t_i_v_e_ga487ba1a2fb1f6eb30ede520a377\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 ...}{\-K\-\_\-\-I\-\_\-\-B\-\_\-\-C}~0.\-030}
+                                                  \label{group___p_i_d___c_o...
+pdfTeX warning (ext4): destination with the same identifier (name{group___p_i_d
+___c_o_n_s_e_r_v_a_t_i_v_e_gaa4a54318f792ea9e243345ae8d9\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.63 ...}{\-K\-\_\-\-D\-\_\-\-B\-\_\-\-C}~0.\-006}
+                                                  \label{group___p_i_d___c_o...
+pdfTeX warning (ext4): destination with the same identifier (name{group___p_i_d
+___c_o_n_s_e_r_v_a_t_i_v_e_ga1c4a7a398975f9f8057e6906ebd\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.66 ...\-\-O\-U\-T\-\_\-\-B\-\_\-\-C}~-\/255.\-0}
+                                                  \label{group___p_i_d___c_o...
+pdfTeX warning (ext4): destination with the same identifier (name{group___p_i_d
+___c_o_n_s_e_r_v_a_t_i_v_e_ga3cb1b49a05f50c572603d7d8d41\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.69 ...-\_\-\-O\-U\-T\-\_\-\-B\-\_\-\-C}~255.\-0}
+                                                  \label{group___p_i_d___c_o...
+[86]) (./srf08_8c.tex [87]
+Underfull \vbox (badness 10000) detected at line 61
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 66--69
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 69
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 85
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 90--93
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 93
+ []
+
+[88]
+Underfull \vbox (badness 10000) detected at line 112
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 117--122
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 122
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 144
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 149--154
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 154
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 173
+ []
+
+[89]
+Underfull \vbox (badness 10000) detected at line 192
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 197--202
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 202
+ []
+
+) (./srf08_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+[]\T1/pcr/m/n/10 #include "../i2cmaster/i2cmaster.-h"\OMS/ztmcm/m/n/10 ^^B \T1/
+pcr/m/n/10 #include "../avr-
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_gadf04d6ea3fb1e38d041300a9ac29d6c\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 ...-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-00}~0x\-E0}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_ga2f08f6c270f6b8b58f4d9d16c897aae\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 ...-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-01}~0x\-E2}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_gaecce93dd8641a1e7767dbc2d60d9841\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.21 ...-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-02}~0x\-E4}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_ga0fcf883663e6b64b1b8b26504898cd9\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.24 ...-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-03}~0x\-E6}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_gabc45851be6d5a1596a5b49b985ca60a\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.27 ...-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-04}~0x\-E8}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_gaf6e06e3803a009591abb4c0144302ab\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.30 ...\-F08\-\_\-\-A\-D\-D\-R\-\_\-05}~0x\-E\-A}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_ga917887ddb05be2753a90b0313ea5a92\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.33 ...\-F08\-\_\-\-A\-D\-D\-R\-\_\-06}~0x\-E\-C}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_gaf084c2cc7b47c1ba701fae9e65cae99\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.36 ...\-F08\-\_\-\-A\-D\-D\-R\-\_\-07}~0x\-E\-E}
+                                                  \label{group___s_r_f08___a...
+[90]pdfTeX warning (ext4): destination with the same identifier (name{group___s
+_r_f08___a_d_d_r_e_s_s_e_s_gac666d6efe957396e4da69acca376d8c\ETC.}) has been al
+ready used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.39 ...-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-08}~0x\-F0}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_ga56fe1e425a4dc4ea62d152465809161\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.42 ...-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-09}~0x\-F2}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_ga7703b0bd1c4ce686246fd9807d20b33\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45 ...-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-10}~0x\-F4}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_ga53f1ae2f79245f01fa9c59bc2858e5b\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.48 ...-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-11}~0x\-F6}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_ga8e3660b76ec59ae7a72570f3156ae0a\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.51 ...-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-12}~0x\-F8}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_gafc7bed5fad69491537353544252bbfc\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.54 ...\-F08\-\_\-\-A\-D\-D\-R\-\_\-13}~0x\-F\-A}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_gab68016bb485baf9762b68d3d215f259\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.57 ...\-F08\-\_\-\-A\-D\-D\-R\-\_\-14}~0x\-F\-C}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___a_d_d_r_e_s_s_e_s_gacb3d7bc92b1e56a4af102bc168c874f\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.60 ...\-F08\-\_\-\-A\-D\-D\-R\-\_\-15}~0x\-F\-E}
+                                                  \label{group___s_r_f08___a...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___r_e_g_i_s_t_e_r_s_ga47960835050dd16b6a3369227b3d817\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.67 ...-R\-E\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N}~0x00}
+                                                  \label{group___s_r_f08___r...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___r_e_g_i_s_t_e_r_s_ga63dda9c9fac527c2097116ad5346135\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.70 ...\_\-\-R\-E\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N}}
+                                                  \label{group___s_r_f08___r...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___r_e_g_i_s_t_e_r_s_gaf2e557b72f14538a5a2e611700045ed\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.73 ...-\_\-\-R\-E\-G\-\_\-\-L\-I\-G\-H\-T}~0x01}
+                                                  \label{group___s_r_f08___r...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___r_e_g_i_s_t_e_r_s_ga442609ae4e02b190250ea094a7d46a8\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.76 ...-F08\-\_\-\-R\-E\-G\-\_\-\-L\-I\-G\-H\-T}}
+                                                  \label{group___s_r_f08___r...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___r_e_g_i_s_t_e_r_s_ga852b7411dc4146e15021b5a03ee568b\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.79 ...-R\-E\-G\-\_\-\-E\-C\-H\-O\-\_\-\-H}~0x02}
+                                                  \label{group___s_r_f08___r...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___r_e_g_i_s_t_e_r_s_gad1933d946b6b16efaab6206c5f4fabb\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.82 ...\_\-\-R\-E\-G\-\_\-\-E\-C\-H\-O\-\_\-\-H}}
+                                                  \label{group___s_r_f08___r...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___r_e_g_i_s_t_e_r_s_gaf59fa043fa146779d9a0aa02a2d214d\ETC.}) has been alread
+y used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.85 ...-R\-E\-G\-\_\-\-E\-C\-H\-O\-\_\-\-L}~0x03}
+                                                  \label{group___s_r_f08___r...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___c_o_m_m_a_n_d_s_ga44f876f131e733be4df50e3e76cbaff0}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.88 ...08\-\_\-\-C\-O\-M\-\_\-\-I\-N\-C\-H}~0x50}
+                                                  \label{group___s_r_f08___c...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___c_o_m_m_a_n_d_s_gac572f29f83e644f9111433f608b05942}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.91 ...\-R\-F08\-\_\-\-C\-O\-M\-\_\-\-C\-M}~0x51}
+                                                  \label{group___s_r_f08___c...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___c_o_m_m_a_n_d_s_ga88377c1ad512b37e58964c51fb680c4c}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.94 ...\-F08\-\_\-\-C\-O\-M\-\_\-\-M\-K\-S}~0x52}
+                                                  \label{group___s_r_f08___c...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___c_o_m_m_a_n_d_s_ga82f1b0b1aab0b04fcecc5dbce53b1e8e}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.97 ...-\_\-\-C\-O\-M\-\_\-\-A\-D\-D\-R0}~0x\-A0}
+                                                  \label{group___s_r_f08___c...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___c_o_m_m_a_n_d_s_gabd43092bfa433d67683d45d5ae80168e}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.100 ...\-\-C\-O\-M\-\_\-\-A\-D\-D\-R1}~0x\-A\-A}
+                                                  \label{group___s_r_f08___c...
+pdfTeX warning (ext4): destination with the same identifier (name{group___s_r_f
+08___c_o_m_m_a_n_d_s_gaf3b62e25ee73df4bb301d63b2ea7d5ca}) has been already used
+, duplicate ignored
+<to be read again> 
+                   \relax 
+l.103 ...\_\-\-C\-O\-M\-\_\-\-A\-D\-D\-R2}~0x\-A5}
+                                                  \label{group___s_r_f08___c...
+[91] [92]
+Underfull \vbox (badness 10000) detected at line 175
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 180--183
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 183
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 199
+ []
+
+[93]
+Overfull \hbox (21.89388pt too wide) in alignment at lines 204--207
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 207
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 226
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 231--236
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 236
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 258
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 263--268
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 268
+ []
+
+[94]
+Underfull \vbox (badness 10000) detected at line 287
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 306
+ []
+
+
+Overfull \hbox (21.89388pt too wide) in alignment at lines 311--316
+ [] [] 
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 316
+ []
+
+) (./usart_8c.tex [95]
+Underfull \vbox (badness 10000) detected at line 58
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 78
+ []
+
+
+Overfull \vbox (11.30565pt too high) has occurred while \output is active []
+
+
+[96]
+Underfull \vbox (badness 10000) detected at line 97
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 119
+ []
+
+) (./usart_8h.tex
+Underfull \hbox (badness 10000) in paragraph at lines 9--12
+[]\T1/pcr/m/n/10 #include $\OML/ztmcm/m/it/10 <$\T1/pcr/m/n/10 avr/io.-h$\OML/z
+tmcm/m/it/10 >$\OMS/ztmcm/m/n/10 ^^B \T1/pcr/m/n/10 #include $\OML/ztmcm/m/it/1
+0 <$\T1/pcr/m/n/10 avr/interrupt.-h$\OML/ztmcm/m/it/10 >$\OMS/ztmcm/m/n/10 ^^B 
+\T1/pcr/m/n/10 #include
+ []
+
+pdfTeX warning (ext4): destination with the same identifier (name{group___u_s_a
+_r_t___m_a_c_r_o_s_ga0fbb2397eec70ece300296c0f9a4c316}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.15 ...-U} / ( 16\-U\-L $\ast$ ( x ) ) ) -\/ 1 )}
+                                                  \label{group___u_s_a_r_t__...
+pdfTeX warning (ext4): destination with the same identifier (name{group___u_s_a
+_r_t___m_a_c_r_o_s_gaa9d9d95f01f9c72166262ecfa9eb4bef}) has been already used, 
+duplicate ignored
+<to be read again> 
+                   \relax 
+l.18 ...\-U} / ( 8\-U\-L $\ast$ ( x ) ) ) -\/ 1 )}
+                                                  \label{group___u_s_a_r_t__...
+[97]
+Underfull \vbox (badness 10000) detected at line 70
+ []
+
+[98]
+Underfull \vbox (badness 10000) detected at line 90
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 109
+ []
+
+
+Underfull \vbox (badness 10000) detected at line 131
+ []
+
+)
+No file refman.ind.
+[99] (./refman.aux
+(./group___a_d_x_l354___r_e_g___b_w___r_a_t_e___m_o_d_e_s.aux)
+(./group___a_d_x_l354___a_x_i_s.aux) (./group___a_d_x_l354___m_a_c_r_o_s.aux)
+(./group___a_t_m_e_g_a___s_e_t_t_i_n_g_s.aux)
+(./group___a_t_m_e_g_a___c_o_n_s_t_a_n_t_s.aux)
+(./group___a_t_m_e_g_e___m_a_c_r_o_s.aux)
+(./group___i2_c___d_i_r_e_c_t_i_o_n.aux) (./group___i2_c_m_a_c_r_o_s.aux)
+(./group___i2_c___s_t_a_t_u_s___c_o_d_e_s.aux)
+(./group___i2_c___s_c_l___m_o_d_e_s.aux)
+(./group___l3_g4200_d___d_e_v_i_c_e___i_d_s.aux)
+(./group___l3_g4200_d___r_e_g_i_s_t_e_r_s.aux)
+(./group___l3_g4200_d___b_w___r_a_t_e.aux) (./group___l3_g4200_d___a_x_i_s.aux)
+(./group___l3_g42000_d___m_a_c_r_o_s.aux) (./group___m_c___p_i_n_s.aux)
+(./group___m_c___o_c_r.aux) (./group___r_o_l_l___l_i_m_i_t_s.aux)
+(./group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e.aux)
+(./group___s_r_f08___a_d_d_r_e_s_s_e_s.aux)
+(./group___s_r_f08___m_o_d___a_d_d_r.aux)
+(./group___s_r_f08___r_e_g_i_s_t_e_r_s.aux)
+(./group___s_r_f08___c_o_m_m_a_n_d_s.aux)
+(./group___u_s_a_r_t___m_a_c_r_o_s.aux))
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 11110 strings out of 495061
+ 178108 string characters out of 1182621
+ 245184 words of memory out of 3000000
+ 13115 multiletter control sequences out of 15000+50000
+ 85536 words of font info for 128 fonts, out of 3000000 for 9000
+ 28 hyphenation exceptions out of 8191
+ 41i,15n,58p,686b,504s stack positions out of 5000i,500n,10000p,200000b,50000s
+{/usr/share/texmf-texlive/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-texli
+ve/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-texlive/fonts/ty
+pe1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-texlive/fonts/type1/urw/cou
+rier/ucrr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8a.pfb><
+/usr/share/texmf-texlive/fonts/type1/urw/helvetic/uhvb8ac.pfb></usr/share/texmf
+-texlive/fonts/type1/urw/helvetic/uhvbo8ac.pfb></usr/share/texmf-texlive/fonts/
+type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-texlive/fonts/type1/urw/helveti
+c/uhvro8a.pfb>
+Output written on refman.pdf (103 pages, 528068 bytes).
+PDF statistics:
+ 2000 PDF objects out of 2073 (max. 8388607)
+ 776 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+

@@ -1,0 +1,198 @@
+\hypertarget{l3g4200d_8c}{\section{\-Robo\-Way/l3g4200d/l3g4200d.c \-File \-Reference}
+\label{l3g4200d_8c}\index{\-Robo\-Way/l3g4200d/l3g4200d.\-c@{\-Robo\-Way/l3g4200d/l3g4200d.\-c}}
+}
+
+
+\-This is the header file for the l3g4200d gyro bibliothek.  
+
+
+{\ttfamily \#include \char`\"{}l3g4200d.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{l3g4200d_8c_a2104db80626cb1a7def25e1d37a64582}{l3g4200d\-Init} (uint8\-\_\-t addr, uint8\-\_\-t bw\-Rate)
+\begin{DoxyCompactList}\small\item\em \-Initial setup of an \-L3\-G4200\-D -\/ need to be called only once. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{l3g4200d_8c_a05e10fc7f53630a9657dffa16db6d1a0}{l3g4200d\-Get\-Reg} (uint8\-\_\-t addr, uint8\-\_\-t reg)
+\begin{DoxyCompactList}\small\item\em \-Get the value of a specified register. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{l3g4200d_8c_aecff3c5d77a8a38549ace871024c1d2d}{l3g4200d\-Set\-Reg} (uint8\-\_\-t addr, uint8\-\_\-t reg, uint8\-\_\-t val)
+\begin{DoxyCompactList}\small\item\em \-Set the value of a specified register. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{l3g4200d_8c_ac6df9b08eeb0cd116b8346916a286fa2}{l3g4200d\-Get\-A\-R} (uint8\-\_\-t addr, uint8\-\_\-t axis, int16\-\_\-t $\ast$val)
+\begin{DoxyCompactList}\small\item\em \-Get angular rate data of one axis. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{l3g4200d_8c_a5fad9468d7b63219d15c789ae9df043b}{l3g4200d\-Get\-A\-R\-All} (uint8\-\_\-t addr, int16\-\_\-t $\ast$x, int16\-\_\-t $\ast$y, int16\-\_\-t $\ast$z)
+\begin{DoxyCompactList}\small\item\em \-Get current angular rate data of all three axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is the header file for the l3g4200d gyro bibliothek. \begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+11.\-02.\-2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Version}
+0.\-0.\-1
+\end{DoxyVersion}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{l3g4200d_8c_ac6df9b08eeb0cd116b8346916a286fa2}{\index{l3g4200d.\-c@{l3g4200d.\-c}!l3g4200d\-Get\-A\-R@{l3g4200d\-Get\-A\-R}}
+\index{l3g4200d\-Get\-A\-R@{l3g4200d\-Get\-A\-R}!l3g4200d.c@{l3g4200d.\-c}}
+\subsubsection[{l3g4200d\-Get\-A\-R}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf l3g4200d\-Get\-A\-R} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{uint8\-\_\-t}]{axis, }
+\item[{int16\-\_\-t $\ast$}]{val}
+\end{DoxyParamCaption}
+)}}\label{l3g4200d_8c_ac6df9b08eeb0cd116b8346916a286fa2}
+
+
+\-Get angular rate data of one axis. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the \-L3\-G4200\-D \\
+\hline
+{\em axis} & \-Witch axis (see \-L3\-G4200\-D\-\_\-\-A\-X\-I\-S) \\
+\hline
+{\em val} & \-Value of axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em true} & \-Success \\
+\hline
+{\em false} & \-Fail \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{l3g4200d_8c_a5fad9468d7b63219d15c789ae9df043b}{\index{l3g4200d.\-c@{l3g4200d.\-c}!l3g4200d\-Get\-A\-R\-All@{l3g4200d\-Get\-A\-R\-All}}
+\index{l3g4200d\-Get\-A\-R\-All@{l3g4200d\-Get\-A\-R\-All}!l3g4200d.c@{l3g4200d.\-c}}
+\subsubsection[{l3g4200d\-Get\-A\-R\-All}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf l3g4200d\-Get\-A\-R\-All} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{int16\-\_\-t $\ast$}]{x, }
+\item[{int16\-\_\-t $\ast$}]{y, }
+\item[{int16\-\_\-t $\ast$}]{z}
+\end{DoxyParamCaption}
+)}}\label{l3g4200d_8c_a5fad9468d7b63219d15c789ae9df043b}
+
+
+\-Get current angular rate data of all three axis. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the \-L3\-G4200\-D \\
+\hline
+{\em x} & \-Value of \-X-\/\-Axis \\
+\hline
+{\em y} & \-Value of \-Y-\/\-Axis \\
+\hline
+{\em z} & \-Value of \-Z-\/\-Axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em true} & \-Success \\
+\hline
+{\em false} & \-Fail \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{l3g4200d_8c_a05e10fc7f53630a9657dffa16db6d1a0}{\index{l3g4200d.\-c@{l3g4200d.\-c}!l3g4200d\-Get\-Reg@{l3g4200d\-Get\-Reg}}
+\index{l3g4200d\-Get\-Reg@{l3g4200d\-Get\-Reg}!l3g4200d.c@{l3g4200d.\-c}}
+\subsubsection[{l3g4200d\-Get\-Reg}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf l3g4200d\-Get\-Reg} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{uint8\-\_\-t}]{reg}
+\end{DoxyParamCaption}
+)}}\label{l3g4200d_8c_a05e10fc7f53630a9657dffa16db6d1a0}
+
+
+\-Get the value of a specified register. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the \-L3\-G4200\-D \\
+\hline
+{\em reg} & \-Address of the register (see \-L3\-G4200\-D\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-Value} & of the register \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{l3g4200d_8c_a2104db80626cb1a7def25e1d37a64582}{\index{l3g4200d.\-c@{l3g4200d.\-c}!l3g4200d\-Init@{l3g4200d\-Init}}
+\index{l3g4200d\-Init@{l3g4200d\-Init}!l3g4200d.c@{l3g4200d.\-c}}
+\subsubsection[{l3g4200d\-Init}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf l3g4200d\-Init} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{uint8\-\_\-t}]{bw\-Rate}
+\end{DoxyParamCaption}
+)}}\label{l3g4200d_8c_a2104db80626cb1a7def25e1d37a64582}
+
+
+\-Initial setup of an \-L3\-G4200\-D -\/ need to be called only once. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the \-L3\-G4200\-D (refer to \-L3\-G4200\-D\-\_\-\-D\-E\-V\-I\-C\-E\-\_\-\-I\-D\-S) \\
+\hline
+{\em bw\-Rate} & \-Bit rate setting (refer to \-L3\-G4200\-D\-\_\-\-B\-W\-\_\-\-R\-A\-T\-E) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em true} & -\/$>$ success \\
+\hline
+{\em false} & -\/$>$ fail \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{l3g4200d_8c_aecff3c5d77a8a38549ace871024c1d2d}{\index{l3g4200d.\-c@{l3g4200d.\-c}!l3g4200d\-Set\-Reg@{l3g4200d\-Set\-Reg}}
+\index{l3g4200d\-Set\-Reg@{l3g4200d\-Set\-Reg}!l3g4200d.c@{l3g4200d.\-c}}
+\subsubsection[{l3g4200d\-Set\-Reg}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf l3g4200d\-Set\-Reg} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{uint8\-\_\-t}]{reg, }
+\item[{uint8\-\_\-t}]{val}
+\end{DoxyParamCaption}
+)}}\label{l3g4200d_8c_aecff3c5d77a8a38549ace871024c1d2d}
+
+
+\-Set the value of a specified register. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the \-L3\-G4200\-D \\
+\hline
+{\em reg} & \-Address of the register (see \-L3\-G4200\-D\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S) \\
+\hline
+{\em val} & \-Value for the register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em true} & \-Success \\
+\hline
+{\em false} & \-Fail \\
+\hline
+\end{DoxyRetVals}

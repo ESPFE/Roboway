@@ -1,0 +1,17 @@
+\hypertarget{group___a_t_m_e_g_e___m_a_c_r_o_s}{\section{\-Useful macros for \-At\-Mega 8 bit micro controllers}
+\label{group___a_t_m_e_g_e___m_a_c_r_o_s}\index{\-Useful macros for At\-Mega 8 bit micro controllers@{\-Useful macros for At\-Mega 8 bit micro controllers}}
+}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___a_t_m_e_g_e___m_a_c_r_o_s_ga77dd57594a038f87051b324cee42c531}{\#define \hyperlink{group___a_t_m_e_g_e___m_a_c_r_o_s_ga77dd57594a038f87051b324cee42c531}{\-R\-A\-D\-\_\-\-T\-O\-\_\-\-D\-E\-G}(x)~( ( x ) $\ast$ 57.\-295779513082320876798154814105 )}\label{group___a_t_m_e_g_e___m_a_c_r_o_s_ga77dd57594a038f87051b324cee42c531}
+
+\begin{DoxyCompactList}\small\item\em \-Converts an angle from rad to deg. \end{DoxyCompactList}\item 
+\hypertarget{group___a_t_m_e_g_e___m_a_c_r_o_s_gaaf16148e7a910d20df2da6bcf300ea25}{\#define \hyperlink{group___a_t_m_e_g_e___m_a_c_r_o_s_gaaf16148e7a910d20df2da6bcf300ea25}{\-L\-O\-W\-\_\-\-B\-Y\-T\-E}(x)~( (uint8\-\_\-t)( ( x ) \& 0x\-F\-F ) )}\label{group___a_t_m_e_g_e___m_a_c_r_o_s_gaaf16148e7a910d20df2da6bcf300ea25}
+
+\begin{DoxyCompactList}\small\item\em \-Returns low byte as uint8\-\_\-t \par
+ x should be 2 bytes. \end{DoxyCompactList}\item 
+\hypertarget{group___a_t_m_e_g_e___m_a_c_r_o_s_ga414e62382b4f31e419c3dce2bd833ca7}{\#define \hyperlink{group___a_t_m_e_g_e___m_a_c_r_o_s_ga414e62382b4f31e419c3dce2bd833ca7}{\-H\-I\-G\-H\-\_\-\-B\-Y\-T\-E}(x)~( (uint8\-\_\-t)( ( ( x ) $>$$>$ 8 ) \& 0x\-F\-F ) )}\label{group___a_t_m_e_g_e___m_a_c_r_o_s_ga414e62382b4f31e419c3dce2bd833ca7}
+
+\begin{DoxyCompactList}\small\item\em \-Returns high byte as uint8\-\_\-t\par
+ x should be 2 bytes. \end{DoxyCompactList}\end{DoxyCompactItemize}

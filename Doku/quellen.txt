@@ -1,0 +1,18 @@
+
+PID Regler:		http://www.rn-wissen.de/index.php/Regelungstechnik (09.03.2014)
+			https://github.com/astromaf/VertiBOT/tree/master/Firmwares/PID_VertiBOT_V3_2 (09.03.2014)
+
+Complementary Filter:	http://www.pieter-jan.com/node/11 (09.03.2014)
+
+Allgemeine Kenntnisse Microcontroller und Codeschnipsel:
+			AVR-Mikrocontroller-Kochbuch ( Entwurf und Programmierung praktischer Anwendungen ) - Franzis
+
+Gyroscope L3G4200D:	Datenblatt des Herstellers STMicroelectronics ( Revision 3 )
+
+Beschleunigungssensor ADXL345: Datenblatt des Hersteller Analog Devices
+
+Motortreiber L293D:	http://www.ti.com/lit/ds/symlink/l293.pdf (09.03.2014)
+
+Microcontroller AtMega 328P: Datenblatt des Herstellers Atmel (Rev. 8161D – 10/09)
+
+Ultraschall Sensor SRF08:	Datenblatt des Händlers www.roboter-teile.de

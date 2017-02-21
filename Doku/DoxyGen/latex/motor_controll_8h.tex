@@ -1,0 +1,121 @@
+\hypertarget{motor_controll_8h}{\section{\-Robo\-Way/motor\-Controll/motor\-Controll.h \-File \-Reference}
+\label{motor_controll_8h}\index{\-Robo\-Way/motor\-Controll/motor\-Controll.\-h@{\-Robo\-Way/motor\-Controll/motor\-Controll.\-h}}
+}
+
+
+\-Header file for motor control of \-Robo\-Way.  
+
+
+{\ttfamily \#include $<$avr/io.\-h$>$}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___m_c___p_i_n_s_gade4d9adc2fb51f9d4697a5b17ff9659d}{\#define \hyperlink{group___m_c___p_i_n_s_gade4d9adc2fb51f9d4697a5b17ff9659d}{\-M\-C\-\_\-\-P\-O\-R\-T}~\-P\-O\-R\-T\-D}\label{group___m_c___p_i_n_s_gade4d9adc2fb51f9d4697a5b17ff9659d}
+
+\begin{DoxyCompactList}\small\item\em \-A\-V\-R \-P\-O\-R\-T used for motor control pins. \end{DoxyCompactList}\item 
+\hypertarget{group___m_c___p_i_n_s_gaf248c583aa63761168322d4f9d59c24d}{\#define \hyperlink{group___m_c___p_i_n_s_gaf248c583aa63761168322d4f9d59c24d}{\-M\-C\-\_\-\-D\-D\-R}~\-D\-D\-R\-D}\label{group___m_c___p_i_n_s_gaf248c583aa63761168322d4f9d59c24d}
+
+\begin{DoxyCompactList}\small\item\em \-A\-V\-R \-D\-D\-R used for motor control pins. \end{DoxyCompactList}\item 
+\hypertarget{group___m_c___p_i_n_s_ga4b4e05b59627be30c01b2a052c8d143a}{\#define \hyperlink{group___m_c___p_i_n_s_ga4b4e05b59627be30c01b2a052c8d143a}{\-M\-C\-\_\-\-L\-E\-F\-T}~\-P\-D5}\label{group___m_c___p_i_n_s_ga4b4e05b59627be30c01b2a052c8d143a}
+
+\begin{DoxyCompactList}\small\item\em \-Pin for speed left wheel. \end{DoxyCompactList}\item 
+\hypertarget{group___m_c___p_i_n_s_ga6d6ada18e848708206bc1fbf1305e5ee}{\#define \hyperlink{group___m_c___p_i_n_s_ga6d6ada18e848708206bc1fbf1305e5ee}{\-M\-C\-\_\-\-L\-E\-F\-T\-\_\-\-F\-W}~\-P\-D2}\label{group___m_c___p_i_n_s_ga6d6ada18e848708206bc1fbf1305e5ee}
+
+\begin{DoxyCompactList}\small\item\em \-Left wheel drives in forward direction if this pin is set to high. \end{DoxyCompactList}\item 
+\hypertarget{group___m_c___p_i_n_s_gaec96aeb7ac2143bd73c4e21e367f7c94}{\#define \hyperlink{group___m_c___p_i_n_s_gaec96aeb7ac2143bd73c4e21e367f7c94}{\-M\-C\-\_\-\-L\-E\-F\-T\-\_\-\-B\-W}~\-P\-D3}\label{group___m_c___p_i_n_s_gaec96aeb7ac2143bd73c4e21e367f7c94}
+
+\begin{DoxyCompactList}\small\item\em \-Left wheel drives in backward direction if this pin is set to high. \end{DoxyCompactList}\item 
+\hypertarget{group___m_c___p_i_n_s_ga17ab3ecb2a453c06a3376f54df9e9900}{\#define \hyperlink{group___m_c___p_i_n_s_ga17ab3ecb2a453c06a3376f54df9e9900}{\-M\-C\-\_\-\-R\-I\-G\-H\-T}~\-P\-D6}\label{group___m_c___p_i_n_s_ga17ab3ecb2a453c06a3376f54df9e9900}
+
+\begin{DoxyCompactList}\small\item\em \-Pin for speed right wheel. \end{DoxyCompactList}\item 
+\hypertarget{group___m_c___p_i_n_s_ga9c42700359a1bbe408fa75b3f80a4cac}{\#define \hyperlink{group___m_c___p_i_n_s_ga9c42700359a1bbe408fa75b3f80a4cac}{\-M\-C\-\_\-\-R\-I\-G\-H\-T\-\_\-\-F\-W}~\-P\-D4}\label{group___m_c___p_i_n_s_ga9c42700359a1bbe408fa75b3f80a4cac}
+
+\begin{DoxyCompactList}\small\item\em right wheel drives in forward direction if this pin is set to high \end{DoxyCompactList}\item 
+\hypertarget{group___m_c___p_i_n_s_ga14f87c4fefc3cc862fb305c19717df5a}{\#define \hyperlink{group___m_c___p_i_n_s_ga14f87c4fefc3cc862fb305c19717df5a}{\-M\-C\-\_\-\-R\-I\-G\-H\-T\-\_\-\-B\-W}~\-P\-D7}\label{group___m_c___p_i_n_s_ga14f87c4fefc3cc862fb305c19717df5a}
+
+\begin{DoxyCompactList}\small\item\em \-Right wheel drives in forward direction if this pin is set to high. \end{DoxyCompactList}\item 
+\hypertarget{group___m_c___o_c_r_ga1e7c75f85713ec4e9b5e1cd731b0bf87}{\#define \hyperlink{group___m_c___o_c_r_ga1e7c75f85713ec4e9b5e1cd731b0bf87}{\-M\-C\-\_\-\-L\-E\-F\-T\-\_\-\-O\-C\-R}~\-O\-C\-R0\-B}\label{group___m_c___o_c_r_ga1e7c75f85713ec4e9b5e1cd731b0bf87}
+
+\begin{DoxyCompactList}\small\item\em \-Output compare register for left wheel. \end{DoxyCompactList}\item 
+\hypertarget{group___m_c___o_c_r_gad7beaa519afc6c507ab05fa799452ed9}{\#define \hyperlink{group___m_c___o_c_r_gad7beaa519afc6c507ab05fa799452ed9}{\-M\-C\-\_\-\-R\-I\-G\-H\-T\-\_\-\-O\-C\-R}~\-O\-C\-R0\-A}\label{group___m_c___o_c_r_gad7beaa519afc6c507ab05fa799452ed9}
+
+\begin{DoxyCompactList}\small\item\em \-Output compare register for right wheel. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{motor_controll_8h_a446834ceebe4e97b14d0cbe4853e1c6a}{void \hyperlink{motor_controll_8h_a446834ceebe4e97b14d0cbe4853e1c6a}{m\-C\-Init} (void)}\label{motor_controll_8h_a446834ceebe4e97b14d0cbe4853e1c6a}
+
+\begin{DoxyCompactList}\small\item\em \-Initialize motor control. \end{DoxyCompactList}\item 
+void \hyperlink{motor_controll_8h_a444dffba14fde4d227d565741c91714f}{m\-C\-Set\-Speed\-Left} (uint8\-\_\-t val)
+\begin{DoxyCompactList}\small\item\em \-Set speed of the left wheel. \end{DoxyCompactList}\item 
+void \hyperlink{motor_controll_8h_a7ff68617fb39126e199fb39d4df89500}{m\-C\-Set\-Speed\-Right} (uint8\-\_\-t val)
+\begin{DoxyCompactList}\small\item\em \-Set speed of the right wheel. \end{DoxyCompactList}\item 
+\hypertarget{motor_controll_8h_a134e729c87e6fadca1b34308c64a2016}{void \hyperlink{motor_controll_8h_a134e729c87e6fadca1b34308c64a2016}{m\-C\-Right\-F\-W} (void)}\label{motor_controll_8h_a134e729c87e6fadca1b34308c64a2016}
+
+\begin{DoxyCompactList}\small\item\em \-Set direction of right wheel to forward. \end{DoxyCompactList}\item 
+\hypertarget{motor_controll_8h_ac0948e6c23fb8cbfc0a9dbefdb01ce39}{void \hyperlink{motor_controll_8h_ac0948e6c23fb8cbfc0a9dbefdb01ce39}{m\-C\-Right\-B\-W} (void)}\label{motor_controll_8h_ac0948e6c23fb8cbfc0a9dbefdb01ce39}
+
+\begin{DoxyCompactList}\small\item\em \-Set direction of right wheel to backward. \end{DoxyCompactList}\item 
+\hypertarget{motor_controll_8h_ac841f0641d5940cfce4c11da843fa591}{void \hyperlink{motor_controll_8h_ac841f0641d5940cfce4c11da843fa591}{m\-C\-Left\-F\-W} (void)}\label{motor_controll_8h_ac841f0641d5940cfce4c11da843fa591}
+
+\begin{DoxyCompactList}\small\item\em \-Set direction of left wheel to forward. \end{DoxyCompactList}\item 
+\hypertarget{motor_controll_8h_ad2a2289f71233afbb40ae64923c28733}{void \hyperlink{motor_controll_8h_ad2a2289f71233afbb40ae64923c28733}{m\-C\-Left\-B\-W} (void)}\label{motor_controll_8h_ad2a2289f71233afbb40ae64923c28733}
+
+\begin{DoxyCompactList}\small\item\em \-Set direction of right wheel to backward. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Header file for motor control of \-Robo\-Way. \-This implementation of a motor control with \-P\-W\-M is very efficient, because it uses the output compare match interrupt to generate the \-P\-W\-M output. \-Only when you configure the motor control it needs cpu time.
+
+\begin{DoxyVersion}{\-Version}
+1.\-2.\-5 
+\end{DoxyVersion}
+\begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+27.\-01.\-2014
+\end{DoxyDate}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{motor_controll_8h_a444dffba14fde4d227d565741c91714f}{\index{motor\-Controll.\-h@{motor\-Controll.\-h}!m\-C\-Set\-Speed\-Left@{m\-C\-Set\-Speed\-Left}}
+\index{m\-C\-Set\-Speed\-Left@{m\-C\-Set\-Speed\-Left}!motorControll.h@{motor\-Controll.\-h}}
+\subsubsection[{m\-C\-Set\-Speed\-Left}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf m\-C\-Set\-Speed\-Left} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{val}
+\end{DoxyParamCaption}
+)}}\label{motor_controll_8h_a444dffba14fde4d227d565741c91714f}
+
+
+\-Set speed of the left wheel. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em val} & 0 =$>$ 0\% \-P\-W\-M =$>$ 0\% \-Voltage\par
+ 255 =$>$ 100\% \-P\-W\-M =$>$ 100\% \-Voltage \\
+\hline
+\end{DoxyParams}
+\hypertarget{motor_controll_8h_a7ff68617fb39126e199fb39d4df89500}{\index{motor\-Controll.\-h@{motor\-Controll.\-h}!m\-C\-Set\-Speed\-Right@{m\-C\-Set\-Speed\-Right}}
+\index{m\-C\-Set\-Speed\-Right@{m\-C\-Set\-Speed\-Right}!motorControll.h@{motor\-Controll.\-h}}
+\subsubsection[{m\-C\-Set\-Speed\-Right}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf m\-C\-Set\-Speed\-Right} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{val}
+\end{DoxyParamCaption}
+)}}\label{motor_controll_8h_a7ff68617fb39126e199fb39d4df89500}
+
+
+\-Set speed of the right wheel. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em val} & 0 =$>$ 0\% \-P\-W\-M =$>$ 0\% \-Voltage\par
+ 255 =$>$ 100\% \-P\-W\-M =$>$ 100\% \-Voltage \\
+\hline
+\end{DoxyParams}

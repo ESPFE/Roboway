@@ -1,0 +1,196 @@
+\hypertarget{i2cmaster_8c}{\section{\-Robo\-Way/i2cmaster/i2cmaster.c \-File \-Reference}
+\label{i2cmaster_8c}\index{\-Robo\-Way/i2cmaster/i2cmaster.\-c@{\-Robo\-Way/i2cmaster/i2cmaster.\-c}}
+}
+
+
+\-Implementation of the \-I2\-C (\-T\-W\-I) bus\par
+ \-Basic source code provided by \-Peter \-Fleury\par
+ \-Adapted and documented by \-Andre \-S\"{u}nnemann.  
+
+
+{\ttfamily \#include \char`\"{}i2cmaster.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{i2cmaster_8c_ab9d40811e099bf92d4b8648cf8b1e416}{i2c\-Init} (unsigned long scl\-Mode)
+\begin{DoxyCompactList}\small\item\em \-Initialize the \-I2\-C master interface. \-Need to be called only once. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{i2cmaster_8c_a912c175d56be165722ccb59e4049f159}{i2c\-Start} (uint8\-\_\-t addr)
+\begin{DoxyCompactList}\small\item\em \-Issues a start condition, sends address and transfer direction. \end{DoxyCompactList}\item 
+void \hyperlink{i2cmaster_8c_aa501a1262c031fcfcd4378a28d8eecfe}{i2c\-Start\-Wait} (uint8\-\_\-t addr)
+\begin{DoxyCompactList}\small\item\em \-Issues a start condition, sends address and transfer direction \-If device is busy, use ack polling to wait until device ready. \end{DoxyCompactList}\item 
+void \hyperlink{i2cmaster_8c_a46f365de216a017131a0fdc53067b741}{i2c\-Stop} (void)
+\begin{DoxyCompactList}\small\item\em \-Terminates the data transfer and releases the \-I2\-C bus. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{i2cmaster_8c_a55fc4443fac8cb13b315321a84f84454}{i2c\-Write} (uint8\-\_\-t data)
+\begin{DoxyCompactList}\small\item\em \-Send one byte to \-I2\-C device. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{i2cmaster_8c_aabab48c9f5015a459260c7c530c560c9}{i2c\-Read\-Ack} (void)
+\begin{DoxyCompactList}\small\item\em \-Read one byte from the \-I2\-C device, request more data from device. \end{DoxyCompactList}\item 
+unsigned char \hyperlink{i2cmaster_8c_a6958422fca4991ff29f3aa5c2dc7a608}{i2c\-Read\-Nak} (void)
+\begin{DoxyCompactList}\small\item\em \-Read one byte from the \-I2\-C device, read is followed by a stop condition. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Implementation of the \-I2\-C (\-T\-W\-I) bus\par
+ \-Basic source code provided by \-Peter \-Fleury\par
+ \-Adapted and documented by \-Andre \-S\"{u}nnemann. \begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyVersion}{\-Version}
+0.\-1.\-0 
+\end{DoxyVersion}
+\begin{DoxyDate}{\-Date}
+29.\-01.\-2014
+\end{DoxyDate}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{i2cmaster_8c_ab9d40811e099bf92d4b8648cf8b1e416}{\index{i2cmaster.\-c@{i2cmaster.\-c}!i2c\-Init@{i2c\-Init}}
+\index{i2c\-Init@{i2c\-Init}!i2cmaster.c@{i2cmaster.\-c}}
+\subsubsection[{i2c\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf i2c\-Init} (
+\begin{DoxyParamCaption}
+\item[{unsigned long}]{scl\-Mode}
+\end{DoxyParamCaption}
+)}}\label{i2cmaster_8c_ab9d40811e099bf92d4b8648cf8b1e416}
+
+
+\-Initialize the \-I2\-C master interface. \-Need to be called only once. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em scl\-Mode} & \-Clock rate mode (\-See \-I2\-C\-\_\-\-S\-C\-L\-\_\-\-M\-O\-D\-E\-S) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{i2cmaster_8c_aabab48c9f5015a459260c7c530c560c9}{\index{i2cmaster.\-c@{i2cmaster.\-c}!i2c\-Read\-Ack@{i2c\-Read\-Ack}}
+\index{i2c\-Read\-Ack@{i2c\-Read\-Ack}!i2cmaster.c@{i2cmaster.\-c}}
+\subsubsection[{i2c\-Read\-Ack}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf i2c\-Read\-Ack} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{i2cmaster_8c_aabab48c9f5015a459260c7c530c560c9}
+
+
+\-Read one byte from the \-I2\-C device, request more data from device. 
+
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-Data} & read from \-I2\-C device \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{i2cmaster_8c_a6958422fca4991ff29f3aa5c2dc7a608}{\index{i2cmaster.\-c@{i2cmaster.\-c}!i2c\-Read\-Nak@{i2c\-Read\-Nak}}
+\index{i2c\-Read\-Nak@{i2c\-Read\-Nak}!i2cmaster.c@{i2cmaster.\-c}}
+\subsubsection[{i2c\-Read\-Nak}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf i2c\-Read\-Nak} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{i2cmaster_8c_a6958422fca4991ff29f3aa5c2dc7a608}
+
+
+\-Read one byte from the \-I2\-C device, read is followed by a stop condition. 
+
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-Data} & read from \-I2\-C device \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{i2cmaster_8c_a912c175d56be165722ccb59e4049f159}{\index{i2cmaster.\-c@{i2cmaster.\-c}!i2c\-Start@{i2c\-Start}}
+\index{i2c\-Start@{i2c\-Start}!i2cmaster.c@{i2cmaster.\-c}}
+\subsubsection[{i2c\-Start}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf i2c\-Start} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{i2cmaster_8c_a912c175d56be165722ccb59e4049f159}
+
+
+\-Issues a start condition, sends address and transfer direction. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of \-I2\-C \-Slave \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{\-Warning}
+\-Modify the address with \hyperlink{group___i2_c___d_i_r_e_c_t_i_o_n_ga2ed4c4e7103042d26edf44bfc20d33f5}{\-I2\-C\-\_\-\-R\-E\-A\-D(addr)} or \-I2\-C\-\_\-\-W\-R\-I\-T\-E depending on the direction 
+\end{DoxyWarning}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-I2\-C\-\_\-\-F\-A\-I\-L} & \-Failed to access device \\
+\hline
+{\em \-I2\-C\-\_\-\-O\-K} & \-Device accessible \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{i2cmaster_8c_aa501a1262c031fcfcd4378a28d8eecfe}{\index{i2cmaster.\-c@{i2cmaster.\-c}!i2c\-Start\-Wait@{i2c\-Start\-Wait}}
+\index{i2c\-Start\-Wait@{i2c\-Start\-Wait}!i2cmaster.c@{i2cmaster.\-c}}
+\subsubsection[{i2c\-Start\-Wait}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf i2c\-Start\-Wait} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{i2cmaster_8c_aa501a1262c031fcfcd4378a28d8eecfe}
+
+
+\-Issues a start condition, sends address and transfer direction \-If device is busy, use ack polling to wait until device ready. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address and transfer direction of \-I2\-C device \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{i2cmaster_8c_a46f365de216a017131a0fdc53067b741}{\index{i2cmaster.\-c@{i2cmaster.\-c}!i2c\-Stop@{i2c\-Stop}}
+\index{i2c\-Stop@{i2c\-Stop}!i2cmaster.c@{i2cmaster.\-c}}
+\subsubsection[{i2c\-Stop}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf i2c\-Stop} (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}}\label{i2cmaster_8c_a46f365de216a017131a0fdc53067b741}
+
+
+\-Terminates the data transfer and releases the \-I2\-C bus. 
+
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}
+\hypertarget{i2cmaster_8c_a55fc4443fac8cb13b315321a84f84454}{\index{i2cmaster.\-c@{i2cmaster.\-c}!i2c\-Write@{i2c\-Write}}
+\index{i2c\-Write@{i2c\-Write}!i2cmaster.c@{i2cmaster.\-c}}
+\subsubsection[{i2c\-Write}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf i2c\-Write} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{data}
+\end{DoxyParamCaption}
+)}}\label{i2cmaster_8c_a55fc4443fac8cb13b315321a84f84454}
+
+
+\-Send one byte to \-I2\-C device. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em data} & byte to be transfered \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-I2\-C\-\_\-\-F\-A\-I\-L} & \-Write failed \\
+\hline
+{\em \-I2\-C\-\_\-\-O\-K} & \-Write successful \\
+\hline
+\end{DoxyRetVals}

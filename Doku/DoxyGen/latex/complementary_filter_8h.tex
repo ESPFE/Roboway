@@ -1,0 +1,140 @@
+\hypertarget{complementary_filter_8h}{\section{\-Robo\-Way/complementary\-Filter/complementary\-Filter.h \-File \-Reference}
+\label{complementary_filter_8h}\index{\-Robo\-Way/complementary\-Filter/complementary\-Filter.\-h@{\-Robo\-Way/complementary\-Filter/complementary\-Filter.\-h}}
+}
+
+
+\-This is the header file for complementary filter.  
+
+
+{\ttfamily \#include $<$stdint.\-h$>$}\*
+\subsection*{\-Data \-Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structcomp_filter_data}{comp\-Filter\-Data}
+\begin{DoxyCompactList}\small\item\em \-Data structure for complementary filter. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{complementary_filter_8h_a972267c02c91b52f97fabb5ccffe72c1}{\#define \hyperlink{complementary_filter_8h_a972267c02c91b52f97fabb5ccffe72c1}{\-C\-F\-\_\-\-S\-T\-D\-\_\-\-G\-Y\-R\-O\-\_\-\-G\-A\-I\-N}~0.\-98}\label{complementary_filter_8h_a972267c02c91b52f97fabb5ccffe72c1}
+
+\begin{DoxyCompactList}\small\item\em \-Standard gain for the high pass filter (gyroscope) \end{DoxyCompactList}\item 
+\hypertarget{complementary_filter_8h_a87d44a07a90402ab8a12ec4b98bbb367}{\#define \hyperlink{complementary_filter_8h_a87d44a07a90402ab8a12ec4b98bbb367}{\-C\-F\-\_\-\-S\-T\-D\-\_\-\-A\-C\-C\-\_\-\-G\-A\-I\-N}~0.\-02}\label{complementary_filter_8h_a87d44a07a90402ab8a12ec4b98bbb367}
+
+\begin{DoxyCompactList}\small\item\em \-Standart gain for the low pass filter (accelerometer) \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{complementary_filter_8h_abad2b002cd583707936c98c7a3090345}{comp\-Filter\-Init} (double gyro\-Gain, double acc\-Gain, double dt, \hyperlink{structcomp_filter_data}{comp\-Filter\-Data} $\ast$fd)
+\begin{DoxyCompactList}\small\item\em \-Initial setup of an complementary filter. \end{DoxyCompactList}\item 
+double \hyperlink{complementary_filter_8h_a6a4bfcbdce868ceba526c9289952ea3d}{comp\-Filter\-Get\-Angle} (double gyro\-Data, double acc\-Data, \hyperlink{structcomp_filter_data}{comp\-Filter\-Data} $\ast$fd)
+\begin{DoxyCompactList}\small\item\em \-Get new filtered angle. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is the header file for complementary filter. \-A complementary filter combines the good characteristics of an accelerometer and a gyroscope.\par
+ \-On the other hand it filters out bad properties like drift or high sensitivity.
+
+\-A \href{http://www.cbcity.de/das-kalman-filter-einfach-erklaert-teil-1}{\tt \-Kalman \-Filter} is another solution for this problem.\par
+ \-The result is a little bit better, but it is much more complex.
+
+\-Because of the limitations of ressources of the used controller and the very time critical application i recommend to use a complementary filter.\par
+ \-The sampling rate is about five times higher with a \-Kalman \-Filter.
+
+\begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+18.\-03.\-2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Version}
+1.\-3.\-1
+\end{DoxyVersion}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{complementary_filter_8h_a6a4bfcbdce868ceba526c9289952ea3d}{\index{complementary\-Filter.\-h@{complementary\-Filter.\-h}!comp\-Filter\-Get\-Angle@{comp\-Filter\-Get\-Angle}}
+\index{comp\-Filter\-Get\-Angle@{comp\-Filter\-Get\-Angle}!complementaryFilter.h@{complementary\-Filter.\-h}}
+\subsubsection[{comp\-Filter\-Get\-Angle}]{\setlength{\rightskip}{0pt plus 5cm}double {\bf comp\-Filter\-Get\-Angle} (
+\begin{DoxyParamCaption}
+\item[{double}]{gyro\-Data, }
+\item[{double}]{acc\-Data, }
+\item[{{\bf comp\-Filter\-Data} $\ast$}]{fd}
+\end{DoxyParamCaption}
+)}}\label{complementary_filter_8h_a6a4bfcbdce868ceba526c9289952ea3d}
+
+
+\-Get new filtered angle. 
+
+\-It depends on of the angular rate of the gyroscope, the old angle and the angle measured by the accelerometer\par
+ \-The angular rate of the gyroscope is filtered with a high pass filer ( \hyperlink{complementary_filter_8h_a972267c02c91b52f97fabb5ccffe72c1}{\-C\-F\-\_\-\-S\-T\-D\-\_\-\-G\-Y\-R\-O\-\_\-\-G\-A\-I\-N} ).\par
+ \-The angle measured by the acceleromter is filtered with a low pass filter ( \hyperlink{complementary_filter_8h_a87d44a07a90402ab8a12ec4b98bbb367}{\-C\-F\-\_\-\-S\-T\-D\-\_\-\-A\-C\-C\-\_\-\-G\-A\-I\-N} ) 
+\begin{DoxyParams}{\-Parameters}
+{\em gyro\-Data} & \-Measured angular rate of the gyroscope in degrees \\
+\hline
+{\em acc\-Data} & \-Meassured angle of the accelerometer in degrees \\
+\hline
+{\em fd} & \-Pointer to the complementary filter working structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{structcomp_filter_data}{comp\-Filter\-Data} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{\-Returns}
+double \-Filtered angle 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+            double compFilterGetAngle( double gyroData, double accData, 
+      compFilterData *fd )
+            {
+              fd->aO = fd->gG * ( fd->aO + gyroData * fd->dt ) + fd->aG * 
+      accData;
+              return fd->aO;
+            }
+\end{DoxyCode}
+\hypertarget{complementary_filter_8h_abad2b002cd583707936c98c7a3090345}{\index{complementary\-Filter.\-h@{complementary\-Filter.\-h}!comp\-Filter\-Init@{comp\-Filter\-Init}}
+\index{comp\-Filter\-Init@{comp\-Filter\-Init}!complementaryFilter.h@{complementary\-Filter.\-h}}
+\subsubsection[{comp\-Filter\-Init}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf comp\-Filter\-Init} (
+\begin{DoxyParamCaption}
+\item[{double}]{gyro\-Gain, }
+\item[{double}]{acc\-Gain, }
+\item[{double}]{dt, }
+\item[{{\bf comp\-Filter\-Data} $\ast$}]{fd}
+\end{DoxyParamCaption}
+)}}\label{complementary_filter_8h_abad2b002cd583707936c98c7a3090345}
+
+
+\-Initial setup of an complementary filter. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em gyro\-Gain} & \-Gain for high pass filter of gyroscope \\
+\hline
+{\em acc\-Gain} & \-Gain for low pass filter of accelerometer \\
+\hline
+{\em dt} & \-Sampling rate in seconds \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{\-Warning}
+dt should be as precise as possible 
+\end{DoxyWarning}
+
+\begin{DoxyParams}{\-Parameters}
+{\em fd} & \-Pointer to a complementary filter working structure \\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{\-Warning}
+gyro\-Gain + acc\-Gain must be 1 
+\end{DoxyWarning}
+\begin{DoxySeeAlso}{\-See also}
+\hyperlink{structcomp_filter_data}{comp\-Filter\-Data} 
+\end{DoxySeeAlso}
+\begin{DoxyReturn}{\-Returns}
+void 
+\end{DoxyReturn}

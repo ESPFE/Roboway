@@ -1,0 +1,13 @@
+\hypertarget{group___u_s_a_r_t___m_a_c_r_o_s}{\section{\-Useful macros for atmega8 usart (\-R\-S232)}
+\label{group___u_s_a_r_t___m_a_c_r_o_s}\index{\-Useful macros for atmega8 usart (\-R\-S232)@{\-Useful macros for atmega8 usart (\-R\-S232)}}
+}
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___u_s_a_r_t___m_a_c_r_o_s_ga0fbb2397eec70ece300296c0f9a4c316}{\#define \hyperlink{group___u_s_a_r_t___m_a_c_r_o_s_ga0fbb2397eec70ece300296c0f9a4c316}{\-U\-S\-A\-R\-T\-\_\-\-B\-A\-U\-D\-\_\-\-C\-A\-L\-C}(x)~( ( \hyperlink{group___a_t_m_e_g_a___s_e_t_t_i_n_g_s_ga43bafb28b29491ec7f871319b5a3b2f8}{\-F\-\_\-\-C\-P\-U} / ( 16\-U\-L $\ast$ ( x ) ) ) -\/ 1 )}\label{group___u_s_a_r_t___m_a_c_r_o_s_ga0fbb2397eec70ece300296c0f9a4c316}
+
+\begin{DoxyCompactList}\small\item\em \-Calculate value for the prescaler of the usart depending on \-F\-\_\-\-C\-P\-U and baud rate. \end{DoxyCompactList}\item 
+\hypertarget{group___u_s_a_r_t___m_a_c_r_o_s_gaa9d9d95f01f9c72166262ecfa9eb4bef}{\#define \hyperlink{group___u_s_a_r_t___m_a_c_r_o_s_gaa9d9d95f01f9c72166262ecfa9eb4bef}{\-U\-S\-A\-R\-T\-\_\-\-D\-O\-U\-B\-L\-E\-\_\-\-B\-A\-U\-D\-\_\-\-C\-A\-L\-C}(x)~( ( \hyperlink{group___a_t_m_e_g_a___s_e_t_t_i_n_g_s_ga43bafb28b29491ec7f871319b5a3b2f8}{\-F\-\_\-\-C\-P\-U} / ( 8\-U\-L $\ast$ ( x ) ) ) -\/ 1 )}\label{group___u_s_a_r_t___m_a_c_r_o_s_gaa9d9d95f01f9c72166262ecfa9eb4bef}
+
+\begin{DoxyCompactList}\small\item\em \-Calculate value for the prescaler of the usart\par
+ \-It is used if the baud rate is out of range. \end{DoxyCompactList}\end{DoxyCompactItemize}

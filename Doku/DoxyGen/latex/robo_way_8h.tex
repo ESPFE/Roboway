@@ -1,0 +1,110 @@
+\hypertarget{robo_way_8h}{\section{\-Robo\-Way/robo\-Way/robo\-Way.h \-File \-Reference}
+\label{robo_way_8h}\index{\-Robo\-Way/robo\-Way/robo\-Way.\-h@{\-Robo\-Way/robo\-Way/robo\-Way.\-h}}
+}
+
+
+\-This is the main header file for \-Robo\-Way.  
+
+
+{\ttfamily \#include $<$avr/interrupt.\-h$>$}\*
+{\ttfamily \#include \char`\"{}../adxl354/adxl354.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../l3g4200d/l3g4200d.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../motor\-Controll/motor\-Controll.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../avr\-Constants.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../srf08/srf08.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../pid/pid.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../complementary\-Filter/complementary\-Filter.\-h\char`\"{}}\*
+{\ttfamily \#include $<$math.\-h$>$}\*
+{\ttfamily \#include $<$util/delay.\-h$>$}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{robo_way_8h_a231a7b2ba9f7d08b36c85b66d78df12e}{\#define \hyperlink{robo_way_8h_a231a7b2ba9f7d08b36c85b66d78df12e}{\-S\-R\-F\-F}~\hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_gadf04d6ea3fb1e38d041300a9ac29d6c3}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-00}}\label{robo_way_8h_a231a7b2ba9f7d08b36c85b66d78df12e}
+
+\begin{DoxyCompactList}\small\item\em \-Address of the front srf. \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8h_a8db234f5f6a903d1b7f896fd71245647}{\#define \hyperlink{robo_way_8h_a8db234f5f6a903d1b7f896fd71245647}{\-S\-R\-F\-B}~\hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga2f08f6c270f6b8b58f4d9d16c897aae3}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-01}}\label{robo_way_8h_a8db234f5f6a903d1b7f896fd71245647}
+
+\begin{DoxyCompactList}\small\item\em \-Address of the back srf. \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8h_af7c4e61616c739d0aea461e21db7f3aa}{\#define \hyperlink{robo_way_8h_af7c4e61616c739d0aea461e21db7f3aa}{\-A\-C\-C\-\_\-\-A\-D\-D\-R}~\hyperlink{adxl354_8h_a17a5a391b5b7af842885ff7b6feb8ec4}{\-A\-D\-X\-L354\-\_\-\-S\-T\-D\-\_\-\-D\-E\-V\-I\-D}}\label{robo_way_8h_af7c4e61616c739d0aea461e21db7f3aa}
+
+\begin{DoxyCompactList}\small\item\em \-Address of the \-Accelerometer. \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8h_a9e1864ec9f14b2c457cffefc9f0d9ca8}{\#define \hyperlink{robo_way_8h_a9e1864ec9f14b2c457cffefc9f0d9ca8}{\-G\-Y\-R\-O\-\_\-\-A\-D\-D\-R}~\hyperlink{group___l3_g4200_d___d_e_v_i_c_e___i_d_s_gacc4da7e364e8f20599ce14fb73521c9b}{\-L3\-G4200\-D\-\_\-\-D\-E\-V\-I\-D\-\_\-1}}\label{robo_way_8h_a9e1864ec9f14b2c457cffefc9f0d9ca8}
+
+\begin{DoxyCompactList}\small\item\em \-Address of the gyroscope. \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8h_a7d664da8e56f11dc38908401c770c6eb}{\#define \hyperlink{robo_way_8h_a7d664da8e56f11dc38908401c770c6eb}{\-L\-E\-D\-\_\-\-F\-O\-R\-W\-A\-R\-D}~\-P\-B5}\label{robo_way_8h_a7d664da8e56f11dc38908401c770c6eb}
+
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D for forward direction. \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8h_aa988958201d5d622f4a9ae6c75454ca3}{\#define \hyperlink{robo_way_8h_aa988958201d5d622f4a9ae6c75454ca3}{\-L\-E\-D\-\_\-\-B\-A\-C\-K\-W\-A\-R\-D}~\-P\-B4}\label{robo_way_8h_aa988958201d5d622f4a9ae6c75454ca3}
+
+\begin{DoxyCompactList}\small\item\em \-L\-E\-D for backward direction. \end{DoxyCompactList}\item 
+\#define \hyperlink{robo_way_8h_a90a880420c5256bb03f15272c1a5cf16}{\-P\-I\-D\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}~310
+\begin{DoxyCompactList}\small\item\em \-Sampling rate for \-P\-I\-D\par
+ (int)( (interval in sec $\ast$ \-F\-\_\-\-F\-P\-U) / 255 ) \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8h_a44168fb5d3039eede4206264139f6752}{\#define \hyperlink{robo_way_8h_a44168fb5d3039eede4206264139f6752}{\-P\-I\-D\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L\-\_\-\-S\-E\-C}~0.\-004940625}\label{robo_way_8h_a44168fb5d3039eede4206264139f6752}
+
+\begin{DoxyCompactList}\small\item\em \-Seconds between two \-P\-I\-D stabilissation cicles\par
+ ( \-P\-I\-D\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L $\ast$ 255 ) / \-F\-\_\-\-C\-P\-U. \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8h_a3baf8ebdb03329405535684ceecbb40a}{\#define \hyperlink{robo_way_8h_a3baf8ebdb03329405535684ceecbb40a}{\-B\-A\-L\-A\-N\-C\-E\-\_\-\-R\-E\-F}~92.\-75}\label{robo_way_8h_a3baf8ebdb03329405535684ceecbb40a}
+
+\begin{DoxyCompactList}\small\item\em \-Reference value for roll (balancing) \end{DoxyCompactList}\item 
+\#define \hyperlink{group___r_o_l_l___l_i_m_i_t_s_gae368a108e75a5b699e83ad3abeafe0cb}{\-R\-O\-L\-L\-\_\-\-M\-I\-N\-\_\-\-L\-I\-M\-I\-T}~55.\-0
+\begin{DoxyCompactList}\small\item\em \-Minimum value for roll. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___r_o_l_l___l_i_m_i_t_s_ga7428d6dfaaef5ae9e043eedcaeba8ec7}{\-R\-O\-L\-L\-\_\-\-M\-A\-X\-\_\-\-L\-I\-M\-I\-T}~135.\-0
+\begin{DoxyCompactList}\small\item\em \-Maximum value for roll. \end{DoxyCompactList}\item 
+\hypertarget{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_gabd87ddda9a7835cbbdad494de1816966}{\#define \hyperlink{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_gabd87ddda9a7835cbbdad494de1816966}{\-K\-\_\-\-B\-\_\-\-C}~1.\-0}\label{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_gabd87ddda9a7835cbbdad494de1816966}
+
+\begin{DoxyCompactList}\small\item\em \-Over all gain. \end{DoxyCompactList}\item 
+\hypertarget{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga6368ffc1b40771544abbef8a674b3cee}{\#define \hyperlink{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga6368ffc1b40771544abbef8a674b3cee}{\-K\-\_\-\-P\-\_\-\-B\-\_\-\-C}~1.\-86}\label{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga6368ffc1b40771544abbef8a674b3cee}
+
+\begin{DoxyCompactList}\small\item\em \-Gain proportional part. \end{DoxyCompactList}\item 
+\hypertarget{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga487ba1a2fb1f6eb30ede520a377bef8d}{\#define \hyperlink{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga487ba1a2fb1f6eb30ede520a377bef8d}{\-K\-\_\-\-I\-\_\-\-B\-\_\-\-C}~0.\-030}\label{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga487ba1a2fb1f6eb30ede520a377bef8d}
+
+\begin{DoxyCompactList}\small\item\em \-Gain integral part. \end{DoxyCompactList}\item 
+\hypertarget{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_gaa4a54318f792ea9e243345ae8d9788e8}{\#define \hyperlink{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_gaa4a54318f792ea9e243345ae8d9788e8}{\-K\-\_\-\-D\-\_\-\-B\-\_\-\-C}~0.\-006}\label{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_gaa4a54318f792ea9e243345ae8d9788e8}
+
+\begin{DoxyCompactList}\small\item\em \-Gain differential part. \end{DoxyCompactList}\item 
+\hypertarget{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga1c4a7a398975f9f8057e6906ebd6a062}{\#define \hyperlink{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga1c4a7a398975f9f8057e6906ebd6a062}{\-M\-I\-N\-\_\-\-O\-U\-T\-\_\-\-B\-\_\-\-C}~-\/255.\-0}\label{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga1c4a7a398975f9f8057e6906ebd6a062}
+
+\begin{DoxyCompactList}\small\item\em \-Minimal value for pid output. \end{DoxyCompactList}\item 
+\hypertarget{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga3cb1b49a05f50c572603d7d8d41a5a8f}{\#define \hyperlink{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga3cb1b49a05f50c572603d7d8d41a5a8f}{\-M\-A\-X\-\_\-\-O\-U\-T\-\_\-\-B\-\_\-\-C}~255.\-0}\label{group___p_i_d___c_o_n_s_e_r_v_a_t_i_v_e_ga3cb1b49a05f50c572603d7d8d41a5a8f}
+
+\begin{DoxyCompactList}\small\item\em \-Maximum value for pid output. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{robo_way_8h_ad6d2710548ab5fcefcd0c560b77b0f35}{void \hyperlink{robo_way_8h_ad6d2710548ab5fcefcd0c560b77b0f35}{robo\-Way\-Init} (void)}\label{robo_way_8h_ad6d2710548ab5fcefcd0c560b77b0f35}
+
+\begin{DoxyCompactList}\small\item\em \-Initial setup of \-Robo\-Way -\/ need to be called only once. \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8h_ad9539a1dcba714de368e1f524ed976ae}{void \hyperlink{robo_way_8h_ad9539a1dcba714de368e1f524ed976ae}{robo\-Way\-Loop} (void)}\label{robo_way_8h_ad9539a1dcba714de368e1f524ed976ae}
+
+\begin{DoxyCompactList}\small\item\em \-Main function of \-Robo\-Way -\/ need to be called only once \-There is a never ending while loop inside. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is the main header file for \-Robo\-Way. \begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+3.\-02.\-2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Version}
+2.\-6.\-5
+\end{DoxyVersion}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Define \-Documentation}
+\hypertarget{robo_way_8h_a90a880420c5256bb03f15272c1a5cf16}{\index{robo\-Way.\-h@{robo\-Way.\-h}!\-P\-I\-D\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L@{\-P\-I\-D\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}}
+\index{\-P\-I\-D\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L@{\-P\-I\-D\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}!roboWay.h@{robo\-Way.\-h}}
+\subsubsection[{\-P\-I\-D\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}]{\setlength{\rightskip}{0pt plus 5cm}\#define {\bf \-P\-I\-D\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L}~310}}\label{robo_way_8h_a90a880420c5256bb03f15272c1a5cf16}
+
+
+\-Sampling rate for \-P\-I\-D\par
+ (int)( (interval in sec $\ast$ \-F\-\_\-\-F\-P\-U) / 255 ) 
+
+\-Measured minimum interval is 305 -\/$>$ \-P\-I\-D\-\_\-\-I\-N\-T\-E\-R\-V\-A\-L = 310 

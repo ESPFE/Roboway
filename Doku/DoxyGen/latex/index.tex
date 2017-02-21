@@ -1,0 +1,116 @@
+\subsection*{\-Robo\-Way is an educational project.}
+
+\-Its body and its wheels are 3d printed.\par
+ \-The two controller boards are self made.\par
+\par
+ \-I've chosen this project because of the limitations of micro controllers.\par
+ \-I think today you can realize almost everything if you have enough resources.\par
+ \-So normally you don't have to care about the efficiency of your algorithms and programs.\par
+\par
+
+
+\-But an inverted pendulum such as \-Robo\-Way is very time-\/critical and you have to write very efficient and lightweight code because of the limitations of embedded hardware.\par
+\par
+
+
+\-A video is available \href{https://www.youtube.com/watch?v=RWkzlugv2Mk}{\tt here}
+
+    
+
+\par
+
+
+\subsection*{\-Used electronic components}
+
+
+\begin{DoxyItemize}
+\item  {\bfseries \-Sonar sensor \-S\-R\-F08\par
+} \-Actually not assembled\par
+\par
+ \-See \hyperlink{srf08_8h}{srf08.\-h}\par
+ \-See \hyperlink{srf08_8c}{srf08.\-c}\par
+       
+\item  {\bfseries 9 degrees of freedom \-I\-M\-U \-G\-Y80\par
+\par
+} \-Three axis accelerometer \-A\-D\-X\-L354\par
+ \-See \hyperlink{adxl354_8h}{adxl354.\-h}\par
+ \-See \hyperlink{adxl354_8c}{adxl354.\-c}\par
+\par
+ \-Three axis gyroscope \-L3\-G4200\-D\par
+ \-See \hyperlink{l3g4200d_8h}{l3g4200d.\-h}\par
+ \-See \hyperlink{l3g4200d_8c}{l3g4200d.\-c}\par
+\par
+       
+\item  {\bfseries \-Micro controller \href{http://www.atmel.com/devices/atmega328p.aspx}{\tt \-At\-Maga 328\-P}}\par
+\par
+ \hyperlink{i2cmaster_8h}{i2cmaster.\-h}\par
+ \hyperlink{i2cmaster_8c}{i2cmaster.\-c}\par
+ \hyperlink{usart_8h}{usart.\-h}\par
+ \hyperlink{usart_8c}{usart.\-c}\par
+ \hyperlink{avr_constants_8h}{avr\-Constants.\-h}\par
+ \hyperlink{avr_constants_8c}{avr\-Constants.\-c}\par
+\par
+       
+\item  {\bfseries \-D\-C motor driver \-L293\-D}\par
+\par
+ \hyperlink{motor_controll_8h}{motor\-Controll.\-h}\par
+ \hyperlink{motor_controll_8c}{motor\-Controll.\-c}\par
+\par
+       
+\end{DoxyItemize}
+
+\par
+
+
+\subsection*{\-Wiring diagrams\-:}
+
+ \-Voltage regulator and motor controller \-Micro controller board and sensors 
+
+\par
+\par
+  \subsection*{\-How does \-Robo\-Way works}
+
+  \-As you can see in the diagram below \-Robo\-Way uses an accelerometer and a gyroscope with a complementary filter to calculate its angular position.\par
+ \-The angular position and a reference ( \hyperlink{robo_way_8h_a3baf8ebdb03329405535684ceecbb40a}{\-B\-A\-L\-A\-N\-C\-E\-\_\-\-R\-E\-F} ) value is the input for a \-P\-I\-D controller.\par
+ \-The output of the \-P\-I\-D is used as \-P\-W\-M output for the motor control ( \hyperlink{motor_controll_8h}{motor\-Controll.\-h} ).      
+
+\par
+ 
+
+\par
+
+
+\subsection*{\-Future versions of \-Robo\-Way}
+
+\-This is just a prototype of a self balancing robot.\par
+ \-So there are many little bugs in hardware and software.\par
+\par
+ {\bfseries \-As example\-:} 
+\begin{DoxyItemize}
+\item \-The mechanical characteristics of motors with a gear are not as good as they should be.\par
+ \-I think this must be changed at first for newer versions  
+\item \-The controller board could be much better. \-As example the \-I\-S\-P-\/\-Header and three potentiometers for the \-P\-I\-D settings are missing  
+\item \-The settings for the pid controller is not perfect  
+\end{DoxyItemize}
+
+\par
+ 
+
+\par
+
+
+\subsection*{\-Source disclosure}
+
+
+\begin{DoxyItemize}
+\item \href{http://www.rn-wissen.de/index.php/Regelungstechnik}{\tt http\-://www.\-rn-\/wissen.\-de/index.\-php/\-Regelungstechnik} (09.\-03.\-2014)  
+\item \href{https://github.com/astromaf/VertiBOT/tree/master/Firmwares/PID_VertiBOT_V3_2}{\tt https\-://github.\-com/astromaf/\-Verti\-B\-O\-T/tree/master/\-Firmwares/\-P\-I\-D\-\_\-\-Verti\-B\-O\-T\-\_\-\-V3\-\_\-2} (09.\-03.\-2014)  
+\item \href{http://www.pieter-jan.com/node/11}{\tt http\-://www.\-pieter-\/jan.\-com/node/11} (09.\-03.\-2014)  
+\item \-A\-V\-R-\/\-Mikrocontroller-\/\-Kochbuch ( \-Entwurf und \-Programmierung praktischer \-Anwendungen ) -\/ \-Franzis  
+\item \-Powerprojekte mit \-Arduino und \-C -\/ \-Franzis ( \-I\-S\-B\-N 978-\/3-\/645-\/65131-\/8 )  
+\item \-Data sheet of gyroscope \-L3\-G4200\-D (rev. 3)  
+\item \-Data sheet of accelerometer \-A\-D\-X\-L354 (\-Alaog \-Devices)  
+\item \href{http://www.ti.com/lit/ds/symlink/l293.pdf}{\tt http\-://www.\-ti.\-com/lit/ds/symlink/l293.\-pdf} (09.\-03.\-2014)  
+\item \-Data sheet of micro controller \-At\-Mega328\-P (\-Atmel rev. \-Rev. 8161\-D ? 10/09)  
+\item \-Data sheet of sonar sensor \-S\-R\-F08  
+\end{DoxyItemize}

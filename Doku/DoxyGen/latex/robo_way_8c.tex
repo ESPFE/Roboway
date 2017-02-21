@@ -1,0 +1,61 @@
+\hypertarget{robo_way_8c}{\section{\-Robo\-Way/robo\-Way/robo\-Way.c \-File \-Reference}
+\label{robo_way_8c}\index{\-Robo\-Way/robo\-Way/robo\-Way.\-c@{\-Robo\-Way/robo\-Way/robo\-Way.\-c}}
+}
+
+
+\-This is the main source code file for \-Robo\-Way -\/ all crazy stuff is placed here.  
+
+
+{\ttfamily \#include \char`\"{}robo\-Way.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{robo_way_8c_a7cfcbe42bd266750aeb6e5d71e5ea479}{\hyperlink{robo_way_8c_a7cfcbe42bd266750aeb6e5d71e5ea479}{\-I\-S\-R} (\-T\-I\-M\-E\-R2\-\_\-\-O\-V\-F\-\_\-vect)}\label{robo_way_8c_a7cfcbe42bd266750aeb6e5d71e5ea479}
+
+\begin{DoxyCompactList}\small\item\em \-Interrupt service routine for sampling rate of the motor controller. \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8c_a50f0297150a1829ef72a227088bdea18}{void \hyperlink{robo_way_8c_a50f0297150a1829ef72a227088bdea18}{robo\-Way\-Init} ()}\label{robo_way_8c_a50f0297150a1829ef72a227088bdea18}
+
+\begin{DoxyCompactList}\small\item\em \-Initial setup of \-Robo\-Way -\/ need to be called only once. \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8c_ad9539a1dcba714de368e1f524ed976ae}{void \hyperlink{robo_way_8c_ad9539a1dcba714de368e1f524ed976ae}{robo\-Way\-Loop} (void)}\label{robo_way_8c_ad9539a1dcba714de368e1f524ed976ae}
+
+\begin{DoxyCompactList}\small\item\em \-Main function of \-Robo\-Way -\/ need to be called only once \-There is a never ending while loop inside. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Variables}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{robo_way_8c_a66bcee9e8e498d9e474ff8643f42d743}{\hyperlink{structpid_data}{pid\-Data} \hyperlink{robo_way_8c_a66bcee9e8e498d9e474ff8643f42d743}{pid\-Data\-C}}\label{robo_way_8c_a66bcee9e8e498d9e474ff8643f42d743}
+
+\begin{DoxyCompactList}\small\item\em \-Working data structure for pid motor control. \end{DoxyCompactList}\item 
+\hypertarget{robo_way_8c_a725f5aaad4ffc658542c55a8b20f6864}{\hyperlink{structcomp_filter_data}{comp\-Filter\-Data} \hyperlink{robo_way_8c_a725f5aaad4ffc658542c55a8b20f6864}{comp\-Filter\-Data\-C}}\label{robo_way_8c_a725f5aaad4ffc658542c55a8b20f6864}
+
+\begin{DoxyCompactList}\small\item\em \-Working data structure for complementary filter motor control. \end{DoxyCompactList}\item 
+volatile \hyperlink{group___a_t_m_e_g_a___c_o_n_s_t_a_n_t_s_gabb452686968e48b67397da5f97445f5b}{bool} \hyperlink{robo_way_8c_a2f4a014e1b0327f4a1a6a1e17052f6d6}{pid\-M\-C\-En} = \hyperlink{group___a_t_m_e_g_a___c_o_n_s_t_a_n_t_s_ga41f9c5fb8b08eb5dc3edce4dcb37fee7}{true}
+\begin{DoxyCompactList}\small\item\em \-Global variable for timing of motor controll. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is the main source code file for \-Robo\-Way -\/ all crazy stuff is placed here. \begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+3.\-02.\-2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Version}
+2.\-6.\-5
+\end{DoxyVersion}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Variable \-Documentation}
+\hypertarget{robo_way_8c_a2f4a014e1b0327f4a1a6a1e17052f6d6}{\index{robo\-Way.\-c@{robo\-Way.\-c}!pid\-M\-C\-En@{pid\-M\-C\-En}}
+\index{pid\-M\-C\-En@{pid\-M\-C\-En}!roboWay.c@{robo\-Way.\-c}}
+\subsubsection[{pid\-M\-C\-En}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pid\-M\-C\-En} = {\bf true}}}\label{robo_way_8c_a2f4a014e1b0327f4a1a6a1e17052f6d6}
+
+
+\-Global variable for timing of motor controll. 
+
+\-It is used in \hyperlink{robo_way_8c_a7cfcbe42bd266750aeb6e5d71e5ea479}{\-I\-S\-R(\-T\-I\-M\-E\-R2\-\_\-\-O\-V\-F\-\_\-vect)} and void \hyperlink{robo_way_8h_ad9539a1dcba714de368e1f524ed976ae}{robo\-Way\-Loop( void )} 

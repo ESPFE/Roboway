@@ -1,0 +1,72 @@
+\hypertarget{structcomp_filter_data}{\section{comp\-Filter\-Data \-Struct \-Reference}
+\label{structcomp_filter_data}\index{comp\-Filter\-Data@{comp\-Filter\-Data}}
+}
+
+
+\-Data structure for complementary filter.  
+
+
+
+
+{\ttfamily \#include $<$complementary\-Filter.\-h$>$}
+
+\subsection*{\-Data \-Fields}
+\begin{DoxyCompactItemize}
+\item 
+double \hyperlink{structcomp_filter_data_a15c4d386f5a6e782dccc9b419633bc82}{g\-G}
+\begin{DoxyCompactList}\small\item\em \-Gain for high pass filter of gyroscope. \end{DoxyCompactList}\item 
+double \hyperlink{structcomp_filter_data_afa9cf053cc3f14e6f45db1326dd4faa1}{a\-G}
+\begin{DoxyCompactList}\small\item\em \-Gain for low pass filter of accelerometer. \end{DoxyCompactList}\item 
+\hypertarget{structcomp_filter_data_aa32bf336800522599921b322a5d32562}{double \hyperlink{structcomp_filter_data_aa32bf336800522599921b322a5d32562}{a\-O}}\label{structcomp_filter_data_aa32bf336800522599921b322a5d32562}
+
+\begin{DoxyCompactList}\small\item\em \-Old angle. \end{DoxyCompactList}\item 
+double \hyperlink{structcomp_filter_data_a770f288d3048ff6cbee9faa0969fd6b0}{dt}
+\begin{DoxyCompactList}\small\item\em \-Sampling rate in seconds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-Data structure for complementary filter. 
+
+\begin{DoxySeeAlso}{\-See also}
+void \hyperlink{complementary_filter_8h_abad2b002cd583707936c98c7a3090345}{comp\-Filter\-Init( double gyro\-Gain, double acc\-Gain, double dt, comp\-Filter\-Data $\ast$fd )} 
+
+double \hyperlink{complementary_filter_8h_a6a4bfcbdce868ceba526c9289952ea3d}{comp\-Filter\-Get\-Angle( double gyro\-Data, double acc\-Data, comp\-Filter\-Data $\ast$fd )} 
+\end{DoxySeeAlso}
+
+
+\subsection{\-Field \-Documentation}
+\hypertarget{structcomp_filter_data_afa9cf053cc3f14e6f45db1326dd4faa1}{\index{comp\-Filter\-Data@{comp\-Filter\-Data}!a\-G@{a\-G}}
+\index{a\-G@{a\-G}!compFilterData@{comp\-Filter\-Data}}
+\subsubsection[{a\-G}]{\setlength{\rightskip}{0pt plus 5cm}{\bf a\-G}}}\label{structcomp_filter_data_afa9cf053cc3f14e6f45db1326dd4faa1}
+
+
+\-Gain for low pass filter of accelerometer. 
+
+\begin{DoxyWarning}{\-Warning}
+\-Sum of \hyperlink{structcomp_filter_data_a15c4d386f5a6e782dccc9b419633bc82}{comp\-Filter\-Data\-::g\-G} and \hyperlink{structcomp_filter_data_afa9cf053cc3f14e6f45db1326dd4faa1}{comp\-Filter\-Data\-::a\-G} must be 1 
+\end{DoxyWarning}
+\hypertarget{structcomp_filter_data_a770f288d3048ff6cbee9faa0969fd6b0}{\index{comp\-Filter\-Data@{comp\-Filter\-Data}!dt@{dt}}
+\index{dt@{dt}!compFilterData@{comp\-Filter\-Data}}
+\subsubsection[{dt}]{\setlength{\rightskip}{0pt plus 5cm}{\bf dt}}}\label{structcomp_filter_data_a770f288d3048ff6cbee9faa0969fd6b0}
+
+
+\-Sampling rate in seconds. 
+
+\begin{DoxyWarning}{\-Warning}
+\-This must be as precise as possible 
+\end{DoxyWarning}
+\hypertarget{structcomp_filter_data_a15c4d386f5a6e782dccc9b419633bc82}{\index{comp\-Filter\-Data@{comp\-Filter\-Data}!g\-G@{g\-G}}
+\index{g\-G@{g\-G}!compFilterData@{comp\-Filter\-Data}}
+\subsubsection[{g\-G}]{\setlength{\rightskip}{0pt plus 5cm}{\bf g\-G}}}\label{structcomp_filter_data_a15c4d386f5a6e782dccc9b419633bc82}
+
+
+\-Gain for high pass filter of gyroscope. 
+
+\begin{DoxyWarning}{\-Warning}
+\-Sum of \hyperlink{structcomp_filter_data_a15c4d386f5a6e782dccc9b419633bc82}{comp\-Filter\-Data\-::g\-G} and \hyperlink{structcomp_filter_data_afa9cf053cc3f14e6f45db1326dd4faa1}{comp\-Filter\-Data\-::a\-G} must be 1 
+\end{DoxyWarning}
+
+
+\-The documentation for this struct was generated from the following file\-:\begin{DoxyCompactItemize}
+\item 
+\-Robo\-Way/complementary\-Filter/\hyperlink{complementary_filter_8h}{complementary\-Filter.\-h}\end{DoxyCompactItemize}

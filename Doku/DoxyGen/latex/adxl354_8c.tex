@@ -1,0 +1,169 @@
+\hypertarget{adxl354_8c}{\section{\-Robo\-Way/adxl354/adxl354.c \-File \-Reference}
+\label{adxl354_8c}\index{\-Robo\-Way/adxl354/adxl354.\-c@{\-Robo\-Way/adxl354/adxl354.\-c}}
+}
+
+
+\-This is the source code file for simple use of the digital accelerometer \-A\-D\-X\-L354.  
+
+
+{\ttfamily \#include \char`\"{}./adxl354.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+uint8\-\_\-t \hyperlink{adxl354_8c_a118445225e5078640421b4709d1ccf0a}{adxl354\-Init} (uint8\-\_\-t addr, uint8\-\_\-t bw\-Rate)
+\begin{DoxyCompactList}\small\item\em \-Initial setup of an \-A\-D\-X\-L354 -\/ need to be called only once. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{adxl354_8c_a6a747063a6707cd9a35f5e7515924a18}{adxl354\-Set\-Reg} (uint8\-\_\-t addr, uint8\-\_\-t reg, uint8\-\_\-t val)
+\begin{DoxyCompactList}\small\item\em \-Set the value of an register. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{adxl354_8c_a911701abafdafd95fc9a9bb0b84f5e83}{adxl354\-Get\-Accel\-All} (uint8\-\_\-t addr, int16\-\_\-t $\ast$x, int16\-\_\-t $\ast$y, int16\-\_\-t $\ast$z)
+\begin{DoxyCompactList}\small\item\em \-Get current acceleration of all three axis. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{adxl354_8c_af02570dcd1ca6acd197193ee843ddee3}{adxl354\-Get\-Accel} (uint8\-\_\-t addr, int8\-\_\-t axis, int16\-\_\-t $\ast$val)
+\begin{DoxyCompactList}\small\item\em \-Get current acceleration of one axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is the source code file for simple use of the digital accelerometer \-A\-D\-X\-L354. \begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+31.\-01.\-2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Version}
+1.\-4.\-2
+\end{DoxyVersion}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{adxl354_8c_af02570dcd1ca6acd197193ee843ddee3}{\index{adxl354.\-c@{adxl354.\-c}!adxl354\-Get\-Accel@{adxl354\-Get\-Accel}}
+\index{adxl354\-Get\-Accel@{adxl354\-Get\-Accel}!adxl354.c@{adxl354.\-c}}
+\subsubsection[{adxl354\-Get\-Accel}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf adxl354\-Get\-Accel} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{int8\-\_\-t}]{axis, }
+\item[{int16\-\_\-t $\ast$}]{val}
+\end{DoxyParamCaption}
+)}}\label{adxl354_8c_af02570dcd1ca6acd197193ee843ddee3}
+
+
+\-Get current acceleration of one axis. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the \-A\-D\-X\-L354 \\
+\hline
+{\em axis} & \-Witch axis (see \-A\-D\-X\-L354\-\_\-\-A\-X\-I\-S) \\
+\hline
+{\em val} & \-Value of axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em true} & success \\
+\hline
+{\em false} & failure \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{adxl354_8c_a911701abafdafd95fc9a9bb0b84f5e83}{\index{adxl354.\-c@{adxl354.\-c}!adxl354\-Get\-Accel\-All@{adxl354\-Get\-Accel\-All}}
+\index{adxl354\-Get\-Accel\-All@{adxl354\-Get\-Accel\-All}!adxl354.c@{adxl354.\-c}}
+\subsubsection[{adxl354\-Get\-Accel\-All}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf adxl354\-Get\-Accel\-All} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{int16\-\_\-t $\ast$}]{x, }
+\item[{int16\-\_\-t $\ast$}]{y, }
+\item[{int16\-\_\-t $\ast$}]{z}
+\end{DoxyParamCaption}
+)}}\label{adxl354_8c_a911701abafdafd95fc9a9bb0b84f5e83}
+
+
+\-Get current acceleration of all three axis. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the \-A\-D\-X\-L354 \\
+\hline
+{\em $\ast$x} & \-Value of \-X-\/\-Axis \\
+\hline
+{\em $\ast$y} & \-Value of \-Y-\/\-Axis \\
+\hline
+{\em $\ast$z} & \-Value of \-Z-\/\-Axis \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em true} & success \\
+\hline
+{\em false} & failure \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{adxl354_8c_a118445225e5078640421b4709d1ccf0a}{\index{adxl354.\-c@{adxl354.\-c}!adxl354\-Init@{adxl354\-Init}}
+\index{adxl354\-Init@{adxl354\-Init}!adxl354.c@{adxl354.\-c}}
+\subsubsection[{adxl354\-Init}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf adxl354\-Init} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{uint8\-\_\-t}]{bw\-Rate}
+\end{DoxyParamCaption}
+)}}\label{adxl354_8c_a118445225e5078640421b4709d1ccf0a}
+
+
+\-Initial setup of an \-A\-D\-X\-L354 -\/ need to be called only once. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the \-A\-D\-X\-L354 (refer to \-A\-D\-X\-L354\-\_\-\-S\-T\-D\-\_\-\-D\-E\-V\-I\-D) \\
+\hline
+{\em bw\-Rate} & \-Bit rate setting (refer to \-A\-D\-X\-L354\-\_\-\-R\-E\-G\-\_\-\-B\-W\-\_\-\-R\-A\-T\-E\-\_\-\-M\-O\-D\-E\-S) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em true} & -\/$>$ success \\
+\hline
+{\em false} & -\/$>$ failure \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{adxl354_8c_a6a747063a6707cd9a35f5e7515924a18}{\index{adxl354.\-c@{adxl354.\-c}!adxl354\-Set\-Reg@{adxl354\-Set\-Reg}}
+\index{adxl354\-Set\-Reg@{adxl354\-Set\-Reg}!adxl354.c@{adxl354.\-c}}
+\subsubsection[{adxl354\-Set\-Reg}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf adxl354\-Set\-Reg} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{uint8\-\_\-t}]{reg, }
+\item[{uint8\-\_\-t}]{val}
+\end{DoxyParamCaption}
+)}}\label{adxl354_8c_a6a747063a6707cd9a35f5e7515924a18}
+
+
+\-Set the value of an register. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the \-A\-D\-X\-L354 \\
+\hline
+{\em reg} & \-Address of the register (see \-A\-D\-X\-L354\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S) \\
+\hline
+{\em val} & \-New value for the register \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em true} & \-Success \\
+\hline
+{\em false} & \-Failure \\
+\hline
+\end{DoxyRetVals}

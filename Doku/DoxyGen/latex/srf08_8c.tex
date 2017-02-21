@@ -1,0 +1,202 @@
+\hypertarget{srf08_8c}{\section{\-Robo\-Way/srf08/srf08.c \-File \-Reference}
+\label{srf08_8c}\index{\-Robo\-Way/srf08/srf08.\-c@{\-Robo\-Way/srf08/srf08.\-c}}
+}
+
+
+\-This is the main source code file for \-Robo\-Way -\/ all crazy stuff is placed here.  
+
+
+{\ttfamily \#include \char`\"{}srf08.\-h\char`\"{}}\*
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{srf08_8c_ab5a6c32769a4ae618f6e05f2c9e61e0c}{srf08\-Start} (uint8\-\_\-t addr, uint8\-\_\-t command)
+\begin{DoxyCompactList}\small\item\em \-Start a measure of distance and light. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{srf08_8c_aeaffc5211661dc410c2b2e4c0f019835}{srf08\-Status} (uint8\-\_\-t addr)
+\begin{DoxyCompactList}\small\item\em \-Get status of the srf08. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{srf08_8c_a257bb403c6af859c54d8b55fe5aaead3}{srf08\-Get\-Distance} (uint8\-\_\-t addr)
+\begin{DoxyCompactList}\small\item\em \-Get measured distance. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{srf08_8c_a0c3f2c3de9171d8920236c2a9c9ae4a9}{srf08\-Get\-Light} (uint8\-\_\-t addr)
+\begin{DoxyCompactList}\small\item\em \-Get measured light. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{srf08_8c_ae3d1da917a4b688db3ee791b73811b6c}{srf08\-Set\-Reg} (uint8\-\_\-t addr, uint8\-\_\-t reg, uint8\-\_\-t val)
+\begin{DoxyCompactList}\small\item\em \-Change the value of an specified register. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{srf08_8c_a67f9808f86f7589d51fc461ea02e5dff}{srf08\-Set\-Addr} (uint8\-\_\-t old\-Addr, uint8\-\_\-t new\-Addr)
+\begin{DoxyCompactList}\small\item\em \-Set a new address for an \-S\-R\-F08. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is the main source code file for \-Robo\-Way -\/ all crazy stuff is placed here. \begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+3.\-02.\-2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Version}
+1.\-8.\-4
+\end{DoxyVersion}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{srf08_8c_a257bb403c6af859c54d8b55fe5aaead3}{\index{srf08.\-c@{srf08.\-c}!srf08\-Get\-Distance@{srf08\-Get\-Distance}}
+\index{srf08\-Get\-Distance@{srf08\-Get\-Distance}!srf08.c@{srf08.\-c}}
+\subsubsection[{srf08\-Get\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t {\bf srf08\-Get\-Distance} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{srf08_8c_a257bb403c6af859c54d8b55fe5aaead3}
+
+
+\-Get measured distance. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the srf08 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint16\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-Distance} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{srf08_8c_a0c3f2c3de9171d8920236c2a9c9ae4a9}{\index{srf08.\-c@{srf08.\-c}!srf08\-Get\-Light@{srf08\-Get\-Light}}
+\index{srf08\-Get\-Light@{srf08\-Get\-Light}!srf08.c@{srf08.\-c}}
+\subsubsection[{srf08\-Get\-Light}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf srf08\-Get\-Light} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{srf08_8c_a0c3f2c3de9171d8920236c2a9c9ae4a9}
+
+
+\-Get measured light. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the srf08 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-Measured} & \-Light \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{srf08_8c_a67f9808f86f7589d51fc461ea02e5dff}{\index{srf08.\-c@{srf08.\-c}!srf08\-Set\-Addr@{srf08\-Set\-Addr}}
+\index{srf08\-Set\-Addr@{srf08\-Set\-Addr}!srf08.c@{srf08.\-c}}
+\subsubsection[{srf08\-Set\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf srf08\-Set\-Addr} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{old\-Addr, }
+\item[{uint8\-\_\-t}]{new\-Addr}
+\end{DoxyParamCaption}
+)}}\label{srf08_8c_a67f9808f86f7589d51fc461ea02e5dff}
+
+
+\-Set a new address for an \-S\-R\-F08. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em old\-Addr} & \-Old address of the \-S\-R\-F08 \\
+\hline
+{\em new\-Addr} & \-New address of the \-S\-R\-F08 (see \-S\-R\-F08\-\_\-\-A\-D\-D\-R\-E\-S\-S\-E\-S) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-S\-R\-F08\-\_\-\-A\-V\-A\-I\-L} & \-Success \\
+\hline
+{\em \-S\-R\-F08\-\_\-\-U\-N\-A\-V\-A\-I\-L} & \-Error \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{srf08_8c_ae3d1da917a4b688db3ee791b73811b6c}{\index{srf08.\-c@{srf08.\-c}!srf08\-Set\-Reg@{srf08\-Set\-Reg}}
+\index{srf08\-Set\-Reg@{srf08\-Set\-Reg}!srf08.c@{srf08.\-c}}
+\subsubsection[{srf08\-Set\-Reg}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf srf08\-Set\-Reg} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{uint8\-\_\-t}]{reg, }
+\item[{uint8\-\_\-t}]{val}
+\end{DoxyParamCaption}
+)}}\label{srf08_8c_ae3d1da917a4b688db3ee791b73811b6c}
+
+
+\-Change the value of an specified register. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the srf08 \\
+\hline
+{\em reg} & \-Address of register to change (see \-S\-R\-F08\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S) \\
+\hline
+{\em val} & \-New value for register given by param reg \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-S\-R\-F08\-\_\-\-A\-V\-A\-I\-L} & \-Success \\
+\hline
+{\em \-S\-R\-F08\-\_\-\-U\-N\-A\-V\-A\-I\-L} & \-Error \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{srf08_8c_ab5a6c32769a4ae618f6e05f2c9e61e0c}{\index{srf08.\-c@{srf08.\-c}!srf08\-Start@{srf08\-Start}}
+\index{srf08\-Start@{srf08\-Start}!srf08.c@{srf08.\-c}}
+\subsubsection[{srf08\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf srf08\-Start} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{uint8\-\_\-t}]{command}
+\end{DoxyParamCaption}
+)}}\label{srf08_8c_ab5a6c32769a4ae618f6e05f2c9e61e0c}
+
+
+\-Start a measure of distance and light. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-I2\-C address of the \-S\-R\-F08 \\
+\hline
+{\em command} & \-Modes for measure (see \-S\-R\-F08\-\_\-\-C\-O\-M\-M\-A\-N\-D\-S) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{srf08_8c_aeaffc5211661dc410c2b2e4c0f019835}{\index{srf08.\-c@{srf08.\-c}!srf08\-Status@{srf08\-Status}}
+\index{srf08\-Status@{srf08\-Status}!srf08.c@{srf08.\-c}}
+\subsubsection[{srf08\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf srf08\-Status} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{srf08_8c_aeaffc5211661dc410c2b2e4c0f019835}
+
+
+\-Get status of the srf08. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the srf08 to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em !=} & \-S\-R\-F08\-\_\-\-U\-N\-A\-V\-A\-I\-L \-S\-R\-F08 is available \\
+\hline
+{\em \-S\-R\-F08\-\_\-\-U\-N\-A\-V\-A\-I\-L} & \-S\-R\-F08 is unavailable or measurement is pending \\
+\hline
+\end{DoxyRetVals}

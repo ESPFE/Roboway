@@ -1,0 +1,316 @@
+\hypertarget{srf08_8h}{\section{\-Robo\-Way/srf08/srf08.h \-File \-Reference}
+\label{srf08_8h}\index{\-Robo\-Way/srf08/srf08.\-h@{\-Robo\-Way/srf08/srf08.\-h}}
+}
+
+
+\-This is the header file for the srf08 bibliothek.  
+
+
+{\ttfamily \#include \char`\"{}../i2cmaster/i2cmaster.\-h\char`\"{}}\*
+{\ttfamily \#include \char`\"{}../avr\-Constants.\-h\char`\"{}}\*
+{\ttfamily \#include $<$util/delay.\-h$>$}\*
+\subsection*{\-Defines}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_gadf04d6ea3fb1e38d041300a9ac29d6c3}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_gadf04d6ea3fb1e38d041300a9ac29d6c3}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-00}~0x\-E0}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_gadf04d6ea3fb1e38d041300a9ac29d6c3}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 0. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga2f08f6c270f6b8b58f4d9d16c897aae3}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga2f08f6c270f6b8b58f4d9d16c897aae3}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-01}~0x\-E2}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga2f08f6c270f6b8b58f4d9d16c897aae3}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 1. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_gaecce93dd8641a1e7767dbc2d60d9841c}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_gaecce93dd8641a1e7767dbc2d60d9841c}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-02}~0x\-E4}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_gaecce93dd8641a1e7767dbc2d60d9841c}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 2. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga0fcf883663e6b64b1b8b26504898cd91}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga0fcf883663e6b64b1b8b26504898cd91}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-03}~0x\-E6}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga0fcf883663e6b64b1b8b26504898cd91}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 3. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_gabc45851be6d5a1596a5b49b985ca60a2}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_gabc45851be6d5a1596a5b49b985ca60a2}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-04}~0x\-E8}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_gabc45851be6d5a1596a5b49b985ca60a2}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 4. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_gaf6e06e3803a009591abb4c0144302ab1}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_gaf6e06e3803a009591abb4c0144302ab1}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-05}~0x\-E\-A}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_gaf6e06e3803a009591abb4c0144302ab1}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 5. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga917887ddb05be2753a90b0313ea5a929}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga917887ddb05be2753a90b0313ea5a929}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-06}~0x\-E\-C}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga917887ddb05be2753a90b0313ea5a929}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 6. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_gaf084c2cc7b47c1ba701fae9e65cae99e}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_gaf084c2cc7b47c1ba701fae9e65cae99e}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-07}~0x\-E\-E}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_gaf084c2cc7b47c1ba701fae9e65cae99e}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 7. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_gac666d6efe957396e4da69acca376d8cf}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_gac666d6efe957396e4da69acca376d8cf}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-08}~0x\-F0}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_gac666d6efe957396e4da69acca376d8cf}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 8. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga56fe1e425a4dc4ea62d1524658091610}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga56fe1e425a4dc4ea62d1524658091610}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-09}~0x\-F2}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga56fe1e425a4dc4ea62d1524658091610}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 9. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga7703b0bd1c4ce686246fd9807d20b33f}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga7703b0bd1c4ce686246fd9807d20b33f}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-10}~0x\-F4}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga7703b0bd1c4ce686246fd9807d20b33f}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 10. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga53f1ae2f79245f01fa9c59bc2858e5b1}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga53f1ae2f79245f01fa9c59bc2858e5b1}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-11}~0x\-F6}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga53f1ae2f79245f01fa9c59bc2858e5b1}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 11. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga8e3660b76ec59ae7a72570f3156ae0a5}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga8e3660b76ec59ae7a72570f3156ae0a5}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-12}~0x\-F8}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_ga8e3660b76ec59ae7a72570f3156ae0a5}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 12. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_gafc7bed5fad69491537353544252bbfc4}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_gafc7bed5fad69491537353544252bbfc4}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-13}~0x\-F\-A}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_gafc7bed5fad69491537353544252bbfc4}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 13. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_gab68016bb485baf9762b68d3d215f2591}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_gab68016bb485baf9762b68d3d215f2591}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-14}~0x\-F\-C}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_gab68016bb485baf9762b68d3d215f2591}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 14. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___a_d_d_r_e_s_s_e_s_gacb3d7bc92b1e56a4af102bc168c874f8}{\#define \hyperlink{group___s_r_f08___a_d_d_r_e_s_s_e_s_gacb3d7bc92b1e56a4af102bc168c874f8}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-15}~0x\-F\-E}\label{group___s_r_f08___a_d_d_r_e_s_s_e_s_gacb3d7bc92b1e56a4af102bc168c874f8}
+
+\begin{DoxyCompactList}\small\item\em \-Possible address 15. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___s_r_f08___m_o_d___a_d_d_r_ga3672a375a4427bcc609d2b64b407a42c}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-\-R\-E\-A\-D}(x)~( (x) + 0x01 )
+\begin{DoxyCompactList}\small\item\em \-Modify the address for read operation. \end{DoxyCompactList}\item 
+\#define \hyperlink{group___s_r_f08___m_o_d___a_d_d_r_ga883930ce23d92466ebc7167812c1c58d}{\-S\-R\-F08\-\_\-\-A\-D\-D\-R\-\_\-\-W\-R\-I\-T\-E}(x)~( (x) )
+\begin{DoxyCompactList}\small\item\em \-Modify the address for write operation. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga47960835050dd16b6a3369227b3d8179}{\#define \hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga47960835050dd16b6a3369227b3d8179}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N}~0x00}\label{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga47960835050dd16b6a3369227b3d8179}
+
+\begin{DoxyCompactList}\small\item\em \-Version of the \-S\-R\-F08 is stored here. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga63dda9c9fac527c2097116ad53461351}{\#define \hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga63dda9c9fac527c2097116ad53461351}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-C\-O\-M\-M\-A\-N\-D}~\hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga47960835050dd16b6a3369227b3d8179}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-V\-E\-R\-S\-I\-O\-N}}\label{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga63dda9c9fac527c2097116ad53461351}
+
+\begin{DoxyCompactList}\small\item\em \-Register for commands -\/ \-See \-S\-R\-F08\-\_\-\-C\-O\-M\-M\-A\-N\-D\-S for possible values. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___r_e_g_i_s_t_e_r_s_gaf2e557b72f14538a5a2e611700045edb}{\#define \hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_gaf2e557b72f14538a5a2e611700045edb}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-L\-I\-G\-H\-T}~0x01}\label{group___s_r_f08___r_e_g_i_s_t_e_r_s_gaf2e557b72f14538a5a2e611700045edb}
+
+\begin{DoxyCompactList}\small\item\em \-Value of measured light is stored here. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga442609ae4e02b190250ea094a7d46a8f}{\#define \hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga442609ae4e02b190250ea094a7d46a8f}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-G\-A\-I\-N}~\hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_gaf2e557b72f14538a5a2e611700045edb}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-L\-I\-G\-H\-T}}\label{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga442609ae4e02b190250ea094a7d46a8f}
+
+\begin{DoxyCompactList}\small\item\em \-Register for setting the gain. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga852b7411dc4146e15021b5a03ee568b0}{\#define \hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga852b7411dc4146e15021b5a03ee568b0}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-E\-C\-H\-O\-\_\-\-H}~0x02}\label{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga852b7411dc4146e15021b5a03ee568b0}
+
+\begin{DoxyCompactList}\small\item\em \-Value of measured distance -\/ high byte. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___r_e_g_i_s_t_e_r_s_gad1933d946b6b16efaab6206c5f4fabb3}{\#define \hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_gad1933d946b6b16efaab6206c5f4fabb3}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-R\-A\-N\-G\-E}~\hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_ga852b7411dc4146e15021b5a03ee568b0}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-E\-C\-H\-O\-\_\-\-H}}\label{group___s_r_f08___r_e_g_i_s_t_e_r_s_gad1933d946b6b16efaab6206c5f4fabb3}
+
+\begin{DoxyCompactList}\small\item\em \-Range in mm ( val $\ast$ 43mm ) + 43mm. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___r_e_g_i_s_t_e_r_s_gaf59fa043fa146779d9a0aa02a2d214df}{\#define \hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_gaf59fa043fa146779d9a0aa02a2d214df}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-E\-C\-H\-O\-\_\-\-L}~0x03}\label{group___s_r_f08___r_e_g_i_s_t_e_r_s_gaf59fa043fa146779d9a0aa02a2d214df}
+
+\begin{DoxyCompactList}\small\item\em \-Value of measured distance -\/ low byte. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___c_o_m_m_a_n_d_s_ga44f876f131e733be4df50e3e76cbaff0}{\#define \hyperlink{group___s_r_f08___c_o_m_m_a_n_d_s_ga44f876f131e733be4df50e3e76cbaff0}{\-S\-R\-F08\-\_\-\-C\-O\-M\-\_\-\-I\-N\-C\-H}~0x50}\label{group___s_r_f08___c_o_m_m_a_n_d_s_ga44f876f131e733be4df50e3e76cbaff0}
+
+\begin{DoxyCompactList}\small\item\em \-Start measure in inch. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___c_o_m_m_a_n_d_s_gac572f29f83e644f9111433f608b05942}{\#define \hyperlink{group___s_r_f08___c_o_m_m_a_n_d_s_gac572f29f83e644f9111433f608b05942}{\-S\-R\-F08\-\_\-\-C\-O\-M\-\_\-\-C\-M}~0x51}\label{group___s_r_f08___c_o_m_m_a_n_d_s_gac572f29f83e644f9111433f608b05942}
+
+\begin{DoxyCompactList}\small\item\em \-Start measure in cm. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___c_o_m_m_a_n_d_s_ga88377c1ad512b37e58964c51fb680c4c}{\#define \hyperlink{group___s_r_f08___c_o_m_m_a_n_d_s_ga88377c1ad512b37e58964c51fb680c4c}{\-S\-R\-F08\-\_\-\-C\-O\-M\-\_\-\-M\-K\-S}~0x52}\label{group___s_r_f08___c_o_m_m_a_n_d_s_ga88377c1ad512b37e58964c51fb680c4c}
+
+\begin{DoxyCompactList}\small\item\em \-Start measure in microseconds. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___c_o_m_m_a_n_d_s_ga82f1b0b1aab0b04fcecc5dbce53b1e8e}{\#define \hyperlink{group___s_r_f08___c_o_m_m_a_n_d_s_ga82f1b0b1aab0b04fcecc5dbce53b1e8e}{\-S\-R\-F08\-\_\-\-C\-O\-M\-\_\-\-A\-D\-D\-R0}~0x\-A0}\label{group___s_r_f08___c_o_m_m_a_n_d_s_ga82f1b0b1aab0b04fcecc5dbce53b1e8e}
+
+\begin{DoxyCompactList}\small\item\em \-Sequence one for changing the \-I2\-C-\/\-Address. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___c_o_m_m_a_n_d_s_gabd43092bfa433d67683d45d5ae80168e}{\#define \hyperlink{group___s_r_f08___c_o_m_m_a_n_d_s_gabd43092bfa433d67683d45d5ae80168e}{\-S\-R\-F08\-\_\-\-C\-O\-M\-\_\-\-A\-D\-D\-R1}~0x\-A\-A}\label{group___s_r_f08___c_o_m_m_a_n_d_s_gabd43092bfa433d67683d45d5ae80168e}
+
+\begin{DoxyCompactList}\small\item\em \-Sequence two for changing the \-I2\-C-\/\-Address. \end{DoxyCompactList}\item 
+\hypertarget{group___s_r_f08___c_o_m_m_a_n_d_s_gaf3b62e25ee73df4bb301d63b2ea7d5ca}{\#define \hyperlink{group___s_r_f08___c_o_m_m_a_n_d_s_gaf3b62e25ee73df4bb301d63b2ea7d5ca}{\-S\-R\-F08\-\_\-\-C\-O\-M\-\_\-\-A\-D\-D\-R2}~0x\-A5}\label{group___s_r_f08___c_o_m_m_a_n_d_s_gaf3b62e25ee73df4bb301d63b2ea7d5ca}
+
+\begin{DoxyCompactList}\small\item\em \-Sequence three for changing the \-I2\-C-\/\-Address. \end{DoxyCompactList}\item 
+\hypertarget{srf08_8h_a896712e4d80f217208b7ea57c69526a0}{\#define \hyperlink{srf08_8h_a896712e4d80f217208b7ea57c69526a0}{\-S\-R\-F08\-\_\-\-A\-V\-A\-I\-L}~0x00}\label{srf08_8h_a896712e4d80f217208b7ea57c69526a0}
+
+\begin{DoxyCompactList}\small\item\em \-S\-R\-F08 is not available. \end{DoxyCompactList}\item 
+\hypertarget{srf08_8h_a633686b2d7693b3e252ccf521848b377}{\#define \hyperlink{srf08_8h_a633686b2d7693b3e252ccf521848b377}{\-S\-R\-F08\-\_\-\-U\-N\-A\-V\-A\-I\-L}~0x\-F\-F}\label{srf08_8h_a633686b2d7693b3e252ccf521848b377}
+
+\begin{DoxyCompactList}\small\item\em \-S\-R\-F08 is not available or measure is pending. \end{DoxyCompactList}\item 
+\hypertarget{srf08_8h_ac5945ec23ff1eb390fcbdf030236f3a1}{\#define \hyperlink{srf08_8h_ac5945ec23ff1eb390fcbdf030236f3a1}{srf08\-Start\-Inch}(addr)~\hyperlink{srf08_8h_ab5a6c32769a4ae618f6e05f2c9e61e0c}{srf08\-Start}( addr, \hyperlink{group___s_r_f08___c_o_m_m_a_n_d_s_ga44f876f131e733be4df50e3e76cbaff0}{\-S\-R\-F08\-\_\-\-C\-O\-M\-\_\-\-I\-N\-C\-H} )}\label{srf08_8h_ac5945ec23ff1eb390fcbdf030236f3a1}
+
+\begin{DoxyCompactList}\small\item\em \-Start measure in inch. \end{DoxyCompactList}\item 
+\hypertarget{srf08_8h_ab6fad828f15fb41d30910173a01a30c2}{\#define \hyperlink{srf08_8h_ab6fad828f15fb41d30910173a01a30c2}{srf08\-Start\-C\-M}(addr)~\hyperlink{srf08_8h_ab5a6c32769a4ae618f6e05f2c9e61e0c}{srf08\-Start}( addr, \hyperlink{group___s_r_f08___c_o_m_m_a_n_d_s_gac572f29f83e644f9111433f608b05942}{\-S\-R\-F08\-\_\-\-C\-O\-M\-\_\-\-C\-M} )}\label{srf08_8h_ab6fad828f15fb41d30910173a01a30c2}
+
+\begin{DoxyCompactList}\small\item\em \-Start measure in cm. \end{DoxyCompactList}\item 
+\hypertarget{srf08_8h_ad7fdc99509670aa1eb3d8d79360f3e45}{\#define \hyperlink{srf08_8h_ad7fdc99509670aa1eb3d8d79360f3e45}{srf08\-Start\-Mcs}(addr)~\hyperlink{srf08_8h_ab5a6c32769a4ae618f6e05f2c9e61e0c}{srf08\-Start}( addr, \hyperlink{group___s_r_f08___c_o_m_m_a_n_d_s_ga88377c1ad512b37e58964c51fb680c4c}{\-S\-R\-F08\-\_\-\-C\-O\-M\-\_\-\-M\-K\-S} )}\label{srf08_8h_ad7fdc99509670aa1eb3d8d79360f3e45}
+
+\begin{DoxyCompactList}\small\item\em \-Start measure in microseconds. \end{DoxyCompactList}\item 
+\hypertarget{srf08_8h_a0069c31440b51f8311cb41661a7e087e}{\#define \hyperlink{srf08_8h_a0069c31440b51f8311cb41661a7e087e}{srf08\-Set\-Range}(addr, range)~\hyperlink{srf08_8h_ae3d1da917a4b688db3ee791b73811b6c}{srf08\-Set\-Reg}( addr, \hyperlink{group___s_r_f08___r_e_g_i_s_t_e_r_s_gad1933d946b6b16efaab6206c5f4fabb3}{\-S\-R\-F08\-\_\-\-R\-E\-G\-\_\-\-R\-A\-N\-G\-E}, ( (range) -\/ 43 ) / 43 )}\label{srf08_8h_a0069c31440b51f8311cb41661a7e087e}
+
+\begin{DoxyCompactList}\small\item\em \-Set range in mm. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{\-Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{srf08_8h_ab5a6c32769a4ae618f6e05f2c9e61e0c}{srf08\-Start} (uint8\-\_\-t addr, uint8\-\_\-t command)
+\begin{DoxyCompactList}\small\item\em \-Start a measure of distance and light. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{srf08_8h_aeaffc5211661dc410c2b2e4c0f019835}{srf08\-Status} (uint8\-\_\-t addr)
+\begin{DoxyCompactList}\small\item\em \-Get status of the srf08. \end{DoxyCompactList}\item 
+uint16\-\_\-t \hyperlink{srf08_8h_a257bb403c6af859c54d8b55fe5aaead3}{srf08\-Get\-Distance} (uint8\-\_\-t addr)
+\begin{DoxyCompactList}\small\item\em \-Get measured distance. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{srf08_8h_a0c3f2c3de9171d8920236c2a9c9ae4a9}{srf08\-Get\-Light} (uint8\-\_\-t addr)
+\begin{DoxyCompactList}\small\item\em \-Get measured light. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{srf08_8h_ae3d1da917a4b688db3ee791b73811b6c}{srf08\-Set\-Reg} (uint8\-\_\-t addr, uint8\-\_\-t reg, uint8\-\_\-t val)
+\begin{DoxyCompactList}\small\item\em \-Change the value of an specified register. \end{DoxyCompactList}\item 
+uint8\-\_\-t \hyperlink{srf08_8h_a67f9808f86f7589d51fc461ea02e5dff}{srf08\-Set\-Addr} (uint8\-\_\-t old\-Addr, uint8\-\_\-t new\-Addr)
+\begin{DoxyCompactList}\small\item\em \-Set a new address for an \-S\-R\-F08. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{\-Detailed \-Description}
+\-This is the header file for the srf08 bibliothek. \begin{DoxyAuthor}{\-Author}
+\-Andre \-S\"{u}nnemann ( \href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de} $|$ \href{http://www.edv-peuker.de}{\tt www.\-edv-\/peuker.\-de} ) 
+\end{DoxyAuthor}
+\begin{DoxyDate}{\-Date}
+04.\-02.\-2014 
+\end{DoxyDate}
+\begin{DoxyVersion}{\-Version}
+1.\-8.\-4
+\end{DoxyVersion}
+\begin{DoxyCopyright}{\-Copyright}
+\char`\"{}\-T\-H\-E B\-E\-E\-R-\/\-W\-A\-R\-E L\-I\-C\-E\-N\-S\-E\char`\"{} (\-Revision 42)\-:\par
+ $<$\href{mailto:a.suennemann@edv-peuker.de}{\tt a.\-suennemann@edv-\/peuker.\-de}$>$ wrote this file.\par
+ \-As long as you retain this notice you can do whatever you want with this stuff.\par
+ \-If we meet some day, and you think this stuff is worth it, you can buy me a beer in return \-Andre \-S\"{u}nnemann. 
+\end{DoxyCopyright}
+
+
+\subsection{\-Function \-Documentation}
+\hypertarget{srf08_8h_a257bb403c6af859c54d8b55fe5aaead3}{\index{srf08.\-h@{srf08.\-h}!srf08\-Get\-Distance@{srf08\-Get\-Distance}}
+\index{srf08\-Get\-Distance@{srf08\-Get\-Distance}!srf08.h@{srf08.\-h}}
+\subsubsection[{srf08\-Get\-Distance}]{\setlength{\rightskip}{0pt plus 5cm}uint16\-\_\-t {\bf srf08\-Get\-Distance} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{srf08_8h_a257bb403c6af859c54d8b55fe5aaead3}
+
+
+\-Get measured distance. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the srf08 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint16\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-Distance} & \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{srf08_8h_a0c3f2c3de9171d8920236c2a9c9ae4a9}{\index{srf08.\-h@{srf08.\-h}!srf08\-Get\-Light@{srf08\-Get\-Light}}
+\index{srf08\-Get\-Light@{srf08\-Get\-Light}!srf08.h@{srf08.\-h}}
+\subsubsection[{srf08\-Get\-Light}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf srf08\-Get\-Light} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{srf08_8h_a0c3f2c3de9171d8920236c2a9c9ae4a9}
+
+
+\-Get measured light. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the srf08 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-Measured} & \-Light \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{srf08_8h_a67f9808f86f7589d51fc461ea02e5dff}{\index{srf08.\-h@{srf08.\-h}!srf08\-Set\-Addr@{srf08\-Set\-Addr}}
+\index{srf08\-Set\-Addr@{srf08\-Set\-Addr}!srf08.h@{srf08.\-h}}
+\subsubsection[{srf08\-Set\-Addr}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf srf08\-Set\-Addr} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{old\-Addr, }
+\item[{uint8\-\_\-t}]{new\-Addr}
+\end{DoxyParamCaption}
+)}}\label{srf08_8h_a67f9808f86f7589d51fc461ea02e5dff}
+
+
+\-Set a new address for an \-S\-R\-F08. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em old\-Addr} & \-Old address of the \-S\-R\-F08 \\
+\hline
+{\em new\-Addr} & \-New address of the \-S\-R\-F08 (see \-S\-R\-F08\-\_\-\-A\-D\-D\-R\-E\-S\-S\-E\-S) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-S\-R\-F08\-\_\-\-A\-V\-A\-I\-L} & \-Success \\
+\hline
+{\em \-S\-R\-F08\-\_\-\-U\-N\-A\-V\-A\-I\-L} & \-Error \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{srf08_8h_ae3d1da917a4b688db3ee791b73811b6c}{\index{srf08.\-h@{srf08.\-h}!srf08\-Set\-Reg@{srf08\-Set\-Reg}}
+\index{srf08\-Set\-Reg@{srf08\-Set\-Reg}!srf08.h@{srf08.\-h}}
+\subsubsection[{srf08\-Set\-Reg}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf srf08\-Set\-Reg} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{uint8\-\_\-t}]{reg, }
+\item[{uint8\-\_\-t}]{val}
+\end{DoxyParamCaption}
+)}}\label{srf08_8h_ae3d1da917a4b688db3ee791b73811b6c}
+
+
+\-Change the value of an specified register. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the srf08 \\
+\hline
+{\em reg} & \-Address of register to change (see \-S\-R\-F08\-\_\-\-R\-E\-G\-I\-S\-T\-E\-R\-S) \\
+\hline
+{\em val} & \-New value for register given by param reg \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em \-S\-R\-F08\-\_\-\-A\-V\-A\-I\-L} & \-Success \\
+\hline
+{\em \-S\-R\-F08\-\_\-\-U\-N\-A\-V\-A\-I\-L} & \-Error \\
+\hline
+\end{DoxyRetVals}
+\hypertarget{srf08_8h_ab5a6c32769a4ae618f6e05f2c9e61e0c}{\index{srf08.\-h@{srf08.\-h}!srf08\-Start@{srf08\-Start}}
+\index{srf08\-Start@{srf08\-Start}!srf08.h@{srf08.\-h}}
+\subsubsection[{srf08\-Start}]{\setlength{\rightskip}{0pt plus 5cm}void {\bf srf08\-Start} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr, }
+\item[{uint8\-\_\-t}]{command}
+\end{DoxyParamCaption}
+)}}\label{srf08_8h_ab5a6c32769a4ae618f6e05f2c9e61e0c}
+
+
+\-Start a measure of distance and light. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-I2\-C address of the \-S\-R\-F08 \\
+\hline
+{\em command} & \-Modes for measure (see \-S\-R\-F08\-\_\-\-C\-O\-M\-M\-A\-N\-D\-S) \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+none 
+\end{DoxyReturn}
+\hypertarget{srf08_8h_aeaffc5211661dc410c2b2e4c0f019835}{\index{srf08.\-h@{srf08.\-h}!srf08\-Status@{srf08\-Status}}
+\index{srf08\-Status@{srf08\-Status}!srf08.h@{srf08.\-h}}
+\subsubsection[{srf08\-Status}]{\setlength{\rightskip}{0pt plus 5cm}uint8\-\_\-t {\bf srf08\-Status} (
+\begin{DoxyParamCaption}
+\item[{uint8\-\_\-t}]{addr}
+\end{DoxyParamCaption}
+)}}\label{srf08_8h_aeaffc5211661dc410c2b2e4c0f019835}
+
+
+\-Get status of the srf08. 
+
+
+\begin{DoxyParams}{\-Parameters}
+{\em addr} & \-Address of the srf08 to check \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{\-Returns}
+uint8\-\_\-t 
+\end{DoxyReturn}
+
+\begin{DoxyRetVals}{\-Return values}
+{\em !=} & \-S\-R\-F08\-\_\-\-U\-N\-A\-V\-A\-I\-L \-S\-R\-F08 is available \\
+\hline
+{\em \-S\-R\-F08\-\_\-\-U\-N\-A\-V\-A\-I\-L} & \-S\-R\-F08 is unavailable or measurement is pending \\
+\hline
+\end{DoxyRetVals}
